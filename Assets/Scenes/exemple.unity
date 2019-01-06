@@ -39,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.554
   m_CustomReflection: {fileID: 8900000, guid: ef7513b54a0670140b9b967af7620563, type: 3}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.036394708, g: 0.11120021, b: 0.15022057, a: 0.554}
+  m_IndirectSpecularColor: {r: 0.034250084, g: 0.10706083, b: 0.14945841, a: 0.554}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -8423,13 +8423,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 170076733}
-  m_LocalRotation: {x: -0.15799114, y: -0.85190004, z: 0.47551817, w: 0.15227471}
+  m_LocalRotation: {x: 0.6610984, y: 0.4737039, z: -0.3593871, w: 0.45759636}
   m_LocalPosition: {x: 0, y: 3, z: 4.28}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 130.353, y: 2199.253, z: 1659.7471}
+  m_LocalEulerAnglesHint: {x: 109, y: 2167.35, z: 654}
 --- !u!114 &170076736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14484,7 +14484,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 314295170}
-  m_LocalRotation: {x: -0.066371225, y: -0.0000000015566696, z: -0.000000023402256,
+  m_LocalRotation: {x: -0.066371225, y: -0.0000000015566693, z: -0.000000023402256,
     w: 0.99779505}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -34004,7 +34004,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 824373657}
-  m_LocalRotation: {x: -0.0663711, y: -1.406975e-13, z: -9.358883e-15, w: 0.997795}
+  m_LocalRotation: {x: -0.0663711, y: -1.4003283e-13, z: -9.314672e-15, w: 0.997795}
   m_LocalPosition: {x: 1.777, y: 2.9840062, z: -5.5700054}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -34189,7 +34189,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SW: 735
-  SH: 413
+  SH: 734
 --- !u!114 &824373668
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -106046,6 +106046,16 @@ PrefabInstance:
       propertyPath: m_CastShadows
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1789787479693448588, guid: f9dee39d229a4bb4087224760ba2d338,
+        type: 3}
+      propertyPath: m_AABB.m_Center.y
+      value: 1.2625
+      objectReference: {fileID: 0}
+    - target: {fileID: 1789787479693448588, guid: f9dee39d229a4bb4087224760ba2d338,
+        type: 3}
+      propertyPath: m_AABB.m_Extent.x
+      value: 0.86269236
+      objectReference: {fileID: 0}
     - target: {fileID: 1789787479688529282, guid: f9dee39d229a4bb4087224760ba2d338,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -106101,6 +106111,46 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: a42235ab0d6262c4cb9b4d7d2bc25663, type: 2}
+    - target: {fileID: 5887263940143221527, guid: f9dee39d229a4bb4087224760ba2d338,
+        type: 3}
+      propertyPath: m_SolverFrequency
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 5887263940143221527, guid: f9dee39d229a4bb4087224760ba2d338,
+        type: 3}
+      propertyPath: m_WorldVelocityScale
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5887263940143221527, guid: f9dee39d229a4bb4087224760ba2d338,
+        type: 3}
+      propertyPath: m_WorldAccelerationScale
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5887263940143221527, guid: f9dee39d229a4bb4087224760ba2d338,
+        type: 3}
+      propertyPath: m_Friction
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5887263940143221527, guid: f9dee39d229a4bb4087224760ba2d338,
+        type: 3}
+      propertyPath: m_Damping
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5887263940143221527, guid: f9dee39d229a4bb4087224760ba2d338,
+        type: 3}
+      propertyPath: m_BendingStiffness
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5887263940143221527, guid: f9dee39d229a4bb4087224760ba2d338,
+        type: 3}
+      propertyPath: m_CollisionMassScale
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5887263940143221527, guid: f9dee39d229a4bb4087224760ba2d338,
+        type: 3}
+      propertyPath: m_SleepThreshold
+      value: 0.2
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1789787479697533762, guid: f9dee39d229a4bb4087224760ba2d338, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f9dee39d229a4bb4087224760ba2d338, type: 3}
