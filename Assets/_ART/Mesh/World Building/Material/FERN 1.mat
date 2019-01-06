@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: FERN 1
+  m_Shader: {fileID: 4800000, guid: e27c26c0ecebef247ba69245490f2562, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: ae592358838c0cf48bcf0cdc8850e2e9, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SpecGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _AlphaClip: 0
+    - _AmbientOcclusion: 0.831
+    - _BendingInfluence: 0.28
+    - _BendingTint: -0.1
+    - _Blend: 0
+    - _BumpScale: 1
+    - _ColorVariation: 0
+    - _Cull: 2
+    - _Cutoff: 0.5
+    - _DstBlend: 0
+    - _FlatLighting: 0.13
+    - _GlobalWindMotion: 1
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _HeightmapInfluence: 0.34
+    - _LeafFlutter: 0.73
+    - _MaxHeight: 0.09
+    - _MaxWindStrength: 0.041
+    - _Metallic: 0
+    - _MinHeight: -0.07
+    - _OcclusionStrength: 1
+    - _PigmentMapHeight: 0
+    - _PigmentMapInfluence: 0
+    - _ReceiveShadows: 1
+    - _Smoothness: 0.28
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _Surface: 0
+    - _TransmissionAmount: 0
+    - _TransmissionSize: 2.6
+    - _VS_TOUCHBEND: 0
+    - _WindAmplitudeMultiplier: 1
+    - _WindSwinging: 0.31
+    - _WindTint: -0.12
+    - _WorkflowMode: 1
+    - _ZWrite: 1
+    m_Colors:
+    - _Color: {r: 0.69085974, g: 0.7075472, b: 0.6913654, a: 0}
+    - _ColorBottom: {r: 0.41509432, g: 0.3684941, b: 0.20950516, a: 1}
+    - _ColorTop: {r: 0.8490566, g: 0.78898185, b: 0.78898185, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}

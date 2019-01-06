@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b2425a2284af743826c689403a4924, type: 3}
+  m_Name: SSS
+  m_EditorClassIdentifier: 
+  m_functionInfo: "// Made with Amplify Shader Editor\n// Available at the Unity Asset
+    Store - http://u3d.as/y3X \n/*ASEBEGIN\nVersion=15401\n7;29;1352;692;1057.39;-53.57474;1;True;True\nNode;AmplifyShaderEditor.FunctionInput;6;-852.0198,125.3984;Float;False;ColorSSS2;3;5;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionInput;4;-872.0198,-159.6016;Float;False;WorldNormal;3;0;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionInput;7;-834.0198,260.3984;Float;False;ColorSSS3;3;6;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionInput;10;-802.0198,562.3984;Float;False;Transmission;1;8;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionInput;5;-881.0198,29.39841;Float;False;ColorSSS1;3;4;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionInput;3;-851.0198,-55.60159;Float;False;Depth;1;1;False;1;0;FLOAT;0.5;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionInput;11;-700.0198,629.3984;Float;False;Intensity;1;7;False;1;0;FLOAT;1;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionInput;9;-788.0198,454.3984;Float;False;LvlColor2;1;3;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionInput;8;-805.0198,345.3984;Float;False;LvlColor1;1;2;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.WorldSpaceLightDirHlpNode;12;-714.0198,712.3984;Float;False;False;1;0;FLOAT;0;False;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3\nNode;AmplifyShaderEditor.CustomExpressionNode;2;-327.0197,209.8984;Float;False;float
+    remap1 = ((Depth)*4.0+-3.0)@$$float nulll = 0.0@$$float M_ = (-1.0)@$$float _Gradient
+    = saturate((nulll + ( ((dot(Normal,lightDirection)*(1.0 - remap1)) - M_) * (1.0
+    - nulll) ) / (2.0 - M_)))@$$float Gr = (1.0 - (_Gradient*0.9+0.1))@$$float3 _ColorSSS_
+    = lerp(lerp(ColorSSS1.rgb,ColorSSS2.rgb,saturate((0.0 + ( (_Gradient - 1.0) *
+    (1.0 - 0.0) ) / (LevelColor1 - 1.0)))),ColorSSS3.rgb,saturate((0.0 + ( (_Gradient
+    - LevelColor2) * (1.0 - 0.0) ) / (0.0 - LevelColor2))))@$$ float3 FinalResult
+    = (lerp((_ColorSSS_*saturate(lerp(_Gradient,(_Gradient*Gr),(_Gradient*(Transmission+0.3))))),_ColorSSS_,Transmission)*(Intensity*3.0))@$return
+    Out_ = FinalResult@$;3;False;11;False;Normal;FLOAT3;0,0,1;In;;False;Depth;FLOAT;0.5;In;;False;ColorSSS1;FLOAT3;0.8,0.8,0.8;In;;False;ColorSSS2;FLOAT3;0.8,0.8,0.5;In;;False;ColorSSS3;FLOAT3;1,0.2,0.2;In;;False;LevelColor1;FLOAT;0;In;;False;LevelColor2;FLOAT;0;In;;False;Transmission;FLOAT;0;In;;False;Intensity;FLOAT;0;In;;False;lightDirection;FLOAT3;0,0,0;In;;True;Out_;FLOAT3;0,0,0;Out;;SSS;True;False;11;0;FLOAT3;0,0,1;False;1;FLOAT;0.5;False;2;FLOAT3;0.8,0.8,0.8;False;3;FLOAT3;0.8,0.8,0.5;False;4;FLOAT3;1,0.2,0.2;False;5;FLOAT;0;False;6;FLOAT;0;False;7;FLOAT;0;False;8;FLOAT;0;False;9;FLOAT3;0,0,0;False;10;FLOAT3;0,0,0;False;2;FLOAT3;0;FLOAT3;11\nNode;AmplifyShaderEditor.FunctionOutput;0;55,206;Float;False;True;Output;0;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nWireConnection;2;0;4;0\nWireConnection;2;1;3;0\nWireConnection;2;2;5;0\nWireConnection;2;3;6;0\nWireConnection;2;4;7;0\nWireConnection;2;5;8;0\nWireConnection;2;6;9;0\nWireConnection;2;7;10;0\nWireConnection;2;8;11;0\nWireConnection;2;9;12;0\nWireConnection;0;0;2;11\nASEEND*/\n//CHKSM=3AA2E04143973A4E2AE40DD91854B9D85B34BCC8"
+  m_functionName: 
+  m_description: 
+  m_additionalIncludes:
+    m_additionalIncludes: []
+    m_outsideIncludes: []
+  m_additionalPragmas:
+    m_additionalPragmas: []
+    m_outsidePragmas: []
+  m_additionalDirectives:
+    m_validData: 0
+    m_isDirty: 0
+    m_moduleName: ' Additional Directives'
+    m_independentModule: 1
+    m_additionalDirectives: []
+    m_shaderFunctionDirectives: []
+    m_nativeDirectives: []
+    m_nativeDirectivesFoldout: 0
+  m_nodeCategory: 3
+  m_customNodeCategory: 
+  m_previewPosition: 0

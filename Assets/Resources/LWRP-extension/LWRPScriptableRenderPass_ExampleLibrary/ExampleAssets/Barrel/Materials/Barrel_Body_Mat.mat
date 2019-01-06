@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Barrel_Body_Mat
+  m_Shader: {fileID: 4800000, guid: e8f71946e942aa34fa2ad40340cb293e, type: 3}
+  m_ShaderKeywords: _METALLICGLOSSMAP _METALLICSPECGLOSSMAP _NORMALMAP
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_19DF0828:
+        m_Texture: {fileID: 2800000, guid: 698c0ec7389f142469d5d38e841fbea9, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_527A7B17:
+        m_Texture: {fileID: 2800000, guid: af169a134e7ec7744a3abb7698722654, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_B367B639:
+        m_Texture: {fileID: 2800000, guid: 262e887a708c2e541b91e2406b9d3f1e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: 29abbe6c899f53e48838e5a1ecbc1b4c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: af169a134e7ec7744a3abb7698722654, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 2800000, guid: 698c0ec7389f142469d5d38e841fbea9, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SpecGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_41CC110B_Out:
+        m_Texture: {fileID: 2800000, guid: 52e66a9243cdfed44b5e906f5910d35b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Vector1_3BE3C7CE: 4.99
+    - Vector1_4820A8D6: 0.45
+    - Vector1_70EA2128: 0.5
+    - Vector1_C8CE08AF: 0.67
+    - _AlphaClip: 0
+    - _Blend: 0
+    - _BumpScale: 1
+    - _Cull: 2
+    - _Cutoff: 0.5
+    - _DstBlend: 0
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _Metallic: 0
+    - _OcclusionStrength: 1
+    - _ReceiveShadows: 1
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _Surface: 0
+    - _WorkflowMode: 1
+    - _ZWrite: 1
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}

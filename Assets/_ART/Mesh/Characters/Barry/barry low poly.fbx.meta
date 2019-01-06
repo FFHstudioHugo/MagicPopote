@@ -1,0 +1,977 @@
+fileFormatVersion: 2
+guid: 694e5b0709ab4894183744135bcc461b
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: barry_mesh
+    100004: Barry_newskin_Head
+    100006: Barry_newskin_Hips
+    100008: Barry_newskin_LeftArm
+    100010: Barry_newskin_LeftFoot
+    100012: Barry_newskin_LeftForeArm
+    100014: Barry_newskin_LeftHand
+    100016: Barry_newskin_LeftHandIndex1
+    100018: Barry_newskin_LeftHandIndex2
+    100020: Barry_newskin_LeftHandIndex3
+    100022: Barry_newskin_LeftHandIndex4
+    100024: Barry_newskin_LeftHandMiddle1
+    100026: Barry_newskin_LeftHandMiddle2
+    100028: Barry_newskin_LeftHandMiddle3
+    100030: Barry_newskin_LeftHandMiddle4
+    100032: Barry_newskin_LeftHandPinky1
+    100034: Barry_newskin_LeftHandPinky2
+    100036: Barry_newskin_LeftHandPinky3
+    100038: Barry_newskin_LeftHandPinky4
+    100040: Barry_newskin_LeftHandRing1
+    100042: Barry_newskin_LeftHandRing2
+    100044: Barry_newskin_LeftHandRing3
+    100046: Barry_newskin_LeftHandRing4
+    100048: Barry_newskin_LeftHandThumb1
+    100050: Barry_newskin_LeftHandThumb2
+    100052: Barry_newskin_LeftHandThumb3
+    100054: Barry_newskin_LeftHandThumb4
+    100056: Barry_newskin_LeftLeg
+    100058: Barry_newskin_LeftShoulder
+    100060: Barry_newskin_LeftToeBase
+    100062: Barry_newskin_LeftUpLeg
+    100064: Barry_newskin_Neck
+    100066: Barry_newskin_Reference
+    100068: Barry_newskin_RightArm
+    100070: Barry_newskin_RightFoot
+    100072: Barry_newskin_RightForeArm
+    100074: Barry_newskin_RightHand
+    100076: Barry_newskin_RightHandIndex1
+    100078: Barry_newskin_RightHandIndex2
+    100080: Barry_newskin_RightHandIndex3
+    100082: Barry_newskin_RightHandIndex4
+    100084: Barry_newskin_RightHandMiddle1
+    100086: Barry_newskin_RightHandMiddle2
+    100088: Barry_newskin_RightHandMiddle3
+    100090: Barry_newskin_RightHandMiddle4
+    100092: Barry_newskin_RightHandPinky1
+    100094: Barry_newskin_RightHandPinky2
+    100096: Barry_newskin_RightHandPinky3
+    100098: Barry_newskin_RightHandPinky4
+    100100: Barry_newskin_RightHandRing1
+    100102: Barry_newskin_RightHandRing2
+    100104: Barry_newskin_RightHandRing3
+    100106: Barry_newskin_RightHandRing4
+    100108: Barry_newskin_RightHandThumb1
+    100110: Barry_newskin_RightHandThumb2
+    100112: Barry_newskin_RightHandThumb3
+    100114: Barry_newskin_RightHandThumb4
+    100116: Barry_newskin_RightLeg
+    100118: Barry_newskin_RightShoulder
+    100120: Barry_newskin_RightToeBase
+    100122: Barry_newskin_RightUpLeg
+    100124: Barry_newskin_Spine
+    100126: Barry_newskin_Spine1
+    100128: corpus
+    100130: head
+    400000: //RootNode
+    400002: barry_mesh
+    400004: Barry_newskin_Head
+    400006: Barry_newskin_Hips
+    400008: Barry_newskin_LeftArm
+    400010: Barry_newskin_LeftFoot
+    400012: Barry_newskin_LeftForeArm
+    400014: Barry_newskin_LeftHand
+    400016: Barry_newskin_LeftHandIndex1
+    400018: Barry_newskin_LeftHandIndex2
+    400020: Barry_newskin_LeftHandIndex3
+    400022: Barry_newskin_LeftHandIndex4
+    400024: Barry_newskin_LeftHandMiddle1
+    400026: Barry_newskin_LeftHandMiddle2
+    400028: Barry_newskin_LeftHandMiddle3
+    400030: Barry_newskin_LeftHandMiddle4
+    400032: Barry_newskin_LeftHandPinky1
+    400034: Barry_newskin_LeftHandPinky2
+    400036: Barry_newskin_LeftHandPinky3
+    400038: Barry_newskin_LeftHandPinky4
+    400040: Barry_newskin_LeftHandRing1
+    400042: Barry_newskin_LeftHandRing2
+    400044: Barry_newskin_LeftHandRing3
+    400046: Barry_newskin_LeftHandRing4
+    400048: Barry_newskin_LeftHandThumb1
+    400050: Barry_newskin_LeftHandThumb2
+    400052: Barry_newskin_LeftHandThumb3
+    400054: Barry_newskin_LeftHandThumb4
+    400056: Barry_newskin_LeftLeg
+    400058: Barry_newskin_LeftShoulder
+    400060: Barry_newskin_LeftToeBase
+    400062: Barry_newskin_LeftUpLeg
+    400064: Barry_newskin_Neck
+    400066: Barry_newskin_Reference
+    400068: Barry_newskin_RightArm
+    400070: Barry_newskin_RightFoot
+    400072: Barry_newskin_RightForeArm
+    400074: Barry_newskin_RightHand
+    400076: Barry_newskin_RightHandIndex1
+    400078: Barry_newskin_RightHandIndex2
+    400080: Barry_newskin_RightHandIndex3
+    400082: Barry_newskin_RightHandIndex4
+    400084: Barry_newskin_RightHandMiddle1
+    400086: Barry_newskin_RightHandMiddle2
+    400088: Barry_newskin_RightHandMiddle3
+    400090: Barry_newskin_RightHandMiddle4
+    400092: Barry_newskin_RightHandPinky1
+    400094: Barry_newskin_RightHandPinky2
+    400096: Barry_newskin_RightHandPinky3
+    400098: Barry_newskin_RightHandPinky4
+    400100: Barry_newskin_RightHandRing1
+    400102: Barry_newskin_RightHandRing2
+    400104: Barry_newskin_RightHandRing3
+    400106: Barry_newskin_RightHandRing4
+    400108: Barry_newskin_RightHandThumb1
+    400110: Barry_newskin_RightHandThumb2
+    400112: Barry_newskin_RightHandThumb3
+    400114: Barry_newskin_RightHandThumb4
+    400116: Barry_newskin_RightLeg
+    400118: Barry_newskin_RightShoulder
+    400120: Barry_newskin_RightToeBase
+    400122: Barry_newskin_RightUpLeg
+    400124: Barry_newskin_Spine
+    400126: Barry_newskin_Spine1
+    400128: corpus
+    400130: head
+    2100000: phong9SG1
+    2100002: phong10SG1
+    2100004: phongE7SG1
+    4300000: head
+    4300002: corpus
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: corpus
+    13700002: head
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: phong10SG1
+    second: {fileID: 2100000, guid: ba02bf6c33354504d9960ba7a76a4a6d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: phong9SG1
+    second: {fileID: 2100000, guid: 45c26fa599a71054b9d96cfc68b4f37f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: phongE7SG1
+    second: {fileID: 2100000, guid: 1f6f98656390ac240af08642eab29005, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human:
+    - boneName: Barry_newskin_Hips
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Barry_newskin_LeftUpLeg
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Barry_newskin_RightUpLeg
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Barry_newskin_LeftLeg
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Barry_newskin_RightLeg
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Barry_newskin_LeftFoot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Barry_newskin_RightFoot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Barry_newskin_Spine
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Barry_newskin_Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Barry_newskin_Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Barry_newskin_LeftShoulder
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Barry_newskin_RightShoulder
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Barry_newskin_LeftArm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Barry_newskin_RightArm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Barry_newskin_LeftForeArm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Barry_newskin_RightForeArm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Barry_newskin_LeftHand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Barry_newskin_RightHand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Barry_newskin_LeftToeBase
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Barry_newskin_RightToeBase
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Barry_newskin_LeftHandThumb1
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Barry_newskin_LeftHandThumb2
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Barry_newskin_LeftHandThumb3
+      humanName: Left Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Barry_newskin_LeftHandIndex1
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Barry_newskin_LeftHandIndex2
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Barry_newskin_LeftHandIndex3
+      humanName: Left Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Barry_newskin_LeftHandMiddle1
+      humanName: Left Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Barry_newskin_LeftHandMiddle2
+      humanName: Left Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Barry_newskin_LeftHandMiddle3
+      humanName: Left Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Barry_newskin_LeftHandRing1
+      humanName: Left Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Barry_newskin_LeftHandRing2
+      humanName: Left Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Barry_newskin_LeftHandRing3
+      humanName: Left Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Barry_newskin_LeftHandPinky1
+      humanName: Left Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Barry_newskin_LeftHandPinky2
+      humanName: Left Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Barry_newskin_LeftHandPinky3
+      humanName: Left Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Barry_newskin_RightHandThumb1
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Barry_newskin_RightHandThumb2
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Barry_newskin_RightHandThumb3
+      humanName: Right Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Barry_newskin_RightHandIndex1
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Barry_newskin_RightHandIndex2
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Barry_newskin_RightHandIndex3
+      humanName: Right Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Barry_newskin_RightHandMiddle1
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Barry_newskin_RightHandMiddle2
+      humanName: Right Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Barry_newskin_RightHandMiddle3
+      humanName: Right Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Barry_newskin_RightHandRing1
+      humanName: Right Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Barry_newskin_RightHandRing2
+      humanName: Right Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Barry_newskin_RightHandRing3
+      humanName: Right Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Barry_newskin_RightHandPinky1
+      humanName: Right Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Barry_newskin_RightHandPinky2
+      humanName: Right Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Barry_newskin_RightHandPinky3
+      humanName: Right Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: barry low poly(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: barry_mesh
+      parentName: barry low poly(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: corpus
+      parentName: barry_mesh
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: head
+      parentName: barry_mesh
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Barry_newskin_Reference
+      parentName: barry low poly(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Barry_newskin_Hips
+      parentName: Barry_newskin_Reference
+      position: {x: -0.000000028610229, y: 1.0301734, z: -1.187436e-10}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Barry_newskin_LeftUpLeg
+      parentName: Barry_newskin_Hips
+      position: {x: -0.0891, y: -0.06270004, z: -8.881784e-18}
+      rotation: {x: 0.000015142373, y: -0.0000005764887, z: -0.00000059604645, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Barry_newskin_LeftLeg
+      parentName: Barry_newskin_LeftUpLeg
+      position: {x: -0.020646514, y: -0.44878626, z: 0.016259035}
+      rotation: {x: -0.000020783573, y: 0.0000005297708, z: 1.1010529e-11, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Barry_newskin_LeftFoot
+      parentName: Barry_newskin_LeftLeg
+      position: {x: -0.009405706, y: -0.38611034, z: -0.0000000483407}
+      rotation: {x: 0.0000056411996, y: 3.3623787e-12, z: 0.0000005960397, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Barry_newskin_LeftToeBase
+      parentName: Barry_newskin_LeftFoot
+      position: {x: -0.00000007373049, y: -0.062623166, z: 0.12954721}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Barry_newskin_RightUpLeg
+      parentName: Barry_newskin_Hips
+      position: {x: 0.0891, y: -0.06270004, z: -4.4408918e-17}
+      rotation: {x: 0.00005355291, y: 0.0000016940759, z: 0.000000983593, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Barry_newskin_RightLeg
+      parentName: Barry_newskin_RightUpLeg
+      position: {x: 0.013918726, y: -0.4487843, z: 0.02017993}
+      rotation: {x: -0.000053742253, y: -0.000001696695, z: -0.0000010025132, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Barry_newskin_RightFoot
+      parentName: Barry_newskin_RightLeg
+      position: {x: -0.000000013818429, y: -0.3909045, z: -0.000000045508948}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Barry_newskin_RightToeBase
+      parentName: Barry_newskin_RightFoot
+      position: {x: 0.000010855862, y: -0.06262322, z: 0.12954746}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Barry_newskin_Spine
+      parentName: Barry_newskin_Hips
+      position: {x: -0, y: 0.10387924, z: 4.4408918e-17}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Barry_newskin_Spine1
+      parentName: Barry_newskin_Spine
+      position: {x: -0, y: 0.24655288, z: 2.220446e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Barry_newskin_LeftShoulder
+      parentName: Barry_newskin_Spine1
+      position: {x: -0.07, y: 0.14933258, z: 2.3092638e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Barry_newskin_LeftArm
+      parentName: Barry_newskin_LeftShoulder
+      position: {x: -0.1070725, y: 0.000001373291, z: 9.7699626e-17}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Barry_newskin_LeftForeArm
+      parentName: Barry_newskin_LeftArm
+      position: {x: -0.27305466, y: -5.684342e-16, z: 2.3980816e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Barry_newskin_LeftHand
+      parentName: Barry_newskin_LeftForeArm
+      position: {x: -0.26697147, y: 5.684342e-16, z: 2.3980816e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Barry_newskin_LeftHandIndex1
+      parentName: Barry_newskin_LeftHand
+      position: {x: -0.09428009, y: 0.017149048, z: 0.06259894}
+      rotation: {x: -0.014547269, y: -0.029146047, z: -0.0376235, w: 0.99876094}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Barry_newskin_LeftHandIndex2
+      parentName: Barry_newskin_LeftHandIndex1
+      position: {x: -0.0423983, y: -0.0041459654, z: 0.01960527}
+      rotation: {x: -0.08617723, y: 0.013082823, z: -0.18359643, w: 0.97912955}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Barry_newskin_LeftHandIndex3
+      parentName: Barry_newskin_LeftHandIndex2
+      position: {x: -0.025212824, y: -0.017150115, z: 0.010612107}
+      rotation: {x: -0.01677487, y: -0.008434624, z: -0.05350443, w: 0.9983911}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Barry_newskin_LeftHandIndex4
+      parentName: Barry_newskin_LeftHandIndex3
+      position: {x: -0.018424623, y: -0.018920593, z: 0.008762812}
+      rotation: {x: 0, y: -0.0000053165763, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Barry_newskin_LeftHandMiddle1
+      parentName: Barry_newskin_LeftHand
+      position: {x: -0.10895828, y: 0.014000396, z: 0.031283326}
+      rotation: {x: -0.04898316, y: -0.014971451, z: -0.16390559, w: 0.98514545}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Barry_newskin_LeftHandMiddle2
+      parentName: Barry_newskin_LeftHandMiddle1
+      position: {x: -0.045612335, y: -0.018647918, z: 0.015334585}
+      rotation: {x: -0.04470023, y: -0.015016396, z: -0.15122065, w: 0.9873747}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Barry_newskin_LeftHandMiddle3
+      parentName: Barry_newskin_LeftHandMiddle2
+      position: {x: -0.02227234, y: -0.02245346, z: 0.008813271}
+      rotation: {x: -0.013135948, y: -0.003092955, z: -0.04107632, w: 0.99906486}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Barry_newskin_LeftHandMiddle4
+      parentName: Barry_newskin_LeftHandMiddle3
+      position: {x: -0.018217392, y: -0.025885161, z: 0.007774892}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Barry_newskin_LeftHandPinky1
+      parentName: Barry_newskin_LeftHand
+      position: {x: -0.10230621, y: -0.011895446, z: -0.015874619}
+      rotation: {x: -0.027415982, y: 0.10027815, z: -0.14036657, w: 0.9846268}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Barry_newskin_LeftHandPinky2
+      parentName: Barry_newskin_LeftHandPinky1
+      position: {x: -0.029754715, y: -0.008703918, z: -0.0004064202}
+      rotation: {x: 0.0232852, y: -0.061911352, z: -0.37885332, w: 0.92308986}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Barry_newskin_LeftHandPinky3
+      parentName: Barry_newskin_LeftHandPinky2
+      position: {x: -0.008314743, y: -0.016790008, z: 0.002232735}
+      rotation: {x: -0.012890723, y: -0.00006153061, z: -0.04846761, w: 0.99874157}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Barry_newskin_LeftHandPinky4
+      parentName: Barry_newskin_LeftHandPinky3
+      position: {x: -0.0064390562, y: -0.02194046, z: 0.001740427}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Barry_newskin_LeftHandRing1
+      parentName: Barry_newskin_LeftHand
+      position: {x: -0.11180748, y: 0.002541809, z: 0.007906113}
+      rotation: {x: -0.05835401, y: 0.05954045, z: -0.22989057, w: 0.9696392}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Barry_newskin_LeftHandRing2
+      parentName: Barry_newskin_LeftHandRing1
+      position: {x: -0.0418721, y: -0.02265747, z: 0.004760361}
+      rotation: {x: 0.0042249262, y: -0.029056385, z: -0.10113473, w: 0.9944394}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Barry_newskin_LeftHandRing3
+      parentName: Barry_newskin_LeftHandRing2
+      position: {x: -0.020364303, y: -0.019901428, z: 0.0048670014}
+      rotation: {x: 0.008714005, y: -0.035021693, z: -0.10674522, w: 0.9936313}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Barry_newskin_LeftHandRing4
+      parentName: Barry_newskin_LeftHandRing3
+      position: {x: -0.009717407, y: -0.017712554, z: 0.005017928}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Barry_newskin_LeftHandThumb1
+      parentName: Barry_newskin_LeftHand
+      position: {x: -0.049878385, y: -0.009007721, z: 0.071805075}
+      rotation: {x: -0.27741665, y: 0.09678371, z: -0.1609511, w: 0.94221425}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Barry_newskin_LeftHandThumb2
+      parentName: Barry_newskin_LeftHandThumb1
+      position: {x: -0.014803619, y: -0.017702485, z: 0.014870777}
+      rotation: {x: -0.021835683, y: 0.078615025, z: 0.07184727, w: 0.99407285}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Barry_newskin_LeftHandThumb3
+      parentName: Barry_newskin_LeftHandThumb2
+      position: {x: -0.022592392, y: -0.016454315, z: 0.011137962}
+      rotation: {x: -0.062996924, y: 0.10937732, z: 0.033801273, w: 0.991426}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Barry_newskin_LeftHandThumb4
+      parentName: Barry_newskin_LeftHandThumb3
+      position: {x: -0.016607055, y: -0.009915924, z: 0.0011357593}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Barry_newskin_Neck
+      parentName: Barry_newskin_Spine1
+      position: {x: -0, y: 0.24655274, z: 2.753353e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Barry_newskin_Head
+      parentName: Barry_newskin_Neck
+      position: {x: -0, y: 0.19999999, z: 3.1086244e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Barry_newskin_RightShoulder
+      parentName: Barry_newskin_Spine1
+      position: {x: 0.06999999, y: 0.14933258, z: 1.0658141e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Barry_newskin_RightArm
+      parentName: Barry_newskin_RightShoulder
+      position: {x: 0.10707275, y: 0.000004272461, z: -9.7699626e-17}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Barry_newskin_RightForeArm
+      parentName: Barry_newskin_RightArm
+      position: {x: 0.273056, y: 0, z: -2.3980816e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Barry_newskin_RightHand
+      parentName: Barry_newskin_RightForeArm
+      position: {x: 0.26696983, y: 0, z: -2.3092638e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Barry_newskin_RightHandIndex1
+      parentName: Barry_newskin_RightHand
+      position: {x: 0.11218872, y: 0.018737946, z: 0.06707386}
+      rotation: {x: -0.01057345, y: -0.21598582, z: 0.14043175, w: 0.966187}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Barry_newskin_RightHandIndex2
+      parentName: Barry_newskin_RightHandIndex1
+      position: {x: 0.04082929, y: -0.013778381, z: -0.003973789}
+      rotation: {x: 0.011895825, y: 0.016396418, z: 0.0653516, w: 0.9976567}
+      scale: {x: 0.99999976, y: 0.99999994, z: 0.99999976}
+    - name: Barry_newskin_RightHandIndex3
+      parentName: Barry_newskin_RightHandIndex2
+      position: {x: 0.026523173, y: -0.015548707, z: -0.0009257771}
+      rotation: {x: 0.0065164943, y: 0.006412201, z: 0.07920373, w: 0.9968165}
+      scale: {x: 0.9999996, y: 0.9999996, z: 0.9999996}
+    - name: Barry_newskin_RightHandIndex4
+      parentName: Barry_newskin_RightHandIndex3
+      position: {x: 0.018510068, y: -0.017729346, z: -0.00008975322}
+      rotation: {x: 0, y: -0.0000053270414, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Barry_newskin_RightHandMiddle1
+      parentName: Barry_newskin_RightHand
+      position: {x: 0.12732574, y: 0.014191589, z: 0.039934102}
+      rotation: {x: -0.03279242, y: -0.17527649, z: 0.26497403, w: 0.94762415}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Barry_newskin_RightHandMiddle2
+      parentName: Barry_newskin_RightHandMiddle1
+      position: {x: 0.038376305, y: -0.024924316, z: -0.0024728347}
+      rotation: {x: 0.0070460243, y: 0.005267695, z: 0.05619611, w: 0.998381}
+      scale: {x: 1, y: 0.9999996, z: 1}
+    - name: Barry_newskin_RightHandMiddle3
+      parentName: Barry_newskin_RightHandMiddle2
+      position: {x: 0.018858261, y: -0.01812287, z: -0.0006640844}
+      rotation: {x: 0.00823327, y: 0.0076499274, z: 0.025335291, w: 0.99961585}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Barry_newskin_RightHandMiddle4
+      parentName: Barry_newskin_RightHandMiddle3
+      position: {x: 0.020672133, y: -0.025511017, z: 0.0009746365}
+      rotation: {x: 0, y: -0.000005308882, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Barry_newskin_RightHandPinky1
+      parentName: Barry_newskin_RightHand
+      position: {x: 0.12598632, y: -0.003130188, z: -0.009945048}
+      rotation: {x: -0.077270225, y: -0.12772857, z: 0.29175976, w: 0.94477034}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Barry_newskin_RightHandPinky2
+      parentName: Barry_newskin_RightHandPinky1
+      position: {x: 0.02098114, y: -0.0151205445, z: -0.0010628742}
+      rotation: {x: 0.010761719, y: -0.0035895407, z: 0.26339984, w: 0.96462005}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Barry_newskin_RightHandPinky3
+      parentName: Barry_newskin_RightHandPinky2
+      position: {x: 0.008893959, y: -0.023961028, z: -0.00068950927}
+      rotation: {x: 0.013502523, y: 0.00072851166, z: 0.14923939, w: 0.9887086}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Barry_newskin_RightHandPinky4
+      parentName: Barry_newskin_RightHandPinky3
+      position: {x: -0.00019531348, y: -0.015534057, z: 0.0000923887}
+      rotation: {x: 0, y: -0.000005316749, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Barry_newskin_RightHandRing1
+      parentName: Barry_newskin_RightHand
+      position: {x: 0.13236594, y: 0.0037992857, z: 0.015649376}
+      rotation: {x: -0.045770116, y: -0.17348474, z: 0.28510192, w: 0.9415546}
+      scale: {x: 1.0000015, y: 1.0000015, z: 1.0000015}
+    - name: Barry_newskin_RightHandRing2
+      parentName: Barry_newskin_RightHandRing1
+      position: {x: 0.033863083, y: -0.023984032, z: -0.003421686}
+      rotation: {x: 0.021075163, y: 0.019557908, z: 0.071442194, w: 0.9970303}
+      scale: {x: 1.0000025, y: 1.0000025, z: 1.0000025}
+    - name: Barry_newskin_RightHandRing3
+      parentName: Barry_newskin_RightHandRing2
+      position: {x: 0.01952605, y: -0.02135035, z: 0.000086243694}
+      rotation: {x: 0.0132689215, y: 0.012437072, z: 0.07193261, w: 0.9972437}
+      scale: {x: 1.0000011, y: 1.0000011, z: 1.0000011}
+    - name: Barry_newskin_RightHandRing4
+      parentName: Barry_newskin_RightHandRing3
+      position: {x: 0.011404114, y: -0.019786507, z: 0.0013146464}
+      rotation: {x: 0, y: -0.0000053696895, z: -0, w: 1}
+      scale: {x: 1.0000015, y: 1.0000015, z: 1.0000015}
+    - name: Barry_newskin_RightHandThumb1
+      parentName: Barry_newskin_RightHand
+      position: {x: 0.059370726, y: -0.007984924, z: 0.07539143}
+      rotation: {x: -0.30968451, y: -0.107620195, z: 0.16876706, w: 0.9295327}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Barry_newskin_RightHandThumb2
+      parentName: Barry_newskin_RightHandThumb1
+      position: {x: 0.014045563, y: -0.019097747, z: 0.013594923}
+      rotation: {x: -0.02123213, y: -0.088881835, z: -0.102923304, w: 0.99048275}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Barry_newskin_RightHandThumb3
+      parentName: Barry_newskin_RightHandThumb2
+      position: {x: 0.018962478, y: -0.01362793, z: 0.007856884}
+      rotation: {x: -0.032156065, y: -0.048560522, z: -0.006620555, w: 0.9982806}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Barry_newskin_RightHandThumb4
+      parentName: Barry_newskin_RightHandThumb3
+      position: {x: 0.019312287, y: -0.01320877, z: 0.0030844307}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
