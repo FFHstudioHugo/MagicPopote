@@ -122,9 +122,9 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1000010151976528}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0.27696633, y: 11.342236, z: 0.039752007}
-  m_Size: 22.721474
-  m_FadeMode: 1
+  m_LocalReferencePoint: {x: 0.27696657, y: 11.201487, z: 0.03967619}
+  m_Size: 23.002972
+  m_FadeMode: 0
   m_AnimateCrossFading: 1
   m_LastLODIsBillboard: 0
   m_LODs:
@@ -191,7 +191,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967283
+  m_StaticEditorFlags: 4294967291
   m_IsActive: 1
 --- !u!4 &4000012807369804
 Transform:

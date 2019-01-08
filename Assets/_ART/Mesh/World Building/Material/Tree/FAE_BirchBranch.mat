@@ -187,10 +187,10 @@ Material:
     - _SpecColor: {r: 0, g: 0, b: 0, a: 0}
     - _TranslucencyColor: {r: 0.73, g: 0.85, b: 0.41, a: 1}
     - _Transmisioncolor: {r: 0.862069, g: 1, b: 0, a: 0.259}
-    - _TransmissionColor: {r: 0.4781763, g: 0.5849056, b: 0.12967235, a: 1}
+    - _TransmissionColor: {r: 0.4781763, g: 0.5849056, b: 0.12967229, a: 1}
     - _TreeInstanceColor: {r: 1, g: 1, b: 1, a: 1}
     - _TreeInstanceScale: {r: 1, g: 1, b: 1, a: 1}
     - _VariationColor: {r: 1, g: 0.6827586, b: 0, a: 0.266}
     - _Variationcolor: {r: 1, g: 0.80689657, b: 0, a: 0.134}
     - _WindDirection: {r: 0.93536794, g: 0, b: 0.35367614, a: 0}
-    - _mAINcoLOR: {r: 0.15806323, g: 0.30188665, b: 0.18857124, a: 0}
+    - _mAINcoLOR: {r: 0.15806317, g: 0.3018866, b: 0.18857118, a: 0}

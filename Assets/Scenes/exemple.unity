@@ -90,7 +90,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -14408,7 +14408,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 314295170}
-  m_LocalRotation: {x: -0.06637121, y: -0.00000031706776, z: -0.000000021090674, w: 0.99779505}
+  m_LocalRotation: {x: -0.06637122, y: 4.3905073e-17, z: 6.6004905e-16, w: 0.99779505}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -33767,7 +33767,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 824373657}
-  m_LocalRotation: {x: -0.06637109, y: -0.00000031706648, z: -0.000000021090552, w: 0.997795}
+  m_LocalRotation: {x: -0.06637106, y: -1.7396419e-14, z: -1.1571702e-15, w: 0.997795}
   m_LocalPosition: {x: -5.95, y: 3.0900059, z: -10.850006}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -33951,8 +33951,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8bf9aeca1f28c94d85d6ecb490bad11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SW: 735
-  SH: 413
+  SW: 695
+  SH: 338
 --- !u!114 &824373668
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57973,7 +57973,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1343764756}
-  m_LocalRotation: {x: -0.035276145, y: -0.000000001464319, z: -5.1687692e-11, w: 0.9993776}
+  m_LocalRotation: {x: -0.02667551, y: -0.0000000021500322, z: -5.7373634e-11, w: 0.99964416}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -74494,22 +74494,22 @@ PrefabInstance:
     - target: {fileID: 114000010437488720, guid: 2b921f83e3023db489286b9d6df19b96,
         type: 3}
       propertyPath: windSpeed
-      value: 0.123
+      value: 0.073
       objectReference: {fileID: 0}
     - target: {fileID: 114000010437488720, guid: 2b921f83e3023db489286b9d6df19b96,
         type: 3}
       propertyPath: windStrength
-      value: 1.11
+      value: 1.52
       objectReference: {fileID: 0}
     - target: {fileID: 114000010437488720, guid: 2b921f83e3023db489286b9d6df19b96,
         type: 3}
       propertyPath: windAmplitude
-      value: 0.85
+      value: 2.96
       objectReference: {fileID: 0}
     - target: {fileID: 114000010437488720, guid: 2b921f83e3023db489286b9d6df19b96,
         type: 3}
       propertyPath: listenToWindZone
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114000010437488720, guid: 2b921f83e3023db489286b9d6df19b96,
         type: 3}
@@ -74534,12 +74534,12 @@ PrefabInstance:
     - target: {fileID: 114000010437488720, guid: 2b921f83e3023db489286b9d6df19b96,
         type: 3}
       propertyPath: trunkWindSpeed
-      value: 10
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 182909314389821000, guid: 2b921f83e3023db489286b9d6df19b96,
         type: 3}
       propertyPath: m_WindPulseMagnitude
-      value: 0.2
+      value: 0.08
       objectReference: {fileID: 0}
     - target: {fileID: 182909314389821000, guid: 2b921f83e3023db489286b9d6df19b96,
         type: 3}
@@ -74549,7 +74549,17 @@ PrefabInstance:
     - target: {fileID: 182909314389821000, guid: 2b921f83e3023db489286b9d6df19b96,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 182909314389821000, guid: 2b921f83e3023db489286b9d6df19b96,
+        type: 3}
+      propertyPath: m_WindPulseFrequency
+      value: 0.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 182909314389821000, guid: 2b921f83e3023db489286b9d6df19b96,
+        type: 3}
+      propertyPath: m_WindMain
+      value: 0.42
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b921f83e3023db489286b9d6df19b96, type: 3}
@@ -78050,7 +78060,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1882019631}
-  m_LocalRotation: {x: 0.038217332, y: 0.0000000027980613, z: -0.000000017047272,
+  m_LocalRotation: {x: 0.03821734, y: -0.0000000015003919, z: -0.000000016882877,
     w: 0.9992695}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
