@@ -11,7 +11,7 @@ Material:
   m_Shader: {fileID: 4800000, guid: 85827a98514358f438446da0fc64b0f5, type: 3}
   m_ShaderKeywords: EFFECT_HUE_VARIATION GEOM_TYPE_LEAF _ALPHATEST_ON
   m_LightmapFlags: 4
-  m_EnableInstancingVariants: 1
+  m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: 2450
   stringTagMap: {}
@@ -92,7 +92,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _WindVectors:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 6c795dd1d1d319e479e68164001557e8, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _node_1116:
@@ -121,7 +121,7 @@ Material:
     - _DetailNormalMapScale: 1
     - _Dist: 0
     - _DstBlend: 0
-    - _FlatLighting: 1
+    - _FlatLighting: 0.183
     - _Float8: 0.1
     - _Gloss: 0.5
     - _GlossMapScale: 1
@@ -129,7 +129,7 @@ Material:
     - _GlossyReflections: 1
     - _GradientBrightness: 1
     - _MaskClipValue: 0.5
-    - _MaxWindStrength: 0.08
+    - _MaxWindStrength: 0.452
     - _Metallic: 0
     - _Mode: 1
     - _OcclusionStrength: 1
@@ -173,11 +173,11 @@ Material:
     - _Color: {r: 0, g: 0, b: 1, a: 1}
     - _Color1: {r: 0, g: 0, b: 0, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _HueVariation: {r: 0.18867901, g: 0.18867901, b: 0.18867901, a: 0.14509805}
+    - _HueVariation: {r: 0.18867892, g: 0.18867892, b: 0.18867892, a: 0.14509805}
     - _SpecColor: {r: 0, g: 0, b: 0, a: 0}
     - _Transmisioncolor: {r: 1, g: 1, b: 1, a: 0.122}
-    - _TransmissionColor: {r: 0.40587395, g: 0.49056602, b: 0.37255248, a: 0.191}
+    - _TransmissionColor: {r: 0.40587386, g: 0.49056596, b: 0.3725524, a: 0.191}
     - _VariationColor: {r: 1, g: 0.5, b: 0, a: 0.297}
     - _Variationcolor: {r: 1, g: 0.8896551, b: 0, a: 0}
     - _WindDirection: {r: 0.93536794, g: 0, b: 0.35367614, a: 0}
-    - _mAINcoLOR: {r: 0, g: 0.46226418, b: 0.09245286, a: 0}
+    - _mAINcoLOR: {r: 0, g: 0.462264, b: 0.09245277, a: 0}
