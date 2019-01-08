@@ -42,16 +42,16 @@ Material:
     m_Floats:
     - _Distortion: 0.4
     - _Float0: 10
-    - _Float1: -8.09
+    - _Float1: -3.81
     - _Float2: -0.1
     - _FoamDepth: 1.39
     - _FoamFalloff: 7.83
     - _FoamSmoothness: 0
     - _FoamSpecular: 0
-    - _NormalScale: -0.13
-    - _PlanarReflectionColorForce: 0.222
-    - _PlanarRflection: -0.03
-    - _WaterDepth: 1.63
+    - _NormalScale: 0.17
+    - _PlanarReflectionColorForce: 0.637
+    - _PlanarRflection: -0.541
+    - _WaterDepth: 1.46
     - _WaterFalloff: -1.51
     - _WaterSmoothness: 0.09
     - _WaterSpecular: 0.43
@@ -64,5 +64,5 @@ Material:
     - _Fresnelbiasscalepower: {r: -0.11, g: 1.14, b: 4.25, a: 0}
     - _ShalowColor: {r: 0.12860449, g: 0.3207547, b: 0.27898288, a: 0}
     - _SpecularColor: {r: 0.3864364, g: 0.47390515, b: 0.49056596, a: 0}
-    - _Vector0: {r: -1.87, g: 3.86, b: 0, a: 0}
+    - _Vector0: {r: -1.01, g: 2.87, b: 0, a: 0}
     - _Vector1: {r: 0.02, g: 0.85, b: 0, a: 0}

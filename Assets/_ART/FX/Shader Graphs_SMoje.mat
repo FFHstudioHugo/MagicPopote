@@ -32,11 +32,12 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_4CE03734: 20.7
-    - Vector1_8E426FA8: 5
-    - Vector1_9F17DACB: 0.96
+    - Vector1_4CE03734: 4
+    - Vector1_8E426FA8: 0.73
+    - Vector1_9F17DACB: 1
+    - Vector1_C9329344: 23.35
     m_Colors:
-    - Vector2_3D9D79A7: {r: 0.67, g: -2.43, b: 0, a: 0}
+    - Vector2_3D9D79A7: {r: 0.25, g: -0.86, b: 0, a: 0}
     - Vector4_A66345DE: {r: 1280, g: 720, b: 1, a: 1}
     - _ScreenSize: {r: 1280, g: 720, b: 1, a: 1}
     - _ScreenSizeWH: {r: 1280, g: 720, b: 1, a: 1}
