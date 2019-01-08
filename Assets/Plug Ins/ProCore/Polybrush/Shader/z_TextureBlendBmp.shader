@@ -1,5 +1,3 @@
-// Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld'
-
 // define Z_TEXTURE_CHANNELS 4
 // define Z_MESH_ATTRIBUTES 
 // Important!  This is a generated file, any changes will be overwritten
