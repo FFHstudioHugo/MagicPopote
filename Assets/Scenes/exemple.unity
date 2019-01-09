@@ -39,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.554
   m_CustomReflection: {fileID: 8900000, guid: ef7513b54a0670140b9b967af7620563, type: 3}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.03806344, g: 0.113012426, b: 0.14660557, a: 0.554}
+  m_IndirectSpecularColor: {r: 0.038063616, g: 0.113013074, b: 0.14660656, a: 0.554}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -33949,7 +33949,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 824373657}
-  m_LocalRotation: {x: -0.06637106, y: 1.7396419e-14, z: 1.1571702e-15, w: 0.997795}
+  m_LocalRotation: {x: -0.06637106, y: -1.7396419e-14, z: -1.1571702e-15, w: 0.997795}
   m_LocalPosition: {x: -5.95, y: 3.0900059, z: -10.850006}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -34038,7 +34038,7 @@ MonoBehaviour:
   volumeLayer:
     serializedVersion: 2
     m_Bits: 256
-  stopNaNPropagation: 0
+  stopNaNPropagation: 1
   finalBlitToCameraTarget: 1
   antialiasingMode: 1
   temporalAntialiasing:
@@ -34049,7 +34049,7 @@ MonoBehaviour:
   subpixelMorphologicalAntialiasing:
     quality: 2
   fastApproximateAntialiasing:
-    fastMode: 0
+    fastMode: 1
     keepAlpha: 0
   fog:
     enabled: 1
@@ -34133,8 +34133,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8bf9aeca1f28c94d85d6ecb490bad11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SW: 961
-  SH: 541
+  SW: 906
+  SH: 424
 --- !u!114 &824373668
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34148,7 +34148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ShowDebugText: 0
-  m_ShowCameraFrustum: 1
+  m_ShowCameraFrustum: 0
   m_IgnoreTimeScale: 0
   m_WorldUpOverride: {fileID: 0}
   m_UpdateMethod: 2
@@ -58267,7 +58267,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1343764756}
-  m_LocalRotation: {x: -0.02667551, y: 0.0000000021500322, z: 5.7373606e-11, w: 0.99964416}
+  m_LocalRotation: {x: -0.02667551, y: -0.0000000021500322, z: -5.7373634e-11, w: 0.99964416}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
