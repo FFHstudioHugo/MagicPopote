@@ -13,7 +13,7 @@ Material:
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 3000
+  m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
   m_SavedProperties:
@@ -41,28 +41,31 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _Distortion: 0.4
-    - _Float0: 10
-    - _Float1: -3.81
-    - _Float2: -0.1
+    - _EmissionDepth: 0.32
+    - _Float0: 8.5
+    - _Float1: -1.55
+    - _Float2: -0.05
+    - _Float3: 0
     - _FoamDepth: 1.39
     - _FoamFalloff: 7.83
     - _FoamSmoothness: 0
     - _FoamSpecular: 0
-    - _NormalScale: 0.17
-    - _PlanarReflectionColorForce: 0.637
-    - _PlanarRflection: -0.541
-    - _WaterDepth: 1.46
-    - _WaterFalloff: -1.51
+    - _NormalScale: 0.05
+    - _PlanarReflectionColorForce: 0.77
+    - _PlanarRflection: -0.26
+    - _WaterDepth: 2
+    - _WaterFalloff: -1.57
     - _WaterSmoothness: 0.09
     - _WaterSpecular: 0.43
     - _WavesAmount: 2.54
     - _WavesAmplitude: 35.33
     m_Colors:
     - _Color0: {r: 1, g: 1, b: 1, a: 0}
-    - _Color1: {r: 0.11836905, g: 0.26415044, b: 0.23499414, a: 0}
+    - _Color1: {r: 0.26214826, g: 0.40298647, b: 0.40566015, a: 0}
+    - _Color2: {r: 1, g: 1, b: 1, a: 0}
     - _DeepColor: {r: 0.19530958, g: 0.62019384, b: 0.7264151, a: 0}
     - _Fresnelbiasscalepower: {r: -0.11, g: 1.14, b: 4.25, a: 0}
-    - _ShalowColor: {r: 0.12860449, g: 0.3207547, b: 0.27898288, a: 0}
-    - _SpecularColor: {r: 0.3864364, g: 0.47390515, b: 0.49056596, a: 0}
-    - _Vector0: {r: -1.01, g: 2.87, b: 0, a: 0}
-    - _Vector1: {r: 0.02, g: 0.85, b: 0, a: 0}
+    - _ShalowColor: {r: 0.03466536, g: 0.17924508, b: 0.12815967, a: 0}
+    - _SpecularColor: {r: 0.38643467, g: 0.4739051, b: 0.49056596, a: 0}
+    - _Vector0: {r: -0.31, g: 3.08, b: 0, a: 0}
+    - _Vector1: {r: -0.76, g: 0.78, b: 0, a: 0}
