@@ -16,7 +16,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 123
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &4000012542339338
 Transform:
@@ -65,7 +65,7 @@ MeshRenderer:
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 0.05
+  m_ScaleInLightmap: 0.6540975
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -104,8 +104,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1000012036384780}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: -0.59, z: 0}
+  m_LocalScale: {x: 0.9, y: 0.9, z: 0.9}
   m_Children: []
   m_Father: {fileID: 4000010697365950}
   m_RootOrder: 0
@@ -143,7 +143,7 @@ MeshRenderer:
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 0.05
+  m_ScaleInLightmap: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -172,7 +172,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 123
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &4000013266113624
 Transform:
@@ -214,14 +214,14 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: eae703bad76e9454ba55acda0f6ed2aa, type: 2}
-  - {fileID: 2100000, guid: c6d714edd5b78b74bab09c47624d8422, type: 2}
+  - {fileID: 2100000, guid: 6e2b985298d12784584f8ef12493fc17, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 0.04
+  m_ScaleInLightmap: 0.6439502
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -251,7 +251,7 @@ GameObject:
   m_TagString: Trees
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 123
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &4000010697365950
 Transform:
@@ -262,7 +262,7 @@ Transform:
   m_GameObject: {fileID: 1000013852149934}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.7347312, y: 1.7347304, z: 1.7347312}
   m_Children:
   - {fileID: 4000013446367628}
   - {fileID: 4000012542339338}
@@ -278,21 +278,21 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1000013852149934}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: -0.25300336, y: 5.309589, z: -0.5401149}
+  m_LocalReferencePoint: {x: -0.25300765, y: 5.309589, z: -0.5401149}
   m_Size: 10.628842
   m_FadeMode: 0
-  m_AnimateCrossFading: 1
+  m_AnimateCrossFading: 0
   m_LastLODIsBillboard: 0
   m_LODs:
-  - screenRelativeHeight: 0.39734727
-    fadeTransitionWidth: 0
+  - screenRelativeHeight: 0.32704875
+    fadeTransitionWidth: 1
     renderers:
     - renderer: {fileID: 23000012556369098}
-  - screenRelativeHeight: 0.092225105
+  - screenRelativeHeight: 0.16098756
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 23000010092500896}
-  - screenRelativeHeight: 0.035318363
+  - screenRelativeHeight: 0.058820378
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 23000012560812290}
