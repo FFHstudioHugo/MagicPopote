@@ -114,7 +114,7 @@ Material:
     m_Floats:
     - _AO: 1
     - _Alphacutoff: 0.415
-    - _AmbientOcclusion: 0.333
+    - _AmbientOcclusion: 0.21
     - _BendingInfluence: 0
     - _BlendSpeed: 1
     - _BumpScale: 1
@@ -130,7 +130,7 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _GradientBrightness: 0.54
+    - _GradientBrightness: 0.48
     - _Height: 0
     - _MaskClipValue: 0.5
     - _MaxWindStrength: 0.23
@@ -145,7 +145,7 @@ Material:
     - _Shadows: 0
     - _Shininess: 0.1
     - _SmoothShading: 0
-    - _Smoothness: 0.142
+    - _Smoothness: 0.15
     - _SmoothnessTextureChannel: 0
     - _SnowHeight: 0
     - _SpecularHighlights: 1
@@ -187,10 +187,10 @@ Material:
     - _SpecColor: {r: 0, g: 0, b: 0, a: 0}
     - _TranslucencyColor: {r: 0.73, g: 0.85, b: 0.41, a: 1}
     - _Transmisioncolor: {r: 0.862069, g: 1, b: 0, a: 0.259}
-    - _TransmissionColor: {r: 0.4781763, g: 0.5849056, b: 0.12967226, a: 1}
+    - _TransmissionColor: {r: 0.4781763, g: 0.5849056, b: 0.12967223, a: 1}
     - _TreeInstanceColor: {r: 1, g: 1, b: 1, a: 1}
     - _TreeInstanceScale: {r: 1, g: 1, b: 1, a: 1}
     - _VariationColor: {r: 1, g: 0.6827586, b: 0, a: 0.266}
     - _Variationcolor: {r: 1, g: 0.80689657, b: 0, a: 0.134}
     - _WindDirection: {r: 0.93536794, g: 0, b: 0.35367614, a: 0}
-    - _mAINcoLOR: {r: 0.15806314, g: 0.30188656, b: 0.18857116, a: 0}
+    - _mAINcoLOR: {r: 0.15806311, g: 0.30188653, b: 0.18857113, a: 0}

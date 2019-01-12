@@ -70,11 +70,11 @@ Material:
     m_Floats:
     - Vector1_3BE3C7CE: 28.77
     - Vector1_4820A8D6: 0.22
-    - Vector1_598F8AA0: 1
+    - Vector1_598F8AA0: 1.76
     - Vector1_70EA2128: 4
-    - Vector1_72DFFB2: 1.922
-    - Vector1_C8CE08AF: 0.62
-    - Vector1_E426EC9A: 0.49
+    - Vector1_72DFFB2: 2
+    - Vector1_C8CE08AF: 1.7
+    - Vector1_E426EC9A: 0.1
     - _Glossiness: 0
     - _Metallic: 0
     - _UseAoMap: 0
