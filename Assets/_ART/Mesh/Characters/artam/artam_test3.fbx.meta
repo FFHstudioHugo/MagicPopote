@@ -610,7 +610,7 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 0.02
+    previousCalculatedGlobalScale: 0.012
     hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
@@ -1223,27 +1223,27 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: group5
       parentName: artam_corpus
-      position: {x: 1.3411098, y: 0.7708937, z: 0.22292778}
+      position: {x: 0.80466586, y: 0.46253625, z: 0.13375667}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 0.55791324, y: 0.55791324, z: 0.55791324}
     - name: group6
       parentName: artam_corpus
-      position: {x: 1.3382434, y: 0.7333976, z: 0.23446213}
+      position: {x: 0.80294603, y: 0.4400386, z: 0.14067729}
       rotation: {x: -0.008026628, y: 0, z: -0, w: 0.9999678}
       scale: {x: 0.5293735, y: 0.5293735, z: 0.5293735}
     - name: oeil_d
       parentName: artam_corpus
-      position: {x: 0.04834242, y: 3.4078953, z: 0.1890549}
+      position: {x: 0.029005455, y: 2.0447373, z: 0.11343295}
       rotation: {x: 0.0093041, y: -0.001535176, z: 0.0017737672, w: 0.999954}
       scale: {x: 1.6963898, y: 1.6963898, z: 1.6963898}
     - name: oeil_g
       parentName: artam_corpus
-      position: {x: -0.064115815, y: 3.4105628, z: 0.19050081}
+      position: {x: -0.03846949, y: 2.0463378, z: 0.11430049}
       rotation: {x: 0.009351606, y: -0, z: -0, w: 0.9999563}
       scale: {x: 1.6963898, y: 1.6963898, z: 1.6963898}
     - name: polySurface10
       parentName: artam_corpus
-      position: {x: -0.0015563576, y: 0.01816637, z: -0.013275288}
+      position: {x: -0.0009338146, y: 0.010899823, z: -0.007965174}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: polySurface11
@@ -1278,818 +1278,819 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_Reference
       parentName: ARTAM_Reference
-      position: {x: -0, y: 0.054529257, z: 0}
+      position: {x: -0, y: 0.032717556, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_ChestEndEffector
       parentName: ARTAM_Ctrl_Reference
-      position: {x: 0.00000010490417, y: 2.9317708, z: -0.000000014305114}
+      position: {x: 0.000000062942505, y: 1.7590625, z: -0.000000008583069}
       rotation: {x: 2.5266077e-16, y: 7.332054e-32, z: -2.220446e-16, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_ChestOriginEffector
       parentName: ARTAM_Ctrl_Reference
-      position: {x: 0.000000114440915, y: 2.1399999, z: -0.000000014305114}
+      position: {x: 0.000000068664555, y: 1.2839999, z: -0.000000008583069}
       rotation: {x: 2.5266077e-16, y: 7.332054e-32, z: -2.220446e-16, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_HeadEffector
       parentName: ARTAM_Ctrl_Reference
-      position: {x: 0.000000114440915, y: 3.3, z: -0.000000014305113}
+      position: {x: 0.000000068664555, y: 1.98, z: -0.000000008583068}
       rotation: {x: 2.5266077e-16, y: -3.764939e-24, z: -0.000000014901161, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_Hips
       parentName: ARTAM_Ctrl_Reference
-      position: {x: 0.000000114440915, y: 1.9999998, z: -0.000000014305114}
+      position: {x: 0.000000068664555, y: 1.1999999, z: -0.000000008583069}
       rotation: {x: 3.0817192e-16, y: 5.5511145e-17, z: -5.551115e-17, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_LeftUpLeg
       parentName: ARTAM_Ctrl_Hips
-      position: {x: -0.1782, y: -0.12540008, z: 0}
+      position: {x: -0.10692001, y: -0.07524005, z: 0}
       rotation: {x: 0.000013874351, y: 0.000000034110148, z: -0.00000295043, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_LeftLeg
       parentName: ARTAM_Ctrl_LeftUpLeg
-      position: {x: -0, y: -0.89757276, z: 0}
+      position: {x: -0, y: -0.5385437, z: 0}
       rotation: {x: -0.00000008085135, y: -0.000000034109803, z: 0.000000025206226,
         w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_LeftFoot
       parentName: ARTAM_Ctrl_LeftLeg
-      position: {x: -0, y: -0.8140192, z: 0}
+      position: {x: -0, y: -0.48841155, z: 0}
       rotation: {x: -0.000013793499, y: -4.0424934e-11, z: 0.0000029252244, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_LeftToeBase
       parentName: ARTAM_Ctrl_LeftFoot
-      position: {x: -0.00000017166137, y: -0.12524635, z: 0.25909442}
+      position: {x: -0.00000010299683, y: -0.07514781, z: 0.15545666}
       rotation: {x: 2.2365468e-32, y: -0, z: -1.2246467e-16, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_RightUpLeg
       parentName: ARTAM_Ctrl_Hips
-      position: {x: 0.1782, y: -0.12540008, z: 0}
+      position: {x: 0.10692001, y: -0.07524005, z: 0}
       rotation: {x: -0.000002989831, y: -4.722302e-12, z: 0.0000015795424, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_RightLeg
       parentName: ARTAM_Ctrl_RightUpLeg
-      position: {x: 0.000000057220458, y: -0.89757276, z: 0.00000878048}
+      position: {x: 0.000000034332277, y: -0.5385437, z: 0.000005268288}
       rotation: {x: -1.138829e-16, y: -1.3877788e-16, z: 0.00000001958006, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_RightFoot
       parentName: ARTAM_Ctrl_RightLeg
-      position: {x: -0.000000019073486, y: -0.81401914, z: 0}
+      position: {x: -0.000000011444092, y: -0.48841152, z: 0}
       rotation: {x: 0.0000029889725, y: -4.78309e-12, z: -0.0000015991226, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_RightToeBase
       parentName: ARTAM_Ctrl_RightFoot
-      position: {x: 0.000021705628, y: -0.12524635, z: 0.25909498}
+      position: {x: 0.0000130233775, y: -0.07514781, z: 0.15545699}
       rotation: {x: 3.469142e-32, y: -0, z: -1.2246467e-16, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_Spine
       parentName: ARTAM_Ctrl_Hips
-      position: {x: -0, y: 0.14, z: 0}
+      position: {x: -0, y: 0.08400001, z: 0}
       rotation: {x: 3.0817192e-16, y: 5.5511145e-17, z: -5.551115e-17, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_Spine1
       parentName: ARTAM_Ctrl_Spine
-      position: {x: -0, y: 0.25333327, z: 0}
+      position: {x: -0, y: 0.15199997, z: 0}
       rotation: {x: 3.0817192e-16, y: 5.5511145e-17, z: -5.551115e-17, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_Spine2
       parentName: ARTAM_Ctrl_Spine1
-      position: {x: -0, y: 0.25333327, z: 0}
+      position: {x: -0, y: 0.15199997, z: 0}
       rotation: {x: 3.0817192e-16, y: 5.5511145e-17, z: -5.551115e-17, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_LeftShoulder
       parentName: ARTAM_Ctrl_Spine2
-      position: {x: -0.14, y: 0.28510436, z: 0}
+      position: {x: -0.08400001, y: 0.17106262, z: 0}
       rotation: {x: 0, y: -0, z: -4.235165e-21, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_LeftArm
       parentName: ARTAM_Ctrl_LeftShoulder
-      position: {x: -0.214145, y: 0.000002746582, z: 0}
+      position: {x: -0.128487, y: 0.0000016479493, z: 0}
       rotation: {x: -0.000000014901161, y: 0.00000013411044, z: 0.000000059604645,
         w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_LeftForeArm
       parentName: ARTAM_Ctrl_LeftArm
-      position: {x: -0.5461093, y: -5.684342e-16, z: 0}
+      position: {x: -0.3276656, y: -3.4106052e-16, z: 0}
       rotation: {x: 0.000000014901156, y: -0.00000021840414, z: -0.000000059604645,
         w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_LeftHand
       parentName: ARTAM_Ctrl_LeftForeArm
-      position: {x: -0.5339429, y: -5.684342e-16, z: 0}
+      position: {x: -0.32036573, y: -3.4106052e-16, z: 0}
       rotation: {x: -8.652067e-33, y: 0.0000000842937, z: -2.3878463e-23, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_LeftHandIndex1
       parentName: ARTAM_Ctrl_LeftHand
-      position: {x: -0.17643951, y: 0.003994446, z: 0.06943338}
+      position: {x: -0.10586371, y: 0.0023966676, z: 0.041660033}
       rotation: {x: -1.2239038e-16, y: 1.7347236e-17, z: -3.472634e-18, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_LeftHandIndex2
       parentName: ARTAM_Ctrl_LeftHandIndex1
-      position: {x: -0.08445511, y: -0.00000030517577, z: 0.0029439782}
+      position: {x: -0.050673068, y: -0.00000018310547, z: 0.001766387}
       rotation: {x: -1.2238223e-16, y: -1.3877788e-17, z: 4.2644544e-18, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_LeftHandIndex3
       parentName: ARTAM_Ctrl_LeftHandIndex2
-      position: {x: -0.053046566, y: -0.00000030517577, z: 0.0018491221}
+      position: {x: -0.03182794, y: -0.00000018310547, z: 0.0011094733}
       rotation: {x: 6.6174455e-23, y: -1.3877788e-17, z: -1.8777e-22, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_LeftHandMiddle1
       parentName: ARTAM_Ctrl_LeftHand
-      position: {x: -0.17619766, y: 0.0100177, z: 0.026093688}
+      position: {x: -0.105718605, y: 0.00601062, z: 0.015656214}
       rotation: {x: -1.2246467e-16, y: -4.663324e-37, z: 3.8078932e-21, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_LeftHandMiddle2
       parentName: ARTAM_Ctrl_LeftHandMiddle1
-      position: {x: -0.09726501, y: 0, z: 0.000006048679}
+      position: {x: -0.05835901, y: 0, z: 0.0000036292076}
       rotation: {x: -1.2246467e-16, y: -4.658366e-37, z: 3.8038446e-21, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_LeftHandMiddle3
       parentName: ARTAM_Ctrl_LeftHandMiddle2
-      position: {x: -0.055304717, y: 0, z: 0.0000034356115}
+      position: {x: -0.033182833, y: 0, z: 0.000002061367}
       rotation: {x: 6.1232336e-17, y: 1.2246064e-16, z: 6.122854e-17, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_LeftHandPinky1
       parentName: ARTAM_Ctrl_LeftHand
-      position: {x: -0.17764555, y: -0.013511352, z: -0.056915946}
+      position: {x: -0.106587335, y: -0.008106812, z: -0.03414957}
       rotation: {x: -1.2246467e-16, y: 6.138642e-22, z: 7.5176675e-38, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_LeftHandPinky2
       parentName: ARTAM_Ctrl_LeftHandPinky1
-      position: {x: -0.060881957, y: 0.00000061035155, z: -8.881784e-18}
+      position: {x: -0.036529176, y: 0.00000036621094, z: -5.3290706e-18}
       rotation: {x: -1.3518376e-16, y: 1.8166877e-21, z: 0.0000027153342, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_LeftHandPinky3
       parentName: ARTAM_Ctrl_LeftHandPinky2
-      position: {x: -0.03949005, y: 0.00000061035155, z: -0.0000000047683715}
+      position: {x: -0.023694033, y: 0.00000036621094, z: -0.000000002861023}
       rotation: {x: -9.330927e-13, y: 1.2967524e-16, z: -1.6092357e-16, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_LeftHandRing1
       parentName: ARTAM_Ctrl_LeftHand
-      position: {x: -0.1778752, y: 0.002879028, z: -0.02432423}
+      position: {x: -0.10672513, y: 0.0017274169, z: -0.014594539}
       rotation: {x: -1.2246467e-16, y: -1.96997e-40, z: 1.6086058e-24, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_LeftHandRing2
       parentName: ARTAM_Ctrl_LeftHandRing1
-      position: {x: -0.09075515, y: 0, z: 0.0000000023841857}
+      position: {x: -0.054453094, y: 0, z: 0.0000000014305115}
       rotation: {x: -1.2325952e-32, y: 1.323489e-23, z: -3.1674452e-24, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_LeftHandRing3
       parentName: ARTAM_Ctrl_LeftHandRing2
-      position: {x: -0.046090543, y: 0, z: -0.0000000023841857}
+      position: {x: -0.027654327, y: 0, z: -0.0000000014305115}
       rotation: {x: 6.1232336e-17, y: 1.2246469e-16, z: 6.123234e-17, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_LeftHandThumb1
       parentName: ARTAM_Ctrl_LeftHand
-      position: {x: -0.08697525, y: -0.015970154, z: 0.08564867}
+      position: {x: -0.05218515, y: -0.009582093, z: 0.051389206}
       rotation: {x: 2.7755578e-16, y: 9.7144515e-17, z: -2.7755576e-17, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_LeftHandThumb2
       parentName: ARTAM_Ctrl_LeftHandThumb1
-      position: {x: -0.050251767, y: -0.028372802, z: 0.028078994}
+      position: {x: -0.030151062, y: -0.017023683, z: 0.016847396}
       rotation: {x: -8.0779364e-27, y: 1.8119634e-21, z: -3.811648e-21, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_LeftHandThumb3
       parentName: ARTAM_Ctrl_LeftHandThumb2
-      position: {x: -0.05086273, y: -0.00000030517577, z: 0.00000019073485}
+      position: {x: -0.03051764, y: -0.00000018310547, z: 0.000000114440915}
       rotation: {x: -1.3322632e-21, y: 2.2204409e-16, z: -8.4703295e-22, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_Neck
       parentName: ARTAM_Ctrl_Spine2
-      position: {x: -0, y: 0.25333342, z: 0}
+      position: {x: -0, y: 0.15200005, z: 0}
       rotation: {x: 3.0817192e-16, y: 5.5511145e-17, z: -5.551115e-17, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_Head
       parentName: ARTAM_Ctrl_Neck
-      position: {x: -0, y: 0.39999998, z: 0}
+      position: {x: -0, y: 0.24, z: 0}
       rotation: {x: 1.9714962e-16, y: 5.551114e-17, z: -0.000000014901161, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_RightShoulder
       parentName: ARTAM_Ctrl_Spine2
-      position: {x: 0.13999999, y: 0.28510436, z: 0}
+      position: {x: 0.08399999, y: 0.17106262, z: 0}
       rotation: {x: 0, y: 0, z: 1.3552527e-20, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_RightArm
       parentName: ARTAM_Ctrl_RightShoulder
-      position: {x: 0.21414548, y: 0.000008544922, z: 0}
+      position: {x: 0.12848729, y: 0.0000051269535, z: 0}
       rotation: {x: -2.7200462e-15, y: -0.000000044703484, z: -0.000000059604645,
         w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_RightForeArm
       parentName: ARTAM_Ctrl_RightArm
-      position: {x: 0.546112, y: 0, z: 0}
+      position: {x: 0.3276672, y: 0, z: 0}
       rotation: {x: -0.000000052154068, y: 0.00000012899719, z: 0.000000059604645,
         w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_RightHand
       parentName: ARTAM_Ctrl_RightForeArm
-      position: {x: 0.53393966, y: -5.684342e-16, z: 0}
+      position: {x: 0.32036382, y: -3.4106052e-16, z: 0}
       rotation: {x: 0.000000059604645, y: -0.0000000842937, z: 5.024296e-15, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_RightHandIndex1
       parentName: ARTAM_Ctrl_RightHand
-      position: {x: 0.1764334, y: 0.003994751, z: 0.05884467}
+      position: {x: 0.10586005, y: 0.0023968506, z: 0.035306804}
       rotation: {x: -2.135384e-18, y: -1.3877788e-17, z: 7.451356e-20, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_RightHandIndex2
       parentName: ARTAM_Ctrl_RightHandIndex1
-      position: {x: 0.08445511, y: -5.684342e-16, z: -0.0029470348}
+      position: {x: 0.050673068, y: -3.4106052e-16, z: -0.0017682209}
       rotation: {x: -2.1353901e-18, y: -1.5911644e-37, z: 7.4513993e-20, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_RightHandIndex3
       parentName: ARTAM_Ctrl_RightHandIndex2
-      position: {x: 0.053046416, y: 0, z: -0.0018510435}
+      position: {x: 0.031827852, y: 0, z: -0.0011106262}
       rotation: {x: 0, y: 1.3877788e-17, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_RightHandMiddle1
       parentName: ARTAM_Ctrl_RightHand
-      position: {x: 0.17619535, y: 0.010018005, z: 0.002647147}
+      position: {x: 0.10571722, y: 0.0060108034, z: 0.0015882883}
       rotation: {x: -2.135389e-18, y: -1.5911623e-37, z: 7.451393e-20, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_RightHandMiddle2
       parentName: ARTAM_Ctrl_RightHandMiddle1
-      position: {x: 0.09720581, y: -5.684342e-16, z: -0.003391975}
+      position: {x: 0.058323488, y: -3.4106052e-16, z: -0.0020351852}
       rotation: {x: -2.1353856e-18, y: -1.0408341e-17, z: 7.4513683e-20, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_RightHandMiddle3
       parentName: ARTAM_Ctrl_RightHandMiddle2
-      position: {x: 0.05527115, y: -5.684342e-16, z: -0.0019286711}
+      position: {x: 0.03316269, y: -3.4106052e-16, z: -0.0011572028}
       rotation: {x: 0, y: -1.0408341e-17, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_RightHandPinky1
       parentName: ARTAM_Ctrl_RightHand
-      position: {x: 0.17764984, y: -0.006260376, z: -0.10067058}
+      position: {x: 0.106589906, y: -0.0037562258, z: -0.060402352}
       rotation: {x: 1.1674867e-17, y: -4.1633363e-17, z: 2.8947086e-18, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_RightHandPinky2
       parentName: ARTAM_Ctrl_RightHandPinky1
-      position: {x: 0.06054077, y: -0.0000015258788, z: 0.00710288}
+      position: {x: 0.036324464, y: -0.0000009155273, z: 0.0042617284}
       rotation: {x: 0.00000055904974, y: -2.6639062e-12, z: -0.000004764999, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_RightHandPinky3
       parentName: ARTAM_Ctrl_RightHandPinky2
-      position: {x: 0.039268646, y: -0.00000061035155, z: 0.0046071624}
+      position: {x: 0.023561189, y: -0.00000036621094, z: 0.0027642976}
       rotation: {x: -1.4823077e-21, y: -6.245004e-17, z: 1.5908336e-20, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_RightHandRing1
       parentName: ARTAM_Ctrl_RightHand
-      position: {x: 0.17787658, y: 0.007598572, z: -0.056148704}
+      position: {x: 0.10672595, y: 0.0045591434, z: -0.033689223}
       rotation: {x: -1.3160741e-17, y: 3.4694473e-17, z: 1.2151773e-16, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_RightHandRing2
       parentName: ARTAM_Ctrl_RightHandRing1
-      position: {x: 0.09052124, y: 0, z: 0.0065132426}
+      position: {x: 0.054312747, y: 0, z: 0.003907946}
       rotation: {x: -1.31607504e-17, y: 2.7755576e-17, z: 1.2151773e-16, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_RightHandRing3
       parentName: ARTAM_Ctrl_RightHandRing2
-      position: {x: 0.04597168, y: 0, z: 0.0033077858}
+      position: {x: 0.027583009, y: 0, z: 0.0019846717}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_RightHandThumb1
       parentName: ARTAM_Ctrl_RightHand
-      position: {x: 0.08696762, y: -0.034699097, z: 0.08565628}
+      position: {x: 0.052180573, y: -0.02081946, z: 0.05139377}
       rotation: {x: 7.632783e-17, y: -1.4918622e-16, z: -1.9428903e-16, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_RightHandThumb2
       parentName: ARTAM_Ctrl_RightHandThumb1
-      position: {x: 0.05025055, y: -0.010721739, z: 0.014153537}
+      position: {x: 0.03015033, y: -0.006433044, z: 0.008492122}
       rotation: {x: -5.547116e-16, y: -1.111877e-16, z: -2.1121612e-17, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_RightHandThumb3
       parentName: ARTAM_Ctrl_RightHandThumb2
-      position: {x: 0.050831754, y: 0.00000030517577, z: 0.0017764091}
+      position: {x: 0.030499054, y: 0.00000018310547, z: 0.0010658455}
       rotation: {x: -1.6637775e-16, y: 1.3714031e-17, z: -3.5126456e-18, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_HipsEffector
       parentName: ARTAM_Ctrl_Reference
-      position: {x: 0.000000114440915, y: 1.8745996, z: -0.000000014305114}
+      position: {x: 0.000000068664555, y: 1.1247598, z: -0.000000008583069}
       rotation: {x: 2.5266077e-16, y: 7.332054e-32, z: -2.220446e-16, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_LeftAnkleEffector
       parentName: ARTAM_Ctrl_Reference
-      position: {x: -0.17820992, y: 0.16300781, z: -0.00004749774}
+      position: {x: -0.10692596, y: 0.09780469, z: -0.000028498644}
       rotation: {x: -1.5594509e-16, y: -3.382319e-16, z: -1.8848509e-16, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_LeftElbowEffector
       parentName: ARTAM_Ctrl_Reference
-      position: {x: -0.9002542, y: 2.9317737, z: -0.000000014305111}
+      position: {x: -0.54015255, y: 1.7590643, z: -0.000000008583067}
       rotation: {x: -8.652067e-33, y: -0.0000000842937, z: 2.3878463e-23, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_LeftFootEffector
       parentName: ARTAM_Ctrl_Reference
-      position: {x: -0.17821008, y: 0.037761476, z: 0.2590469}
+      position: {x: -0.106926054, y: 0.022656886, z: 0.15542816}
       rotation: {x: 3.469142e-32, y: -0, z: -1.2246467e-16, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_LeftHandIndexEffector
       parentName: ARTAM_Ctrl_Reference
-      position: {x: -1.7481382, y: 2.9357672, z: 0.074226476}
+      position: {x: -1.048883, y: 1.7614604, z: 0.044535886}
       rotation: {x: -1.223906e-16, y: 4.1633363e-17, z: 4.2661497e-18, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_LeftHandMiddleEffector
       parentName: ARTAM_Ctrl_Reference
-      position: {x: -1.7629645, y: 2.9417913, z: 0.026103158}
+      position: {x: -1.0577787, y: 1.7650748, z: 0.015661895}
       rotation: {x: 6.1232336e-17, y: 1.2246064e-16, z: 6.122854e-17, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_LeftHandPinkyEffector
       parentName: ARTAM_Ctrl_Reference
-      position: {x: -1.7122146, y: 2.9182632, z: -0.056915965}
+      position: {x: -1.0273288, y: 1.750958, z: -0.03414958}
       rotation: {x: -1.2609657e-12, y: 1.3220914e-16, z: 0.0000027153342, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_LeftHandRingEffector
       parentName: ARTAM_Ctrl_Reference
-      position: {x: -1.7489179, y: 2.9346526, z: -0.024324246}
+      position: {x: -1.0493509, y: 1.7607917, z: -0.014594548}
       rotation: {x: 6.1232336e-17, y: 1.2246469e-16, z: 6.123234e-17, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_LeftHandThumbEffector
       parentName: ARTAM_Ctrl_Reference
-      position: {x: -1.6222868, y: 2.8874302, z: 0.11372785}
+      position: {x: -0.9733721, y: 1.7324582, z: 0.068236716}
       rotation: {x: -9.212546e-22, y: 1.5354242e-16, z: -4.2351647e-22, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_LeftHipEffector
       parentName: ARTAM_Ctrl_Reference
-      position: {x: -0.1781999, y: 1.8745996, z: -0.000000014305114}
+      position: {x: -0.106919944, y: 1.1247598, z: -0.000000008583069}
       rotation: {x: 0.000013874351, y: 0.000000034110148, z: -0.00000295043, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_LeftKneeEffector
       parentName: ARTAM_Ctrl_Reference
-      position: {x: -0.17820515, y: 0.97702694, z: -0.00002498964}
+      position: {x: -0.106923096, y: 0.5862162, z: -0.000014993785}
       rotation: {x: 0.000013793499, y: -1.8439382e-18, z: -0.0000029252242, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_LeftShoulderEffector
       parentName: ARTAM_Ctrl_Reference
-      position: {x: -0.35414487, y: 2.9317737, z: -0.000000014305113}
+      position: {x: -0.21248694, y: 1.7590643, z: -0.000000008583068}
       rotation: {x: -0.00000001490116, y: 0.00000013411044, z: 0.000000059604645,
         w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_LeftWristEffector
       parentName: ARTAM_Ctrl_Reference
-      position: {x: -1.4341971, y: 2.9317737, z: -0.000000014305111}
+      position: {x: -0.8605183, y: 1.7590643, z: -0.000000008583067}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_RightAnkleEffector
       parentName: ARTAM_Ctrl_Reference
-      position: {x: 0.17820564, y: 0.16300781, z: 0.000018793944}
+      position: {x: 0.10692339, y: 0.09780469, z: 0.000011276366}
       rotation: {x: -1.4382995e-12, y: -3.4590115e-16, z: -1.3315697e-16, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_RightElbowEffector
       parentName: ARTAM_Ctrl_Reference
-      position: {x: 0.9002575, y: 2.9317794, z: -0.000000014305116}
+      position: {x: 0.5401545, y: 1.7590677, z: -0.00000000858307}
       rotation: {x: -0.000000059604645, y: 0.0000000842937, z: 5.864764e-23, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_RightFootEffector
       parentName: ARTAM_Ctrl_Reference
-      position: {x: 0.17822735, y: 0.037761476, z: 0.25911376}
+      position: {x: 0.10693642, y: 0.022656886, z: 0.15546826}
       rotation: {x: 3.469142e-32, y: -0, z: -1.2246467e-16, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_RightHandIndexEffector
       parentName: ARTAM_Ctrl_Reference
-      position: {x: 1.7481322, y: 2.935774, z: 0.05404658}
+      position: {x: 1.0488794, y: 1.7614645, z: 0.032427948}
       rotation: {x: 0, y: -4.1633363e-17, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_RightHandMiddleEffector
       parentName: ARTAM_Ctrl_Reference
-      position: {x: 1.7628697, y: 2.9417975, z: -0.002673513}
+      position: {x: 1.0577219, y: 1.7650785, z: -0.0016041079}
       rotation: {x: 0, y: 4.510281e-17, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_RightHandPinkyEffector
       parentName: ARTAM_Ctrl_Reference
-      position: {x: 1.7116566, y: 2.9255166, z: -0.08896056}
+      position: {x: 1.026994, y: 1.75531, z: -0.053376336}
       rotation: {x: 0.0000005590497, y: -8.689094e-12, z: -0.000004764999, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_RightHandRingEffector
       parentName: ARTAM_Ctrl_Reference
-      position: {x: 1.7485669, y: 2.939378, z: -0.04632769}
+      position: {x: 1.0491402, y: 1.7636269, z: -0.027796617}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_RightHandThumbEffector
       parentName: ARTAM_Ctrl_Reference
-      position: {x: 1.6222472, y: 2.886359, z: 0.10158621}
+      position: {x: 0.9733484, y: 1.7318155, z: 0.06095173}
       rotation: {x: -9.264423e-23, y: 1.7184475e-17, z: -1.1705995e-18, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_RightHipEffector
       parentName: ARTAM_Ctrl_Reference
-      position: {x: 0.17820013, y: 1.8745996, z: -0.000000014305114}
+      position: {x: 0.10692008, y: 1.1247598, z: -0.000000008583069}
       rotation: {x: -0.000002989831, y: 1.5451916e-11, z: 0.0000015795424, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_RightKneeEffector
       parentName: ARTAM_Ctrl_Reference
-      position: {x: 0.17820306, y: 0.97702694, z: 0.000014024819}
+      position: {x: 0.106921844, y: 0.5862162, z: 0.000008414892}
       rotation: {x: -0.0000029889738, y: 6.992412e-14, z: 0.0000015991225, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_RightShoulderEffector
       parentName: ARTAM_Ctrl_Reference
-      position: {x: 0.35414562, y: 2.9317794, z: -0.000000014305114}
+      position: {x: 0.21248738, y: 1.7590677, z: -0.000000008583069}
       rotation: {x: -3.1102605e-23, y: -0.000000044703484, z: -0.000000059604645,
         w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Ctrl_RightWristEffector
       parentName: ARTAM_Ctrl_Reference
-      position: {x: 1.4341973, y: 2.9317794, z: -0.000000014305117}
+      position: {x: 0.8605184, y: 1.7590677, z: -0.00000000858307}
       rotation: {x: -1.2325952e-32, y: 6.1232336e-17, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: handposer
       parentName: ARTAM_Ctrl_Reference
-      position: {x: -1.7927334, y: 2.9056392, z: 0.08245551}
+      position: {x: -1.0756401, y: 1.7433835, z: 0.049473308}
       rotation: {x: 0.57634246, y: 0.7493064, z: -0.079972826, w: -0.3161861}
       scale: {x: 8.886303, y: 8.886303, z: 8.886303}
     - name: ARTAM_Hips
       parentName: ARTAM_Reference
-      position: {x: 0.000000114440915, y: 2.054529, z: -0.000000014305114}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
+      position: {x: 0.000000068664555, y: 1.2327174, z: -0.000000008583069}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_LeftUpLeg
       parentName: ARTAM_Hips
-      position: {x: -0.1782, y: -0.12540008, z: 0}
-      rotation: {x: 0.000009801493, y: -0.0000098015535, z: 0.7071046, w: 0.707109}
-      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000002}
+      position: {x: -0.10692001, y: -0.07524005, z: 0}
+      rotation: {x: 6.588371e-18, y: 6.588371e-18, z: 0.7071068, w: 0.7071068}
+      scale: {x: 1.0000035, y: 1.0000035, z: 1.0000002}
+    - name: joint10
+      parentName: ARTAM_LeftUpLeg
+      position: {x: -0.44945887, y: 0.033994302, z: 0.10893486}
+      rotation: {x: -0.0006272495, y: 0.079634525, z: -0.06966686, w: 0.99438643}
+      scale: {x: 1.0000004, y: 1.0000002, z: 0.99999994}
+    - name: joint9
+      parentName: ARTAM_LeftUpLeg
+      position: {x: -0.45687306, y: 0.041106723, z: -0.17405915}
+      rotation: {x: 0.5847451, y: -0.351263, z: -0.7203702, w: 0.1255164}
+      scale: {x: 1.0000007, y: 1.0000019, z: 1.0000011}
     - name: ARTAM_LeftLeg
       parentName: ARTAM_LeftUpLeg
-      position: {x: -0.89757264, y: -0.00000017376678, z: -0.000000092020464}
-      rotation: {x: 0, y: 0, z: 1, w: -6.123234e-17}
-      scale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+      position: {x: -0.5385436, y: -0.000000104260074, z: -0.00000005521228}
+      rotation: {x: 1.184238e-12, y: -1.1489154e-17, z: -1, w: 5.516978e-30}
+      scale: {x: 1.0000018, y: 1.0000018, z: 0.9999999}
     - name: ARTAM_LeftFoot
       parentName: ARTAM_LeftLeg
-      position: {x: 0.8140192, y: 0.0000002189031, z: 0.00000005887252}
-      rotation: {x: -0.000009801493, y: -0.0000098015535, z: 0.707109, w: 0.7071046}
+      position: {x: 0.48841155, y: 0.00000013134186, z: 0.000000035323513}
+      rotation: {x: 0.00004186876, y: -0.00004186876, z: 0.7071068, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_LeftToeBase
       parentName: ARTAM_LeftFoot
-      position: {x: -0.00000017161769, y: -0.12524635, z: 0.25909442}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: joint9
-      parentName: ARTAM_LeftUpLeg
-      position: {x: -0.76145506, y: 0.0685112, z: -0.29009858}
-      rotation: {x: 0.36531347, y: 0.4477822, z: -0.5168484, w: 0.6315893}
-      scale: {x: 1, y: 1, z: 1}
-    - name: joint10
-      parentName: ARTAM_LeftUpLeg
-      position: {x: -0.74909806, y: 0.05665717, z: 0.18155809}
-      rotation: {x: 0.015999341, y: 0.080385305, z: 0.1310002, w: 0.9879885}
+      position: {x: -0.00000010297062, y: -0.07514781, z: 0.15545666}
+      rotation: {x: -0, y: -0, z: 0.0000000017529929, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_RightUpLeg
       parentName: ARTAM_Hips
-      position: {x: 0.1782, y: -0.12540008, z: 0}
-      rotation: {x: -0.000002114133, y: 0.000009031388, z: 0.7071079, w: 0.70710564}
-      scale: {x: 0.99999994, y: 0.99999994, z: 1}
-    - name: ARTAM_RightLeg
+      position: {x: 0.10692001, y: -0.07524005, z: 0}
+      rotation: {x: -3.2155496e-13, y: 0.0000069172515, z: 0.7071068, w: 0.7071068}
+      scale: {x: 1.000003, y: 1.000003, z: 1}
+    - name: joint8
       parentName: ARTAM_RightUpLeg
-      position: {x: -0.8975728, y: -0.000000029278882, z: -0.00000010853691}
-      rotation: {x: 5.990035e-22, y: 0.00000978247, z: 1, w: 6.123234e-17}
-      scale: {x: 0.99999994, y: 0.99999994, z: 1}
-    - name: ARTAM_RightFoot
-      parentName: ARTAM_RightLeg
-      position: {x: 0.8140192, y: 0.000000072405754, z: -0.000008061555}
-      rotation: {x: 0.0000021141218, y: 0.000009031377, z: 0.7071057, w: 0.70710784}
-      scale: {x: 1, y: 1, z: 1}
-    - name: ARTAM_RightToeBase
-      parentName: ARTAM_RightFoot
-      position: {x: 0.000021705624, y: -0.12524635, z: 0.25909498}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
+      position: {x: -0.519308, y: 0.013511715, z: -0.24457093}
+      rotation: {x: 0.023878535, y: -0.23406424, z: 0.16933392, w: 0.95706314}
       scale: {x: 1, y: 1, z: 1}
     - name: joint7
       parentName: ARTAM_RightUpLeg
-      position: {x: -0.7594226, y: -0.21805672, z: 0.2647951}
-      rotation: {x: -0.035151865, y: 0.027764345, z: -0.65784794, w: 0.7518175}
-      scale: {x: 1, y: 1, z: 1}
-    - name: joint8
+      position: {x: -0.45565358, y: -0.13083404, z: 0.15887706}
+      rotation: {x: -0.03515187, y: 0.027764343, z: -0.6578479, w: 0.7518176}
+      scale: {x: 0.9999998, y: 1, z: 1.0000001}
+    - name: ARTAM_RightLeg
       parentName: ARTAM_RightUpLeg
-      position: {x: -0.8655132, y: 0.022519525, z: -0.4076182}
-      rotation: {x: 0.023878535, y: -0.23406424, z: 0.16933392, w: 0.95706314}
+      position: {x: -0.5385437, y: -0.000000017567329, z: -0.00000006512215}
+      rotation: {x: -0, y: -0.0000097824695, z: -1, w: -4.784836e-11}
+      scale: {x: 1.0000018, y: 1.0000018, z: 1}
+    - name: ARTAM_RightFoot
+      parentName: ARTAM_RightLeg
+      position: {x: 0.48841155, y: 0.000000043443453, z: -0.000004836933}
+      rotation: {x: 0.000015250309, y: 0.000022167562, z: 0.7071068, w: 0.7071068}
+      scale: {x: 0.9999998, y: 0.9999998, z: 1}
+    - name: ARTAM_RightToeBase
+      parentName: ARTAM_RightFoot
+      position: {x: 0.000013023375, y: -0.07514781, z: 0.15545699}
+      rotation: {x: 2.4486242e-26, y: -0.000000012760812, z: 3.4965514e-30, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Spine
       parentName: ARTAM_Hips
-      position: {x: -0, y: 0.14, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
+      position: {x: -0, y: 0.08400001, z: 0}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Spine1
       parentName: ARTAM_Spine
-      position: {x: -0, y: 0.25333327, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
+      position: {x: -0, y: 0.15199997, z: 0}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Spine2
       parentName: ARTAM_Spine1
-      position: {x: -0, y: 0.25333327, z: 1.1368684e-15}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
+      position: {x: -0, y: 0.15199997, z: 6.8212103e-16}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_LeftShoulder
       parentName: ARTAM_Spine2
-      position: {x: -0.14, y: 0.28510436, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
+      position: {x: -0.08400001, y: 0.17106262, z: 0}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_LeftArm
       parentName: ARTAM_LeftShoulder
-      position: {x: -0.21414499, y: 0.000002746582, z: 1.1368684e-15}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
+      position: {x: -0.128487, y: 0.0000016479493, z: 6.8212103e-16}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_LeftForeArm
       parentName: ARTAM_LeftArm
-      position: {x: -0.5461093, y: 1.7053025e-15, z: 0.00000014647794}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
+      position: {x: -0.3276656, y: 1.0231816e-15, z: 0.00000008788677}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_LeftHand
       parentName: ARTAM_LeftForeArm
-      position: {x: -0.5339429, y: 0, z: 0.00000014321463}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: ARTAM_LeftHandIndex1
-      parentName: ARTAM_LeftHand
-      position: {x: -0.17643951, y: 0.003994446, z: 0.06943346}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: ARTAM_LeftHandIndex2
-      parentName: ARTAM_LeftHandIndex1
-      position: {x: -0.08445511, y: -0.00000030517577, z: 0.0029440164}
-      rotation: {x: 0, y: -0.000005316577, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: ARTAM_LeftHandIndex3
-      parentName: ARTAM_LeftHandIndex2
-      position: {x: -0.05304655, y: -0.00000030517577, z: 0.0018497099}
-      rotation: {x: 0, y: 0.000010633154, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: ARTAM_LeftHandMiddle1
-      parentName: ARTAM_LeftHand
-      position: {x: -0.17619766, y: 0.0100177, z: 0.026093764}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: ARTAM_LeftHandMiddle2
-      parentName: ARTAM_LeftHandMiddle1
-      position: {x: -0.09726501, y: -5.684342e-16, z: 0.0000060915945}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: ARTAM_LeftHandMiddle3
-      parentName: ARTAM_LeftHandMiddle2
-      position: {x: -0.055304717, y: 5.684342e-16, z: 0.0000034594534}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: ARTAM_LeftHandPinky1
-      parentName: ARTAM_LeftHand
-      position: {x: -0.17764555, y: -0.013511352, z: -0.05691587}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: ARTAM_LeftHandPinky2
-      parentName: ARTAM_LeftHandPinky1
-      position: {x: -0.060881957, y: 0.00000061035155, z: 0.000000028610229}
-      rotation: {x: 0, y: 0, z: 0.0000027153342, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: ARTAM_LeftHandPinky3
-      parentName: ARTAM_LeftHandPinky2
-      position: {x: -0.03949005, y: 0.00000051963315, z: 0.000000014305114}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: ARTAM_LeftHandRing1
-      parentName: ARTAM_LeftHand
-      position: {x: -0.1778752, y: 0.002879028, z: -0.024324153}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: ARTAM_LeftHandRing2
-      parentName: ARTAM_LeftHandRing1
-      position: {x: -0.09075515, y: 0, z: 0.000000042915342}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: ARTAM_LeftHandRing3
-      parentName: ARTAM_LeftHandRing2
-      position: {x: -0.046090543, y: 5.684342e-16, z: 0.0000000166893}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
+      position: {x: -0.32036573, y: 0, z: 0.00000008592878}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_LeftHandThumb1
       parentName: ARTAM_LeftHand
-      position: {x: -0.08697525, y: -0.015970154, z: 0.085648715}
-      rotation: {x: -0.15318418, y: 0.15208177, z: -0.12047392, w: 0.9689643}
+      position: {x: -0.05218515, y: -0.009582093, z: 0.051389232}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_LeftHandThumb2
       parentName: ARTAM_LeftHandThumb1
-      position: {x: -0.050251767, y: -0.028372802, z: 0.028079012}
-      rotation: {x: -0.00000043213367, y: 0.21377479, z: 0.21600968, w: 0.9527015}
-      scale: {x: 1, y: 1, z: 1}
+      position: {x: -0.030151062, y: -0.017023683, z: 0.016847407}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 0.9999999, y: 0.9999998, z: 1}
     - name: ARTAM_LeftHandThumb3
       parentName: ARTAM_LeftHandThumb2
-      position: {x: -0.05086273, y: -0.00000030517577, z: 0.00000020980833}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
+      position: {x: -0.03051764, y: -0.00000018310547, z: 0.00000012588501}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 0.9999999, y: 1, z: 1}
+    - name: ARTAM_LeftHandIndex1
+      parentName: ARTAM_LeftHand
+      position: {x: -0.10586371, y: 0.0023966676, z: 0.041660078}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ARTAM_LeftHandIndex2
+      parentName: ARTAM_LeftHandIndex1
+      position: {x: -0.050673068, y: -0.00000018310547, z: 0.0017664098}
+      rotation: {x: -0, y: -0.000005316577, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ARTAM_LeftHandIndex3
+      parentName: ARTAM_LeftHandIndex2
+      position: {x: -0.03182793, y: -0.00000018310547, z: 0.001109826}
+      rotation: {x: -0, y: 0.000010633154, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ARTAM_LeftHandMiddle1
+      parentName: ARTAM_LeftHand
+      position: {x: -0.105718605, y: 0.00601062, z: 0.015656259}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ARTAM_LeftHandMiddle2
+      parentName: ARTAM_LeftHandMiddle1
+      position: {x: -0.05835901, y: -3.4106052e-16, z: 0.0000036549568}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ARTAM_LeftHandMiddle3
+      parentName: ARTAM_LeftHandMiddle2
+      position: {x: -0.033182833, y: 3.4106052e-16, z: 0.0000020756722}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ARTAM_LeftHandRing1
+      parentName: ARTAM_LeftHand
+      position: {x: -0.10672513, y: 0.0017274169, z: -0.0145944925}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ARTAM_LeftHandRing2
+      parentName: ARTAM_LeftHandRing1
+      position: {x: -0.054453094, y: 0, z: 0.000000025749207}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ARTAM_LeftHandRing3
+      parentName: ARTAM_LeftHandRing2
+      position: {x: -0.027654327, y: 3.4106052e-16, z: 0.000000010013581}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ARTAM_LeftHandPinky1
+      parentName: ARTAM_LeftHand
+      position: {x: -0.106587335, y: -0.008106812, z: -0.034149524}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ARTAM_LeftHandPinky2
+      parentName: ARTAM_LeftHandPinky1
+      position: {x: -0.036529176, y: 0.00000036621094, z: 0.000000017166139}
+      rotation: {x: -0, y: -0, z: 0.0000027153344, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ARTAM_LeftHandPinky3
+      parentName: ARTAM_LeftHandPinky2
+      position: {x: -0.023694033, y: 0.0000003117799, z: 0.000000008583069}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ARTAM_RightShoulder
+      parentName: ARTAM_Spine2
+      position: {x: 0.08399999, y: 0.17106262, z: 0}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ARTAM_RightArm
+      parentName: ARTAM_RightShoulder
+      position: {x: 0.12848729, y: 0.0000051269535, z: -6.8212103e-16}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ARTAM_RightForeArm
+      parentName: ARTAM_RightArm
+      position: {x: 0.32766718, y: 1.7053025e-15, z: 0.000000029295729}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ARTAM_RightHand
+      parentName: ARTAM_RightForeArm
+      position: {x: 0.32036388, y: -6.8212103e-16, z: 0.00000002864276}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ARTAM_RightHandThumb1
+      parentName: ARTAM_RightHand
+      position: {x: 0.052180573, y: -0.02081946, z: 0.05139379}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 0.99999976, z: 1}
+    - name: ARTAM_RightHandThumb2
+      parentName: ARTAM_RightHandThumb1
+      position: {x: 0.03015033, y: -0.006433044, z: 0.008492128}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 0.9999999, y: 0.9999999, z: 1}
+    - name: ARTAM_RightHandThumb3
+      parentName: ARTAM_RightHandThumb2
+      position: {x: 0.030499054, y: 0.00000018310547, z: 0.0010658512}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 0.99999976, y: 0.9999997, z: 1}
+    - name: ARTAM_RightHandIndex1
+      parentName: ARTAM_RightHand
+      position: {x: 0.10586005, y: 0.0023968506, z: 0.035306834}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ARTAM_RightHandIndex2
+      parentName: ARTAM_RightHandIndex1
+      position: {x: 0.050673068, y: 3.4106052e-16, z: -0.0017682067}
+      rotation: {x: -0, y: -0.0000053167487, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ARTAM_RightHandIndex3
+      parentName: ARTAM_RightHandIndex2
+      position: {x: 0.03182784, y: -3.4106052e-16, z: -0.001110956}
+      rotation: {x: -0, y: 0.000010633497, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ARTAM_RightHandMiddle1
+      parentName: ARTAM_RightHand
+      position: {x: 0.10571722, y: 0.0060108034, z: 0.0015883158}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ARTAM_RightHandMiddle2
+      parentName: ARTAM_RightHandMiddle1
+      position: {x: 0.058323488, y: 3.4106052e-16, z: -0.0020351699}
+      rotation: {x: -0, y: -0.0000053167487, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ARTAM_RightHandMiddle3
+      parentName: ARTAM_RightHandMiddle2
+      position: {x: 0.033162676, y: -3.4106052e-16, z: -0.0011575468}
+      rotation: {x: -0, y: 0.000010633497, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ARTAM_RightHandRing1
+      parentName: ARTAM_RightHand
+      position: {x: 0.10672595, y: 0.0045591434, z: -0.033689193}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ARTAM_RightHandRing2
+      parentName: ARTAM_RightHandRing1
+      position: {x: 0.054312747, y: 3.4106052e-16, z: 0.00390796}
+      rotation: {x: -0, y: -0.0000053167487, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ARTAM_RightHandRing3
+      parentName: ARTAM_RightHandRing2
+      position: {x: 0.027583027, y: 0, z: 0.0019843841}
+      rotation: {x: -0, y: 0.000010633497, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ARTAM_RightHandPinky1
+      parentName: ARTAM_RightHand
+      position: {x: 0.106589906, y: -0.0037562258, z: -0.06040233}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ARTAM_RightHandPinky2
+      parentName: ARTAM_RightHandPinky1
+      position: {x: 0.036324464, y: -0.0000009155273, z: 0.0042617396}
+      rotation: {x: 0.00000055902456, y: -0.0000053167514, z: -0.000004765003, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ARTAM_RightHandPinky3
+      parentName: ARTAM_RightHandPinky2
+      position: {x: 0.023561219, y: -0.00000027712295, z: 0.0027640527}
+      rotation: {x: -5.684342e-14, y: 0.000010633497, z: 2.1103995e-13, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Neck
       parentName: ARTAM_Spine2
-      position: {x: -0, y: 0.25333342, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
+      position: {x: -0, y: 0.15200005, z: 0}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ARTAM_Head
       parentName: ARTAM_Neck
-      position: {x: -0, y: 0.39999998, z: 1.1368684e-15}
-      rotation: {x: 0.20111886, y: 0.6622982, z: 0.209714, w: 0.6906029}
-      scale: {x: 1, y: 1, z: 1}
+      position: {x: -0, y: 0.24, z: 6.8212103e-16}
+      rotation: {x: 0.20111878, y: 0.6622982, z: 0.209714, w: 0.6906029}
+      scale: {x: 1, y: 1, z: 1.0000014}
     - name: down_jow
       parentName: ARTAM_Head
-      position: {x: -0.2812, y: -0.0304, z: -0.012}
-      rotation: {x: -0.11777977, y: -0.68249846, z: -0.1296718, w: 0.7095837}
-      scale: {x: 1, y: 1, z: 1}
+      position: {x: -0.16872, y: -0.018240001, z: -0.0072000003}
+      rotation: {x: -0.159476, y: -0.65901095, z: -0.16394942, w: 0.7165142}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
     - name: joint23
       parentName: down_jow
-      position: {x: 0.005816368, y: 0.086384326, z: 0.013727725}
-      rotation: {x: 0.0016698943, y: 0.054961897, z: 0.02228974, w: 0.99823827}
-      scale: {x: 1, y: 1, z: 1}
+      position: {x: 0.003489821, y: 0.051830597, z: 0.0082366355}
+      rotation: {x: -0.000000029802322, y: -0.000000029802322, z: -0.000000007450581,
+        w: 1}
+      scale: {x: 1, y: 1, z: 1.0000001}
     - name: joint24
       parentName: down_jow
-      position: {x: 0.0068006185, y: 0.089979775, z: -0.014783086}
-      rotation: {x: -0.07864195, y: 0, z: -0, w: 0.99690294}
-      scale: {x: 1, y: 1, z: 1}
-    - name: eye1
-      parentName: ARTAM_Head
-      position: {x: -0.13206413, y: 0.1428461, z: 0.056137316}
-      rotation: {x: 0.011463142, y: 0.01749607, z: -0.009624156, w: 0.99973494}
-      scale: {x: 1, y: 1, z: 1}
-    - name: eye2
-      parentName: ARTAM_Head
-      position: {x: -0.13667637, y: 0.14486498, z: -0.05389544}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: hat2
-      parentName: ARTAM_Head
-      position: {x: 0.11879999, y: 0.1812, z: 0}
-      rotation: {x: -0.0000000069695236, y: -8.326673e-17, z: -5.551115e-17, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: joint2
-      parentName: ARTAM_Head
-      position: {x: -0.17485186, y: 0.15496217, z: -0.042876467}
-      rotation: {x: 0.011463142, y: 0.01749607, z: -0.009624156, w: 0.99973494}
-      scale: {x: 1, y: 1, z: 1}
-    - name: joint34
-      parentName: joint2
-      position: {x: 0.00007917676, y: -0.0037482611, z: -0.019711005}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: joint3
-      parentName: ARTAM_Head
-      position: {x: -0.17200923, y: 0.15302895, z: 0.05153016}
-      rotation: {x: 0.011463142, y: 0.01749607, z: -0.009624156, w: 0.99973494}
-      scale: {x: 1, y: 1, z: 1}
-    - name: joint35
-      parentName: joint3
-      position: {x: 0.008686452, y: -0.0057185586, z: 0.028283305}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
+      position: {x: 0.0040803715, y: 0.053987868, z: -0.008869852}
+      rotation: {x: -0.10728046, y: -0.018498182, z: -0.010941997, w: 0.9939965}
+      scale: {x: 1.0000002, y: 0.99999994, z: 1.0000004}
     - name: joint4
       parentName: ARTAM_Head
-      position: {x: -0.2468, y: 0.094799995, z: -0.0056}
-      rotation: {x: 0.011463142, y: 0.01749607, z: -0.009624156, w: 0.99973494}
+      position: {x: -0.14808, y: 0.05688, z: -0.00336}
+      rotation: {x: 0.0063291034, y: 0.01927173, z: -0.08370002, w: 0.9962845}
+      scale: {x: 1.0000005, y: 1.0000002, z: 1.0000007}
+    - name: joint31
+      parentName: joint4
+      position: {x: 0.0051283264, y: -0.00436584, z: -0.019471278}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: joint30
       parentName: joint4
-      position: {x: 0.009613316, y: -0.0076611196, z: 0.036402673}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: joint31
-      parentName: joint4
-      position: {x: 0.00854721, y: -0.0072764, z: -0.03245213}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
+      position: {x: 0.0057679894, y: -0.004596672, z: 0.021841604}
+      rotation: {x: 0.05021867, y: -0.022537204, z: -0.00010916845, w: 0.9984839}
+      scale: {x: 1.0000005, y: 0.9999998, z: 1.0000001}
     - name: joint5
       parentName: ARTAM_Head
-      position: {x: -0.16148925, y: 0.21695568, z: -0.032211073}
-      rotation: {x: 0.011463142, y: 0.01749607, z: -0.009624156, w: 0.99973494}
-      scale: {x: 1, y: 1, z: 1}
+      position: {x: -0.09689356, y: 0.13017341, z: -0.019326644}
+      rotation: {x: 0.047857992, y: -0.011688531, z: -0.007936717, w: 0.99875426}
+      scale: {x: 1.0000008, y: 1.0000002, z: 1.0000005}
     - name: joint16
       parentName: joint5
-      position: {x: 0.006718017, y: -0.010683686, z: -0.04681311}
+      position: {x: 0.0040308107, y: -0.006410212, z: -0.028087867}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: joint6
       parentName: ARTAM_Head
-      position: {x: -0.15783817, y: 0.21416509, z: 0.036273573}
-      rotation: {x: 0.011463142, y: 0.01749607, z: -0.009624156, w: 0.99973494}
-      scale: {x: 1, y: 1, z: 1}
+      position: {x: -0.09470291, y: 0.12849906, z: 0.021764144}
+      rotation: {x: -0.025570877, y: 0.038697988, z: -0.011169568, w: 0.9988613}
+      scale: {x: 1.0000012, y: 1.0000004, z: 1.0000008}
     - name: joint15
       parentName: joint6
-      position: {x: 0.005256566, y: -0.013782804, z: 0.051041454}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: noze1
-      parentName: ARTAM_Head
-      position: {x: -0.22007921, y: 0.115411736, z: 0.034705322}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: noze2
-      parentName: ARTAM_Head
-      position: {x: -0.229, y: 0.11440001, z: -0.028199999}
+      position: {x: 0.00315394, y: -0.0082696825, z: 0.030624874}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: up_eye1
       parentName: ARTAM_Head
-      position: {x: -0.15643722, y: 0.18040329, z: -0.051970508}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
+      position: {x: -0.09386233, y: 0.10824198, z: -0.031182306}
+      rotation: {x: -0, y: -0, z: 0.000000074505806, w: 1}
+      scale: {x: 1, y: 1.0000001, z: 1.0000005}
     - name: up_eye2
       parentName: ARTAM_Head
-      position: {x: -0.1501631, y: 0.17653269, z: 0.057006024}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
+      position: {x: -0.09009786, y: 0.105919614, z: 0.034203615}
+      rotation: {x: -0, y: -0, z: 0.000000074505806, w: 1}
+      scale: {x: 1, y: 1.0000001, z: 1.0000005}
+    - name: noze1
+      parentName: ARTAM_Head
+      position: {x: -0.13204753, y: 0.069247045, z: 0.020823194}
+      rotation: {x: -0, y: -0, z: 0.000000074505806, w: 1}
+      scale: {x: 1, y: 1.0000001, z: 1.0000005}
+    - name: noze2
+      parentName: ARTAM_Head
+      position: {x: -0.1374, y: 0.06864001, z: -0.01692}
+      rotation: {x: -0, y: -0, z: 0.000000074505806, w: 1}
+      scale: {x: 1, y: 1.0000001, z: 1.0000005}
+    - name: hat2
+      parentName: ARTAM_Head
+      position: {x: 0.071279995, y: 0.108720005, z: 0}
+      rotation: {x: -0, y: -0, z: 0.000000074505806, w: 1}
+      scale: {x: 1, y: 1.0000001, z: 1.0000002}
+    - name: joint2
+      parentName: ARTAM_Head
+      position: {x: -0.104911126, y: 0.0929773, z: -0.02572588}
+      rotation: {x: 0.01146315, y: 0.017496109, z: -0.009624019, w: 0.99973494}
+      scale: {x: 1.0000011, y: 1.0000002, z: 1.0000007}
+    - name: joint34
+      parentName: joint2
+      position: {x: 0.00004750606, y: -0.0022489568, z: -0.011826604}
+      rotation: {x: -0, y: -0, z: 2.764864e-10, w: 1}
+      scale: {x: 1.0000005, y: 1.0000002, z: 1.0000006}
+    - name: eye2
+      parentName: ARTAM_Head
+      position: {x: -0.08200583, y: 0.08691899, z: -0.032337267}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 0.9999998, y: 0.9999999, z: 1.0000002}
+    - name: joint3
+      parentName: ARTAM_Head
+      position: {x: -0.10320554, y: 0.09181737, z: 0.030918097}
+      rotation: {x: 0.011463151, y: 0.017496139, z: -0.009624154, w: 0.9997349}
+      scale: {x: 1.0000011, y: 1.0000002, z: 1.0000006}
+    - name: joint35
+      parentName: joint3
+      position: {x: 0.0052118716, y: -0.0034311353, z: 0.016969984}
+      rotation: {x: -0, y: -0, z: 2.764864e-10, w: 1}
+      scale: {x: 1.0000005, y: 1, z: 1.0000005}
+    - name: eye1
+      parentName: ARTAM_Head
+      position: {x: -0.07923848, y: 0.08570766, z: 0.03368239}
+      rotation: {x: 0.011463151, y: 0.017496139, z: -0.009624154, w: 0.9997349}
+      scale: {x: 1.0000013, y: 1.0000001, z: 1.0000008}
     - name: up_jaw
       parentName: ARTAM_Head
-      position: {x: -0.2417791, y: 0.07739986, z: -0.0019170686}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: ARTAM_RightShoulder
-      parentName: ARTAM_Spine2
-      position: {x: 0.13999999, y: 0.28510436, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: ARTAM_RightArm
-      parentName: ARTAM_RightShoulder
-      position: {x: 0.21414548, y: 0.000008544922, z: -1.1368684e-15}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: ARTAM_RightForeArm
-      parentName: ARTAM_RightArm
-      position: {x: 0.54611194, y: 2.8421708e-15, z: 0.000000048826212}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: ARTAM_RightHand
-      parentName: ARTAM_RightForeArm
-      position: {x: 0.5339398, y: -1.1368684e-15, z: 0.00000004773793}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: ARTAM_RightHandIndex1
-      parentName: ARTAM_RightHand
-      position: {x: 0.1764334, y: 0.003994751, z: 0.05884472}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: ARTAM_RightHandIndex2
-      parentName: ARTAM_RightHandIndex1
-      position: {x: 0.08445511, y: 5.684342e-16, z: -0.002947011}
-      rotation: {x: 0, y: -0.0000053167487, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: ARTAM_RightHandIndex3
-      parentName: ARTAM_RightHandIndex2
-      position: {x: 0.053046398, y: -5.684342e-16, z: -0.0018515933}
-      rotation: {x: 0, y: 0.000010633497, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: ARTAM_RightHandMiddle1
-      parentName: ARTAM_RightHand
-      position: {x: 0.17619535, y: 0.010018005, z: 0.002647193}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: ARTAM_RightHandMiddle2
-      parentName: ARTAM_RightHandMiddle1
-      position: {x: 0.09720581, y: 5.684342e-16, z: -0.0033919497}
-      rotation: {x: 0, y: -0.0000053167487, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: ARTAM_RightHandMiddle3
-      parentName: ARTAM_RightHandMiddle2
-      position: {x: 0.055271126, y: -5.684342e-16, z: -0.0019292446}
-      rotation: {x: 0, y: 0.000010633497, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: ARTAM_RightHandPinky1
-      parentName: ARTAM_RightHand
-      position: {x: 0.17764984, y: -0.006260376, z: -0.10067055}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: ARTAM_RightHandPinky2
-      parentName: ARTAM_RightHandPinky1
-      position: {x: 0.06054077, y: -0.0000015258788, z: 0.007102899}
-      rotation: {x: 0.0000006758194, y: -0.000005316753, z: -0.00000569702, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: ARTAM_RightHandPinky3
-      parentName: ARTAM_RightHandPinky2
-      position: {x: 0.039268695, y: -0.00000046187156, z: 0.0046067545}
-      rotation: {x: 0, y: 0.000010633497, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: ARTAM_RightHandRing1
-      parentName: ARTAM_RightHand
-      position: {x: 0.17787658, y: 0.007598572, z: -0.056148652}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: ARTAM_RightHandRing2
-      parentName: ARTAM_RightHandRing1
-      position: {x: 0.09052124, y: 5.684342e-16, z: 0.0065132664}
-      rotation: {x: 0, y: -0.0000053167487, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: ARTAM_RightHandRing3
-      parentName: ARTAM_RightHandRing2
-      position: {x: 0.04597171, y: 0, z: 0.0033073067}
-      rotation: {x: 0, y: 0.000010633497, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: ARTAM_RightHandThumb1
-      parentName: ARTAM_RightHand
-      position: {x: 0.08696762, y: -0.034699097, z: 0.08565631}
-      rotation: {x: -0.060885657, y: -0.19331895, z: 0.06972004, w: 0.9767599}
-      scale: {x: 1, y: 1, z: 1}
-    - name: ARTAM_RightHandThumb2
-      parentName: ARTAM_RightHandThumb1
-      position: {x: 0.05025055, y: -0.010721739, z: 0.014153547}
-      rotation: {x: 0.0027472265, y: -0.090890855, z: -0.07860578, w: 0.99275}
-      scale: {x: 1, y: 1, z: 1}
-    - name: ARTAM_RightHandThumb3
-      parentName: ARTAM_RightHandThumb2
-      position: {x: 0.050831754, y: 0.00000030517577, z: 0.0017764185}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    armTwist: 0.481
+      position: {x: -0.14506747, y: 0.046439916, z: -0.0011502412}
+      rotation: {x: -0, y: -0, z: -0.000000014901161, w: 1}
+      scale: {x: 0.9999997, y: 1, z: 1.0000005}
+    armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
     legTwist: 0.5
-    armStretch: 0.056
-    legStretch: 0.087
-    feetSpacing: 0.056
+    armStretch: 0
+    legStretch: 0
+    feetSpacing: 0
     rootMotionBoneName: 
     hasTranslationDoF: 1
     hasExtraRoot: 1
