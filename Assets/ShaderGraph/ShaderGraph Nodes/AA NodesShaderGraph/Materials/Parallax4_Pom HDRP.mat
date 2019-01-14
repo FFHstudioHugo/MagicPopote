@@ -5,7 +5,8 @@ Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: Parallax4_Pom HDRP
   m_Shader: {fileID: 4800000, guid: f6e28fda9c3b9504fb04fed9a942505b, type: 3}
   m_ShaderKeywords: BOOLEAN_3BE63C52_ON
@@ -26,8 +27,16 @@ Material:
         m_Texture: {fileID: 2800000, guid: f53512d44b91e954dae7bf028209df1a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - Texture2D_5A4300:
+        m_Texture: {fileID: 2800000, guid: a8860e955d6cdf24b9926e88e1ff4d82, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - Texture2D_72DB18D8:
         m_Texture: {fileID: 2800000, guid: 662d72b6ec210cf4cbeec2b4d3cb8b2a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_EAB87738:
+        m_Texture: {fileID: 2800000, guid: 59c951d533891014ba9a4962d131e694, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_EACF2D48:
@@ -56,8 +65,12 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - Boolean_3BE63C52: 1
+    - Vector1_2FD97D36: 1
+    - Vector1_3951DF53: 20
     - Vector1_5AAF7A3C: 4.1
+    - Vector1_5AE600B0: 3
     - Vector1_773295: 40
+    - Vector1_8D78AA2C: 0.1
     - Vector1_9A37879C: 0.099
     - Vector1_AAA517B4: 1
     - Vector1_DB2E7D34: 0

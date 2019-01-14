@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: PixealArt_Ocean
+  m_Shader: {fileID: 4800000, guid: 3b6c02d23e941374eb8ff7a243419a69, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Floats:
+    - Vector1_1A3C99F: 1.84
+    - Vector1_361FBBFF: 36
+    - Vector1_4D179141: 0.5
+    - Vector1_62F0ACF7: -1.98
+    - Vector1_7DD059B8: 0.574
+    - Vector1_8190430A: 12.79
+    - Vector1_8E8E9DD9: 10.47
+    - Vector1_D38E09C: -0.39
+    m_Colors:
+    - Color_5DDA46D9: {r: 0.38568, g: 0.7505831, b: 0.764151, a: 0}
+    - Color_BCF19AFE: {r: 0.01690993, g: 0.6003026, b: 0.7169812, a: 0}

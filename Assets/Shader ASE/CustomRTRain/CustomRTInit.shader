@@ -74,10 +74,10 @@ Shader "ASESampleShaders/CustomRTRainInit"
 	
 }
 /*ASEBEGIN
-Version=15701
-556;185;1066;843;501;154.5;1;True;False
-Node;AmplifyShaderEditor.ColorNode;3;-269,-4.5;Float;False;Property;_InitialColor;InitialColor;0;0;Create;True;0;0;False;0;1,1,1,1;0,0,0,0;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
-Node;AmplifyShaderEditor.TemplateMultiPassMasterNode;0;0,0;Float;False;True;2;Float;ASEMaterialInspector;0;2;ASESampleShaders/CustomRTRainInit;6ce779933eb99f049b78d6163735e06f;0;0;Custom RT Init;1;True;0;1;False;-1;0;False;-1;0;1;False;-1;0;False;-1;True;0;False;-1;0;False;-1;True;2;False;-1;True;True;True;True;True;0;False;-1;True;False;255;False;-1;255;False;-1;255;False;-1;7;False;-1;1;False;-1;1;False;-1;1;False;-1;7;False;-1;1;False;-1;1;False;-1;1;False;-1;True;2;False;-1;True;7;False;-1;True;False;0;False;-1;0;False;-1;True;0;True;2;0;False;False;False;False;False;False;False;False;False;True;2;0;;0;0;Standard;0;1;0;FLOAT4;0,0,0,0;False;0
+Version=16105
+7.2;5.6;1461;830;698.5;148;1;True;False
+Node;AmplifyShaderEditor.ColorNode;3;-269,-4.5;Float;False;Property;_InitialColor;InitialColor;0;0;Create;True;0;0;False;0;1,1,1,1;0,0,0,0;False;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
+Node;AmplifyShaderEditor.TemplateMultiPassMasterNode;0;0,0;Float;False;True;2;Float;ASEMaterialInspector;0;2;ASESampleShaders/CustomRTRainInit;6ce779933eb99f049b78d6163735e06f;0;0;Custom RT Init;1;True;0;1;False;-1;0;False;-1;0;1;False;-1;0;False;-1;True;0;False;-1;0;False;-1;True;False;True;2;False;-1;True;True;True;True;True;0;False;-1;True;False;255;False;-1;255;False;-1;255;False;-1;7;False;-1;1;False;-1;1;False;-1;1;False;-1;7;False;-1;1;False;-1;1;False;-1;1;False;-1;True;2;False;-1;True;7;False;-1;True;False;0;False;-1;0;False;-1;True;0;True;2;0;False;False;False;False;False;False;False;False;False;False;True;2;0;;0;0;Standard;0;1;0;FLOAT4;0,0,0,0;False;0
 WireConnection;0;0;3;0
 ASEEND*/
-//CHKSM=5556BBB4594BA5906D5784848425FA1E239631A3
+//CHKSM=73E17F3FF48152CDD2D7AF4ADB8E51B9979EC752

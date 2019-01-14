@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Skin_lHDRP 2
+  m_Shader: {fileID: 4800000, guid: ff42f4c7ef14bce46b31d5e4c87042e3, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_3900C93A:
+        m_Texture: {fileID: 2800000, guid: e68aeddcb1cd9794d87148aea903ad5d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_75FE6576:
+        m_Texture: {fileID: 2800000, guid: c1692629d7461774781cbb75a3c8b2eb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_A82179B8:
+        m_Texture: {fileID: 2800000, guid: d542dd74334fa654a95f83b6a9495cc3, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_B47C6B8F:
+        m_Texture: {fileID: 2800000, guid: ed266b4e9676b8e41802be6052d8f45c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_F8938F4B:
+        m_Texture: {fileID: 2800000, guid: bfdb52a1fecaa2346ac0c50b81101aa6, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Vector1_5127C35D: 0.986
+    - Vector1_7DAD511F: 0.4
+    - Vector1_E030FF4A: -1.66
+    - Vector1_FC20164B: 0.8
+    m_Colors:
+    - Color_A035A7E2: {r: 1, g: 1, b: 1, a: 0}

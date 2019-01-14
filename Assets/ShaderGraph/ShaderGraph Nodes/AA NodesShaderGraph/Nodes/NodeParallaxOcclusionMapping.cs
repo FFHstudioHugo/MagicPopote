@@ -42,7 +42,7 @@ float3 viewDir =  tanToWorld0 * WorldSpaceViewDirection.x + tanToWorld1 * WorldS
 
 
 
-float MaxParallaxSamples____ = MaxParallaxSamples;
+float MaxParallaxSamples____ = clamp(MaxParallaxSamples,0,50);
 if (MaxParallaxSamples < 6) {
 MaxParallaxSamples____ = 6;
 }
@@ -55,14 +55,14 @@ MaxParallaxSamples____ = 6;
                 float fParallaxLength = sqrt( fLength * fLength - viewDir.z * viewDir.z ) / viewDir.z;
                 float2 vParallaxOffsetTS = vParallaxDirection * fParallaxLength * Depth ;   
                 float nMinSamples = 6;
-                float nMaxSamples = min(MaxParallaxSamples____, 100);
+                float nMaxSamples = min(MaxParallaxSamples____, 50);
                 int nNumSamples = (int)(lerp( nMinSamples, nMaxSamples, 1-dot(WorldSpaceViewDirection , WorldSpaceNormal ) ));
 if (nNumSamples < 0) {
 nNumSamples = 6;
 }
 
-if (nNumSamples > 100) {
-nNumSamples = 100;
+if (nNumSamples > 50) {
+nNumSamples = 50;
 }
 
                 float fStepSize = 1.0 / (float)nNumSamples;   
@@ -77,7 +77,7 @@ nNumSamples = 100;
                 float2 pt2 = 0;
                 float2 dx = ddx(uv__);
                 float2 dy = ddy(uv__);
-[unroll (100) ]
+[unroll (50) ]
                 for (nStepIndex = 0; nStepIndex < nNumSamples; nStepIndex++)
                 {
 

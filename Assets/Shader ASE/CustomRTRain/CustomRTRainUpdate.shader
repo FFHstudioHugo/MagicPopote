@@ -246,15 +246,15 @@ Shader "ASESampleShaders/CustomRTRainUpdate"
 }
 /*ASEBEGIN
 Version=16105
-616;166.4;1461;830;1797.706;210.61;1.9;True;False
+7.2;6.4;1461;829;1805.306;342.66;1.9;True;False
 Node;AmplifyShaderEditor.CommentaryNode;5;-778.9706,-438.6071;Float;False;1110.81;785.8901;Rain ripple effect based on https://www.shadertoy.com/view/ldfyzl;10;10;16;15;12;19;13;7;6;20;8;;1,1,1,1;0;0
-Node;AmplifyShaderEditor.RangedFloatNode;19;-688.2086,4.02002;Float;False;Property;_TimeScale;Time Scale;4;0;Create;True;0;0;False;0;1;4;0;0;0;1;FLOAT;0
+Node;AmplifyShaderEditor.RangedFloatNode;19;-688.2086,4.02002;Float;False;Property;_TimeScale;Time Scale;4;0;Create;True;0;0;False;0;1;3;0;0;0;1;FLOAT;0
 Node;AmplifyShaderEditor.SimpleTimeNode;16;-532.8568,0.7747045;Float;False;1;0;FLOAT;1;False;1;FLOAT;0
 Node;AmplifyShaderEditor.TextureCoordinatesNode;12;-662.8566,-214.2252;Float;False;1;-1;2;3;2;SAMPLER2D;;False;0;FLOAT2;1,1;False;1;FLOAT2;0,0;False;5;FLOAT2;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
-Node;AmplifyShaderEditor.RangedFloatNode;13;-433.7168,-259.9484;Float;False;Property;_Resolution;Resolution;0;0;Create;True;0;0;False;0;1;16.94;0;0;0;1;FLOAT;0
-Node;AmplifyShaderEditor.IntNode;15;-684.5912,230.6578;Float;False;Property;_MaxRadius;Max Radius;1;0;Create;True;0;0;False;0;2;1;0;1;INT;0
-Node;AmplifyShaderEditor.RangedFloatNode;17;-457.1513,572.3462;Float;False;Property;_Float3;Float 3;3;0;Create;True;0;0;False;0;0.47;0.47;0;0;0;1;FLOAT;0
-Node;AmplifyShaderEditor.Vector3Node;18;-480.8512,218.8464;Float;False;Property;_Vector0;Vector 0;2;0;Create;True;0;0;False;0;0.04,0.01,0.0973;0.04,0.01,0.0973;0;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3
+Node;AmplifyShaderEditor.RangedFloatNode;13;-433.7168,-259.9484;Float;False;Property;_Resolution;Resolution;0;0;Create;True;0;0;False;0;1;25.11;0;0;0;1;FLOAT;0
+Node;AmplifyShaderEditor.IntNode;15;-684.5912,230.6578;Float;False;Property;_MaxRadius;Max Radius;1;0;Create;True;0;0;False;0;2;0;0;1;INT;0
+Node;AmplifyShaderEditor.RangedFloatNode;17;-457.1513,572.3462;Float;False;Property;_Float3;Float 3;3;0;Create;True;0;0;False;0;0.47;10.22;0;0;0;1;FLOAT;0
+Node;AmplifyShaderEditor.Vector3Node;18;-480.8512,218.8464;Float;False;Property;_Vector0;Vector 0;2;0;Create;True;0;0;False;0;0.04,0.01,0.0973;0.5,0.4,0.1;0;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3
 Node;AmplifyShaderEditor.CustomExpressionNode;8;-239.1882,-98.21041;Float;False;uv *= resolution@$float2 p0 = floor(uv)@$float2 circles = float2(0,0)@$float maxRadiusf = maxRadius@$for (int j = -maxRadius@ j <= maxRadius@ ++j)${$	for (int i = -maxRadius@ i <= maxRadius@ ++i)$	{$		float2 pi = p0 + float2(i, j)@$		#if DOUBLE_HASH$		float2 hsh = Hash22(pi,hashScale3)@$		#else$		float2 hsh = pi@$		#endif$		float2 p = pi + Hash22(hsh,hashScale3)@$$		float t = frac(0.3*time + Hash12(hsh,hashScale))@$		float2 v = p - uv@$		float d = length(v) - (maxRadiusf + 1.0)*t@$$		float h = 1e-3@$		float d1 = d - h@$		float d2 = d + h@$		float p1 = sin(31.*d1) * smoothstep(-0.6, -0.3, d1) * smoothstep(0.0, -0.3, d1)@$		float p2 = sin(31.*d2) * smoothstep(-0.6, -0.3, d2) * smoothstep(0.0, -0.3, d2)@$		circles += 0.5 * normalize(v) * ((p2 - p1) / (2 * h) * (1.0 - t) * (1.0 - t))@$	}$}$circles /= float((maxRadiusf*1.0+1.0)*(maxRadiusf*2.0+1.0))@$$float intensity = lerp(0.01, 0.15, smoothstep(0.1, 0.6, abs(frac(0.05*time + 0.5)*2.0-1.0)))@$float3 n = float3(circles, sqrt(1.0 - dot(circles, circles)))@$rippleUVOffset = intensity*n.xy@$rippleIntensity = 5.0*pow(clamp(dot(n, normalize(float3(1.0, 0.7, 0.5))), 0.0, 1.0), 6.0)@$return@$;7;False;8;True;resolution;FLOAT;0;In;;Float;True;uv;FLOAT2;0,0;In;;Float;True;maxRadius;INT;0;In;;Float;True;time;FLOAT;0;In;;Float;True;hashScale;FLOAT;0;In;;Float;True;hashScale3;FLOAT3;0,0,0;In;;Float;True;rippleUVOffset;FLOAT2;0,0;Out;;Float;True;rippleIntensity;FLOAT;0;Out;;Float;CalculateRipples;False;True;2;6;7;9;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT2;0,0;False;3;INT;0;False;4;FLOAT;0;False;5;FLOAT;0;False;6;FLOAT3;0,0,0;False;7;FLOAT2;0,0;False;8;FLOAT;0;False;3;FLOAT;0;FLOAT2;8;FLOAT;9
 Node;AmplifyShaderEditor.SimpleMultiplyOpNode;20;149.9745,124.9723;Float;False;2;2;0;FLOAT;0;False;1;FLOAT;0.5;False;1;FLOAT;0
 Node;AmplifyShaderEditor.CustomExpressionNode;6;-629.6786,-364.2099;Float;False;float3 p3  = frac(float3(pos.xyx) * hashScale)@$p3 += dot(p3, p3.yzx + 19.19)@$return frac((p3.x + p3.y) * p3.z)@;1;False;2;True;pos;FLOAT2;0,0;In;;Float;True;hashScale;FLOAT;0;In;;Float;Hash12;False;True;0;2;0;FLOAT2;0,0;False;1;FLOAT;0;False;1;FLOAT;0
@@ -273,4 +273,4 @@ WireConnection;10;0;8;8
 WireConnection;10;3;20;0
 WireConnection;0;0;10;0
 ASEEND*/
-//CHKSM=758700682D1AA6773AED163D9B458DEB4BBF994A
+//CHKSM=F9A416583E0B66B2619CB08D440D1F1CBD53AF8E

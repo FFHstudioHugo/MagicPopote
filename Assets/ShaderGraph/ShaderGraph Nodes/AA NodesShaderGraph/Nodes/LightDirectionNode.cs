@@ -18,7 +18,7 @@ float3 _MainLightPosition_ = 0;
 #if SHADER_HINT_NICE_QUALITY
 _MainLightPosition_ = _MainLightPosition;
 #else
-        _MainLightPosition_ = float3(0.02,0.02,0.02);i
+        _MainLightPosition_ = float3(0.02,0.02,0.02);
 #endif
 
 LightDirection = _MainLightPosition_;

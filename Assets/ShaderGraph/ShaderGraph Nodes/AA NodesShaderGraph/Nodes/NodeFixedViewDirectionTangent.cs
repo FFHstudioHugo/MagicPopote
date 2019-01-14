@@ -35,7 +35,7 @@ float3 tanToWorld2 = float3( WorldSpaceTangent.z, WorldSpaceBiTangent.z, WorldSp
 
 float3 tanViewDir =  tanToWorld0 * WorldSpaceViewDirection.x + tanToWorld1 * WorldSpaceViewDirection.y  + tanToWorld2 * WorldSpaceViewDirection.z;
 
-//tanViewDir = normalize(tanViewDir);
+tanViewDir = normalize(tanViewDir);
 
 Out = tanViewDir;
 } 

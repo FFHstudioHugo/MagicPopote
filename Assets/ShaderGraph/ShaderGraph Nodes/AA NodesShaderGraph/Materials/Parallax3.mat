@@ -8,8 +8,8 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Parallax3
-  m_Shader: {fileID: 4800000, guid: 4c8584164351ef947ba7b558f49e1c80, type: 3}
-  m_ShaderKeywords: BOOLEAN_4ECC7053_ON
+  m_Shader: {fileID: 4800000, guid: 352ea47a495769640907559cd9a23ee3, type: 3}
+  m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -31,8 +31,16 @@ Material:
         m_Texture: {fileID: 2800000, guid: 3e2850b4e4c369b44aa399bdd01e629c, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - Texture2D_6528036A:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - Texture2D_72DB18D8:
         m_Texture: {fileID: 2800000, guid: 662d72b6ec210cf4cbeec2b4d3cb8b2a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_7CCB97C9:
+        m_Texture: {fileID: 2800000, guid: 94fdffb4aa86baf409db0f623b2527a3, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_EACF2D48:
@@ -55,19 +63,23 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Subgraph_D13F376_Texture2DE9C0976D:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _texcoord:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Boolean_4ECC7053: 1
+    - Boolean_9A050F50: 0
     - Vector1_2663460B: 8
+    - Vector1_3951DF53: 8
     - Vector1_5AAF7A3C: 4.85
-    - Vector1_5AE600B0: 9.6
+    - Vector1_5AE600B0: 3
     - Vector1_773295: 8
-    - Vector1_8D78AA2C: 0.169
+    - Vector1_8D78AA2C: 0.05
     - Vector1_9A37879C: 0.0466
-    - Vector1_9BE1BF07: 10
     - Vector1_AAA517B4: 1
     - Vector1_DB2E7D34: 0
     - _Strength: 0.05
