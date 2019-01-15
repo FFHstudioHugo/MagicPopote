@@ -26,17 +26,17 @@ QualitySettings:
     softVegetation: 1
     realtimeReflectionProbes: 0
     billboardsFaceCameraPosition: 1
-    vSyncCount: 2
+    vSyncCount: 0
     lodBias: 3
     maximumLODLevel: 0
-    streamingMipmapsActive: 0
+    streamingMipmapsActive: 1
     streamingMipmapsAddAllCameras: 1
     streamingMipmapsMemoryBudget: 512
     streamingMipmapsRenderersPerFrame: 512
     streamingMipmapsMaxLevelReduction: 2
     streamingMipmapsMaxFileIORequests: 512
     particleRaycastBudget: 512
-    asyncUploadTimeSlice: 1
+    asyncUploadTimeSlice: 4
     asyncUploadBufferSize: 16
     asyncUploadPersistentBuffer: 0
     resolutionScalingFixedDPIFactor: 1
