@@ -48,6 +48,6 @@ Material:
     - _Float1: 20000
     - _Metallic: 0.1
     - _Smoothness: 0.5
-    - _Tiling: 0.87
+    - _Tiling: 1.19
     - __dirty: 0
     m_Colors: []

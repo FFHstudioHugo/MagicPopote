@@ -27,11 +27,11 @@ MonoBehaviour:
   m_AdditionalLightShadowsSupported: 1
   m_AdditionalLightsShadowmapResolution: 256
   m_ShadowDistance: 125
-  m_ShadowCascades: 2
+  m_ShadowCascades: 1
   m_Cascade2Split: 0.20253244
   m_Cascade4Split: {x: 0.05133931, y: 0.18418767, z: 0.42024902}
-  m_ShadowDepthBias: 0.08
-  m_ShadowNormalBias: 1
+  m_ShadowDepthBias: 0.1
+  m_ShadowNormalBias: 1.3
   m_SoftShadowsSupported: 1
   m_SupportsDynamicBatching: 1
   m_MixedLightingSupported: 1
@@ -41,4 +41,4 @@ MonoBehaviour:
   m_MaxPixelLights: 4
   m_ShadowAtlasResolution: 1024
   m_ResourcesAsset: {fileID: 11400000, guid: aac5a08c32552a14c89394b703f1978a, type: 2}
-  m_ShaderVariantLogLevel: 0
+  m_ShaderVariantLogLevel: 1
