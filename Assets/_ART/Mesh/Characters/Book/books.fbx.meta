@@ -1,0 +1,396 @@
+fileFormatVersion: 2
+guid: 868ce1c19495a91458fd9c1985a9cca5
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Book
+    100002: BookCover
+    100004: //RootNode
+    100006: Faces
+    100008: Feuilles5
+    100010: Feuilles6
+    100012: Feuilles7
+    100014: joint1
+    100016: joint18
+    100018: joint19
+    100020: joint19 1
+    100022: joint19 2
+    100024: joint2
+    100026: joint20
+    100028: joint21
+    100030: joint23
+    100032: joint23 1
+    100034: joint23 2
+    100036: joint26
+    100038: joint27
+    100040: joint28
+    100042: joint29
+    100044: joint3
+    100046: joint30
+    100048: joint31
+    100050: joint32
+    100052: joint33
+    100054: joint34
+    100056: joint4
+    100058: joint5
+    100060: LEye
+    100062: MagicBook_Root
+    100064: MagicBook_Transform
+    100066: MainPage
+    100068: Mustach
+    100070: Page
+    100072: PageL
+    100074: Pages
+    100076: pCube1
+    100078: pCube2
+    100080: pCube5
+    100082: pCube6
+    100084: polySurface3
+    100086: polySurface7
+    100088: pSphere1
+    100090: pSphere2
+    100092: pTorus10
+    100094: REye
+    400000: Book
+    400002: BookCover
+    400004: //RootNode
+    400006: Faces
+    400008: Feuilles5
+    400010: Feuilles6
+    400012: Feuilles7
+    400014: joint1
+    400016: joint18
+    400018: joint19
+    400020: joint19 1
+    400022: joint19 2
+    400024: joint2
+    400026: joint20
+    400028: joint21
+    400030: joint23
+    400032: joint23 1
+    400034: joint23 2
+    400036: joint26
+    400038: joint27
+    400040: joint28
+    400042: joint29
+    400044: joint3
+    400046: joint30
+    400048: joint31
+    400050: joint32
+    400052: joint33
+    400054: joint34
+    400056: joint4
+    400058: joint5
+    400060: LEye
+    400062: MagicBook_Root
+    400064: MagicBook_Transform
+    400066: MainPage
+    400068: Mustach
+    400070: Page
+    400072: PageL
+    400074: Pages
+    400076: pCube1
+    400078: pCube2
+    400080: pCube5
+    400082: pCube6
+    400084: polySurface3
+    400086: polySurface7
+    400088: pSphere1
+    400090: pSphere2
+    400092: pTorus10
+    400094: REye
+    2100000: Pages1
+    2100002: lambert1
+    2100004: Lunettes
+    4300000: Feuilles5
+    4300002: Page
+    4300004: PageL
+    4300006: BookCover
+    4300008: polySurface3
+    4300010: Feuilles6
+    4300012: Feuilles7
+    4300014: pCube5
+    4300016: pCube6
+    4300018: pCube2
+    4300020: pCube1
+    4300022: pTorus10
+    4300024: polySurface7
+    4300026: pSphere2
+    4300028: pSphere1
+    7400000: PageToBack
+    7400002: PageToNext
+    7400004: iddle
+    7400006: Open
+    7400008: Close
+    7400010: Talk
+    9500000: //RootNode
+    13700000: BookCover
+    13700002: Feuilles5
+    13700004: Feuilles6
+    13700006: Feuilles7
+    13700008: Page
+    13700010: PageL
+    13700012: pCube1
+    13700014: pCube2
+    13700016: pCube5
+    13700018: pCube6
+    13700020: polySurface3
+    13700022: polySurface7
+    13700024: pSphere1
+    13700026: pSphere2
+    13700028: pTorus10
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: PageToBack
+      takeName: Take 001
+      firstFrame: 77
+      lastFrame: 121
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: PageToNext
+      takeName: Take 001
+      firstFrame: 119
+      lastFrame: 174
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: iddle
+      takeName: Take 001
+      firstFrame: 286
+      lastFrame: 392
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Open
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Close
+      takeName: Take 001
+      firstFrame: 172
+      lastFrame: 199
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Talk
+      takeName: Take 001
+      firstFrame: 312
+      lastFrame: 404
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 4
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 0
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.04
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 1
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 2
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
