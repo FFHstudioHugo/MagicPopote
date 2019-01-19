@@ -3102,6 +3102,7 @@ namespace AmplifyShaderEditor
 			m_genericMessageUI.CleanUpMessageStack();
 			m_nodeParametersWindow.OnLostFocus();
 			m_paletteWindow.OnLostFocus();
+			m_contextMenu.ResetShortcutKeyStates();
 		}
 
 		void CopyToClipboard()

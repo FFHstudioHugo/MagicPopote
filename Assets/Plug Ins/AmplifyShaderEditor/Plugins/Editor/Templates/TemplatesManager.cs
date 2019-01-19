@@ -416,6 +416,7 @@ namespace AmplifyShaderEditor
 			{ "c71b220b631b6344493ea3cf87110c93","Legacy/Post Process" },
 			{ "6e114a916ca3e4b4bb51972669d463bf","Legacy/Default Unlit" },
 			{ "5056123faa0c79b47ab6ad7e8bf059a4","Legacy/Default UI" },
+			{ "899e609c083c74c4ca567477c39edef0","Legacy/Unlit Lightmap" },
 			{ "0f8ba0101102bb14ebf021ddadce9b49","Legacy/Default Sprites" },
 			{ "0b6a9f8b4f707c74ca64c0be8e590de0","Legacy/Particles Alpha Blended" },
 			{ "e1de45c0d41f68c41b2cc20c8b9c05ef","Legacy/Multi Pass Unlit" },
@@ -519,7 +520,7 @@ namespace AmplifyShaderEditor
 			int fixedPriority = 85;
 			for( int i = 0; i < m_sortedTemplates.Count; i++ )
 			{
-				fileContents.AppendFormat( "\t\t[ MenuItem( \"Assets/Create/Amplify Shader/{0}\", false, {1} )]\n", m_sortedTemplates[ i ].Name, fixedPriority );
+				fileContents.AppendFormat( "\t\t[MenuItem( \"Assets/Create/Amplify Shader/{0}\", false, {1} )]\n", m_sortedTemplates[ i ].Name, fixedPriority );
 				fileContents.AppendFormat( "\t\tpublic static void ApplyTemplate{0}()\n", i );
 				fileContents.Append( "\t\t{\n" );
 				fileContents.AppendFormat( "\t\t\tAmplifyShaderEditorWindow.CreateNewTemplateShader( \"{0}\" );\n", m_sortedTemplates[ i ].GUID );

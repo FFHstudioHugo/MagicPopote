@@ -1,4 +1,15 @@
 Release Notes:
+v1.6.2 rev 00 / v1.6.1 rev 05:
+* New Template:
+    * Unlit Lightmap
+
+* New Sample:
+    * Unlit With Lightmap
+
+* Fixes:
+    * Fixed issue on 'Depth Fade' node with custom Vertex Positions
+    * Fixed issue with using the X,Y,Z,W output ports on 'Object To World' node
+
 v1.6.1 rev 04:
 * New Node:
     * Linear Depth

@@ -263,6 +263,14 @@ namespace AmplifyShaderEditor
 			}
 		}
 
+		public void ResetShortcutKeyStates()
+		{
+			foreach( KeyValuePair<KeyCode, ShortcutKeyData> kvp in m_shortcutTypes )
+			{
+				kvp.Value.IsPressed = false;
+			}
+		}
+
 		public ParentNode CreateNodeFromCastType( System.Type type )
 		{
 			if( m_castTypes.ContainsKey( type ) )

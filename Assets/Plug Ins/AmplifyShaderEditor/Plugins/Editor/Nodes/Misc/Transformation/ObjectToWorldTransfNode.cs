@@ -17,12 +17,13 @@ namespace AmplifyShaderEditor
 
 		public override string GenerateShaderForOutput( int outputId, ref MasterNodeDataCollector dataCollector, bool ignoreLocalvar )
 		{
-			string result = base.GenerateShaderForOutput( outputId, ref dataCollector, ignoreLocalvar );
+			string result = base.GenerateShaderForOutput( 0, ref dataCollector, ignoreLocalvar );
 			if( dataCollector.IsTemplate && dataCollector.TemplateDataCollectorInstance.CurrentSRPType == TemplateSRPType.HD && !string.IsNullOrEmpty( m_matrixHDName ) )
 			{
-				dataCollector.AddLocalVariable( UniqueId, string.Format("({0}).xyz",result), string.Format( "GetAbsolutePositionWS(({0}).xyz);", result ));
+				dataCollector.AddLocalVariable( UniqueId, string.Format( "{0}.xyz", result ), string.Format( "GetAbsolutePositionWS(({0}).xyz);", result ) );
 			}
-			return result;
+
+			return GetOutputVectorItem( 0, outputId, result );
 		}
 	}
 }
