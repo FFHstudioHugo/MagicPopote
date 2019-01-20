@@ -24,7 +24,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
-        m_Texture: {fileID: 2800000, guid: ef16018cfee84d645b9216c5e6dfebc1, type: 3}
+        m_Texture: {fileID: 2800000, guid: 78e71b9e097c52e4cba00d81ed4dbe74, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -121,7 +121,7 @@ Material:
     - WindSpeed: 0.3
     - _AO: 0
     - _ASEOutlineWidth: 0
-    - _AmbientOcclusion: 0.445
+    - _AmbientOcclusion: 0.651
     - _BendingInfluence: 0.126
     - _BendingRadius: 1.5
     - _BendingStiffness: 1
@@ -193,8 +193,8 @@ Material:
     - WindDirection: {r: 0, g: 0, b: 1, a: 0}
     - _ASEOutlineColor: {r: 0, g: 0, b: 0, a: 0}
     - _Color: {r: 0.232, g: 0.5, b: 0, a: 1}
-    - _ColorBottom: {r: 0.25507852, g: 0.38679233, b: 0.12953883, a: 1}
-    - _ColorTop: {r: 0.6907453, g: 0.9339623, b: 0.45376456, a: 1}
+    - _ColorBottom: {r: 0.2702609, g: 0.2735849, b: 0.26713243, a: 1}
+    - _ColorTop: {r: 0.4647436, g: 0.6320754, b: 0.30113026, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _FlatColor: {r: 1, g: 0, b: 0, a: 0}
     - _GlobalColor: {r: 0, g: 0, b: 0, a: 0}

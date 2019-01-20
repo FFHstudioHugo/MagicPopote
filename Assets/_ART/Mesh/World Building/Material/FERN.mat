@@ -49,7 +49,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _AlphaClip: 0
-    - _AmbientOcclusion: 0.158
+    - _AmbientOcclusion: 0.587
     - _BendingInfluence: 0.28
     - _BendingTint: -0.1
     - _Blend: 0
@@ -58,7 +58,7 @@ Material:
     - _Cull: 2
     - _Cutoff: 0.5
     - _DstBlend: 0
-    - _FlatLighting: 0.183
+    - _FlatLighting: 0.833
     - _GlobalWindMotion: 1
     - _GlossMapScale: 1
     - _Glossiness: 0.5
@@ -73,7 +73,7 @@ Material:
     - _PigmentMapHeight: 0
     - _PigmentMapInfluence: 0
     - _ReceiveShadows: 1
-    - _Smoothness: 0.28
+    - _Smoothness: 0.026
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
@@ -87,7 +87,7 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 0}
+    - _Color: {r: 0.6004158, g: 0.6132076, b: 0.53511035, a: 0}
     - _ColorBottom: {r: 0.41509432, g: 0.3684941, b: 0.20950516, a: 1}
     - _ColorTop: {r: 0.8490566, g: 0.78898185, b: 0.78898185, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
