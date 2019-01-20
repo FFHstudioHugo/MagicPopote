@@ -13,7 +13,7 @@ Material:
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 2450
+  m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
   m_SavedProperties:
@@ -168,16 +168,17 @@ Material:
     - _WindWeight: 1
     - _ZWrite: 1
     - __dirty: 0
+    - _diffusion: 1
     - _node_3730: 0
     m_Colors:
     - _Color: {r: 0, g: 0, b: 1, a: 1}
     - _Color1: {r: 0, g: 0, b: 0, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _HueVariation: {r: 0.18867892, g: 0.18867892, b: 0.18867892, a: 0.14509805}
+    - _HueVariation: {r: 0.1886788, g: 0.1886788, b: 0.1886788, a: 0.14509805}
     - _SpecColor: {r: 0, g: 0, b: 0, a: 0}
     - _Transmisioncolor: {r: 1, g: 1, b: 1, a: 0.122}
     - _TransmissionColor: {r: 0.40587386, g: 0.49056596, b: 0.3725524, a: 0.191}
     - _VariationColor: {r: 1, g: 0.5, b: 0, a: 0.297}
     - _Variationcolor: {r: 1, g: 0.8896551, b: 0, a: 0}
     - _WindDirection: {r: 0.93536794, g: 0, b: 0.35367614, a: 0}
-    - _mAINcoLOR: {r: 0, g: 0.462264, b: 0.09245277, a: 0}
+    - _mAINcoLOR: {r: 0.27100384, g: 0.5471698, b: 0.3201, a: 0}

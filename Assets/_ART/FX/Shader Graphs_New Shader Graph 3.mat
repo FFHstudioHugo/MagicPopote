@@ -14,11 +14,13 @@ Material:
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
+  stringTagMap:
+    MotionVector: User
+  disabledShaderPasses:
+  - MOTIONVECTORS
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs: []
     m_Floats: []
     m_Colors:
-    - _MainColor: {r: 1.6055588, g: 0, b: 0.016812135, a: 0.8117647}
+    - _MainColor: {r: 24.251463, g: 0, b: 0.38090655, a: 0.8117647}

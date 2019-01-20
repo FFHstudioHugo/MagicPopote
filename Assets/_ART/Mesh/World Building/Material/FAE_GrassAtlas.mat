@@ -11,7 +11,7 @@ Material:
   m_Shader: {fileID: 4800000, guid: 1e36dfca605fba6499e6817389a06b01, type: 3}
   m_ShaderKeywords: GEOM_TYPE_LEAF _ALPHATEST_ON
   m_LightmapFlags: 4
-  m_EnableInstancingVariants: 1
+  m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
@@ -24,7 +24,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: ef16018cfee84d645b9216c5e6dfebc1, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -121,7 +121,7 @@ Material:
     - WindSpeed: 0.3
     - _AO: 0
     - _ASEOutlineWidth: 0
-    - _AmbientOcclusion: 1
+    - _AmbientOcclusion: 0.445
     - _BendingInfluence: 0.126
     - _BendingRadius: 1.5
     - _BendingStiffness: 1
@@ -170,8 +170,8 @@ Material:
     - _TerrainOffsetX: 394.7
     - _TerrainOffsetY: 250
     - _TerrainSize: 500
-    - _TransmissionAmount: 5
-    - _TransmissionSize: 7.7
+    - _TransmissionAmount: 3.17
+    - _TransmissionSize: 10.9
     - _Transmissionsize: 0
     - _UVSec: 0
     - _Uselightcolor: 0
@@ -187,13 +187,14 @@ Material:
     - _Windweight: 4.15
     - _ZWrite: 1
     - __dirty: 0
+    - _diff: 2
     m_Colors:
     - ObstaclePosition: {r: 0, g: 0, b: 0, a: 0}
     - WindDirection: {r: 0, g: 0, b: 1, a: 0}
     - _ASEOutlineColor: {r: 0, g: 0, b: 0, a: 0}
     - _Color: {r: 0.232, g: 0.5, b: 0, a: 1}
-    - _ColorBottom: {r: 0.25507867, g: 0.38679248, b: 0.129539, a: 1}
-    - _ColorTop: {r: 0.42481756, g: 0.5754717, b: 0.2741634, a: 1}
+    - _ColorBottom: {r: 0.25507852, g: 0.38679233, b: 0.12953883, a: 1}
+    - _ColorTop: {r: 0.6907453, g: 0.9339623, b: 0.45376456, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _FlatColor: {r: 1, g: 0, b: 0, a: 0}
     - _GlobalColor: {r: 0, g: 0, b: 0, a: 0}
