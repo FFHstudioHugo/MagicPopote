@@ -14,8 +14,10 @@ Material:
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
+  stringTagMap:
+    MotionVector: User
+  disabledShaderPasses:
+  - MOTIONVECTORS
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -74,7 +76,7 @@ Material:
     - Vector1_70EA2128: 4
     - Vector1_72DFFB2: 1.341
     - Vector1_C8CE08AF: 0.5
-    - Vector1_E426EC9A: 0.8
+    - Vector1_E426EC9A: 0.31
     - _Glossiness: 0
     - _Metallic: 0
     - _UseAoMap: 0

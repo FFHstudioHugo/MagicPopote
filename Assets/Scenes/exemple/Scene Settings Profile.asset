@@ -20,6 +20,8 @@ MonoBehaviour:
   - {fileID: 114010079526561896}
   - {fileID: 114530909719682598}
   - {fileID: 114655691889463150}
+  - {fileID: 114197528659505120}
+  - {fileID: 114942840140700808}
 --- !u!114 &114010079526561896
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -40,6 +42,27 @@ MonoBehaviour:
   sliceDistributionUniformity:
     m_OverrideState: 1
     m_Value: 0.5
+    min: 0
+    max: 1
+--- !u!114 &114197528659505120
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32b6af8f7ad32324cb6941c3290e5895, type: 3}
+  m_Name: MicroShadowing
+  m_EditorClassIdentifier: 
+  active: 0
+  enable:
+    m_OverrideState: 1
+    m_Value: 1
+  opacity:
+    m_OverrideState: 1
+    m_Value: 0.285
     min: 0
     max: 1
 --- !u!114 &114216863880758132
@@ -129,11 +152,11 @@ MonoBehaviour:
   active: 1
   indirectSpecularIntensity:
     m_OverrideState: 1
-    m_Value: 0.95
+    m_Value: 1.01
     min: 0
   indirectDiffuseIntensity:
     m_OverrideState: 1
-    m_Value: 0.52
+    m_Value: 0.74
     min: 0
 --- !u!114 &114632913942979750
 MonoBehaviour:
@@ -224,22 +247,22 @@ MonoBehaviour:
   active: 1
   depthBufferThickness:
     m_OverrideState: 1
-    m_Value: 0.14
+    m_Value: 0.58
     min: 0
     max: 1
   screenFadeDistance:
     m_OverrideState: 1
-    m_Value: 0.31
+    m_Value: 0.3
     min: 0
     max: 1
   minSmoothness:
     m_OverrideState: 1
-    m_Value: 0.05
+    m_Value: 0.443
     min: 0
     max: 1
   smoothnessFadeStart:
     m_OverrideState: 1
-    m_Value: 0.32
+    m_Value: 0.691
     min: 0
     max: 1
   reflectSky:
@@ -323,3 +346,47 @@ MonoBehaviour:
   enableSunDisk:
     m_OverrideState: 1
     m_Value: 0
+--- !u!114 &114942840140700808
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56b145d2b9ee1ac4f846968484e7485a, type: 3}
+  m_Name: ContactShadows
+  m_EditorClassIdentifier: 
+  active: 1
+  enable:
+    m_OverrideState: 1
+    m_Value: 1
+  length:
+    m_OverrideState: 1
+    m_Value: 0.15
+    min: 0
+    max: 1
+  opacity:
+    m_OverrideState: 1
+    m_Value: 0.785
+    min: 0
+    max: 1
+  distanceScaleFactor:
+    m_OverrideState: 1
+    m_Value: 0.5
+    min: 0
+    max: 1
+  maxDistance:
+    m_OverrideState: 1
+    m_Value: 42
+    min: 0
+  fadeDistance:
+    m_OverrideState: 1
+    m_Value: 5
+    min: 0
+  sampleCount:
+    m_OverrideState: 1
+    m_Value: 5
+    min: 4
+    max: 64

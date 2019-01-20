@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: Barrel_Glass_Mat
   m_Shader: {fileID: 4800000, guid: 6e4ae4064600d784cac1e41a9e6f2e59, type: 3}
-  m_ShaderKeywords: _BLENDMODE_ALPHA _BLENDMODE_PRESERVE_SPECULAR_LIGHTING _EMISSION
+  m_ShaderKeywords: _BLENDMODE_ADD _BLENDMODE_PRESERVE_SPECULAR_LIGHTING _EMISSION
     _ENABLE_FOG_ON_TRANSPARENT _NORMALMAP_TANGENT_SPACE _RECEIVE_SHADOWS_OFF _SPECULAR_SETUP
     _SURFACE_TYPE_TRANSPARENT
   m_LightmapFlags: 2
@@ -144,7 +144,7 @@ Material:
     - _AlphaCutoffShadow: 0.5
     - _Anisotropy: 0
     - _Blend: 0
-    - _BlendMode: 0
+    - _BlendMode: 1
     - _BumpScale: 1
     - _CoatMask: 0
     - _Cull: 2
@@ -176,7 +176,7 @@ Material:
     - _DoubleSidedEnable: 0
     - _DoubleSidedNormalMode: 1
     - _Drag: 1
-    - _DstBlend: 10
+    - _DstBlend: 1
     - _EmissiveColorMode: 1
     - _EnableBlendModePreserveSpecularLighting: 1
     - _EnableFogOnTransparent: 1
@@ -256,8 +256,8 @@ Material:
     - _ZTestModeDistortion: 4
     - _ZWrite: 0
     m_Colors:
-    - _BaseColor: {r: 0.990566, g: 0, b: 0, a: 0.8392157}
-    - _Color: {r: 0.99056596, g: 0, b: 0, a: 0.8392157}
+    - _BaseColor: {r: 0.6320754, g: 0.15801886, b: 0.15801886, a: 0.8392157}
+    - _Color: {r: 0.6320754, g: 0.15801883, b: 0.15801883, a: 0.8392157}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
     - _EmissiveColor: {r: 0.6059162, g: 0.15691057, b: 0, a: 0.37254903}

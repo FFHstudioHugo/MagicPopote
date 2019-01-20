@@ -36,7 +36,7 @@ MonoBehaviour:
     enableMotionVectors: 1
     enableObjectMotionVectors: 1
     enableDecals: 0
-    enableRoughRefraction: 1
+    enableRoughRefraction: 0
     enableTransparentPostpass: 1
     enableDistortion: 0
     enablePostprocess: 1
@@ -46,10 +46,10 @@ MonoBehaviour:
     enableMSAA: 0
     enableAsyncCompute: 1
     runLightListAsync: 1
-    runSSRAsync: 0
-    runSSAOAsync: 1
-    runContactShadowsAsync: 0
-    runVolumeVoxelizationAsync: 0
+    runSSRAsync: 1
+    runSSAOAsync: 0
+    runContactShadowsAsync: 1
+    runVolumeVoxelizationAsync: 1
     lightLoopSettings:
       overrides: 0
       enableTileAndCluster: 1
@@ -148,7 +148,7 @@ MonoBehaviour:
       enableBigTilePrepass: 1
       isFptlEnabled: 1
   renderPipelineSettings:
-    supportShadowMask: 1
+    supportShadowMask: 0
     supportSSR: 1
     supportSSAO: 1
     supportSubsurfaceScattering: 1
@@ -156,14 +156,14 @@ MonoBehaviour:
     supportVolumetrics: 1
     increaseResolutionOfVolumetrics: 0
     supportLightLayers: 0
-    supportDistortion: 1
+    supportDistortion: 0
     supportTransparentBackface: 1
     supportTransparentDepthPrepass: 1
     supportTransparentDepthPostpass: 1
     supportedLitShaderMode: 3
-    supportDecals: 1
+    supportDecals: 0
     msaaSampleCount: 1
-    supportMotionVectors: 0
+    supportMotionVectors: 1
     supportRuntimeDebugDisplay: 0
     supportDitheringCrossFade: 1
     supportRayTracing: 0
@@ -189,8 +189,8 @@ MonoBehaviour:
       maxEnvLightsOnScreen: 64
       maxDecalsOnScreen: 512
     hdShadowInitParams:
-      shadowAtlasResolution: 2048
-      maxShadowRequests: 128
+      shadowAtlasResolution: 1024
+      maxShadowRequests: 32
       shadowMapsDepthBits: 32
       useDynamicViewportRescale: 1
       shadowQuality: 0
