@@ -36,9 +36,9 @@ MonoBehaviour:
     enableMotionVectors: 1
     enableObjectMotionVectors: 1
     enableDecals: 0
-    enableRoughRefraction: 0
+    enableRoughRefraction: 1
     enableTransparentPostpass: 1
-    enableDistortion: 0
+    enableDistortion: 1
     enablePostprocess: 1
     enableOpaqueObjects: 1
     enableTransparentObjects: 1
@@ -156,7 +156,7 @@ MonoBehaviour:
     supportVolumetrics: 1
     increaseResolutionOfVolumetrics: 0
     supportLightLayers: 0
-    supportDistortion: 0
+    supportDistortion: 1
     supportTransparentBackface: 1
     supportTransparentDepthPrepass: 1
     supportTransparentDepthPostpass: 1

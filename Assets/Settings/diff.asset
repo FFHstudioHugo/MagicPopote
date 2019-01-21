@@ -34,9 +34,9 @@ MonoBehaviour:
     transmissionTint: {r: 1, g: 1, b: 1, a: 1}
     texturingMode: 0
     transmissionMode: 1
-    thicknessRemap: {x: 0, y: 5}
+    thicknessRemap: {x: 0, y: 50}
     worldScale: 1
-    ior: 1.4
+    ior: 1.736
   - name: Diffusion Profile 4
     scatteringDistance: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     transmissionTint: {r: 1, g: 1, b: 1, a: 1}

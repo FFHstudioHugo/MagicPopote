@@ -39,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.5546733, g: 0.88176143, b: 1.1235993, a: 1}
+  m_IndirectSpecularColor: {r: 0.54274476, g: 0.8745724, b: 1.1450384, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -13980,7 +13980,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 2207ecb0d13ab0c41a587ef4022ef118, type: 2}
+      objectReference: {fileID: 2100000, guid: 3bd7fe7a7a502394dbae640070bdab3b, type: 2}
     - target: {fileID: 1480019902602721553, guid: dac2d1ba8b37d7d4cae2b1f5c79cb74d,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -14016,6 +14016,16 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 1480019902600718303, guid: dac2d1ba8b37d7d4cae2b1f5c79cb74d,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3bd7fe7a7a502394dbae640070bdab3b, type: 2}
+    - target: {fileID: 1480019902600718303, guid: dac2d1ba8b37d7d4cae2b1f5c79cb74d,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3bd7fe7a7a502394dbae640070bdab3b, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dac2d1ba8b37d7d4cae2b1f5c79cb74d, type: 3}
 --- !u!4 &311092469 stripped
@@ -33586,8 +33596,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8bf9aeca1f28c94d85d6ecb490bad11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SW: 735
-  SH: 416
+  SW: 619
+  SH: 338
 --- !u!114 &824373668
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46503,6 +46513,11 @@ PrefabInstance:
     - target: {fileID: 23736955904343332, guid: b8dc2f589e481e248b2c2d1f69cf298e,
         type: 3}
       propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 23736955904343332, guid: b8dc2f589e481e248b2c2d1f69cf298e,
+        type: 3}
+      propertyPath: m_IgnoreNormalsForChartDetection
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -76087,7 +76102,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1882019631}
-  m_LocalRotation: {x: 0.03821732, y: -0.000000017074143, z: -0.000000016287263, w: 0.9992695}
+  m_LocalRotation: {x: 0.03821732, y: 0.000000018371807, z: -0.000000017642902, w: 0.9992695}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -79522,7 +79537,7 @@ MonoBehaviour:
     orthographicSize: 5
     renderingPath: 0
     shadowDistance: 100
-  m_Multiplier: 1.93
+  m_Multiplier: 1
   m_Weight: 1
   m_Mode: 2
   m_RefreshMode: 0
@@ -103941,6 +103956,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 1789787479693448578, guid: f9dee39d229a4bb4087224760ba2d338,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: efcc3b1d9c6b8da409605cd88678c933, type: 2}
     m_RemovedComponents:
     - {fileID: 4511464278929251986, guid: f9dee39d229a4bb4087224760ba2d338, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f9dee39d229a4bb4087224760ba2d338, type: 3}

@@ -166,7 +166,7 @@ MonoBehaviour:
     value: 0
   postExposure:
     overrideState: 1
-    value: -0.59
+    value: -0.26
   contrast:
     overrideState: 1
     value: 6
@@ -199,10 +199,10 @@ MonoBehaviour:
     value: 100
   lift:
     overrideState: 1
-    value: {x: 1, y: 1, z: 1, w: -0.14866199}
+    value: {x: 1, y: 1, z: 1, w: -0.4160417}
   gamma:
     overrideState: 1
-    value: {x: 1, y: 1, z: 1, w: -0.3072349}
+    value: {x: 1, y: 1, z: 1, w: -0.29411757}
   gain:
     overrideState: 1
     value: {x: 1, y: 1, z: 1, w: 0.34687802}
@@ -1533,13 +1533,13 @@ MonoBehaviour:
     value: 3.57
   aperture:
     overrideState: 1
-    value: 11.9
+    value: 15.4
   focalLength:
     overrideState: 1
     value: 80
   kernelSize:
     overrideState: 1
-    value: 1
+    value: 0
 --- !u!114 &114988120114939094
 MonoBehaviour:
   m_ObjectHideFlags: 3

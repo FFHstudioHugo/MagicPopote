@@ -46,7 +46,7 @@ Material:
     m_Floats:
     - _Float0: 2.6
     - _Float1: 20000
-    - _Metallic: 0.1
+    - _Metallic: 0
     - _Smoothness: 0.5
     - _Tiling: 1.19
     - __dirty: 0

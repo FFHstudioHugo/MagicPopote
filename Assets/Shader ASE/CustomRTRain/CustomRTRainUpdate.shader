@@ -245,8 +245,8 @@ Shader "ASESampleShaders/CustomRTRainUpdate"
 	
 }
 /*ASEBEGIN
-Version=16105
-7.2;6.4;1461;829;1805.306;342.66;1.9;True;False
+Version=16200
+542.4;111.2;878;670;1251.456;191.61;1.9;True;False
 Node;AmplifyShaderEditor.CommentaryNode;5;-778.9706,-438.6071;Float;False;1110.81;785.8901;Rain ripple effect based on https://www.shadertoy.com/view/ldfyzl;10;10;16;15;12;19;13;7;6;20;8;;1,1,1,1;0;0
 Node;AmplifyShaderEditor.RangedFloatNode;19;-688.2086,4.02002;Float;False;Property;_TimeScale;Time Scale;4;0;Create;True;0;0;False;0;1;3;0;0;0;1;FLOAT;0
 Node;AmplifyShaderEditor.SimpleTimeNode;16;-532.8568,0.7747045;Float;False;1;0;FLOAT;1;False;1;FLOAT;0
@@ -273,4 +273,4 @@ WireConnection;10;0;8;8
 WireConnection;10;3;20;0
 WireConnection;0;0;10;0
 ASEEND*/
-//CHKSM=F9A416583E0B66B2619CB08D440D1F1CBD53AF8E
+//CHKSM=2E437056383659B90DF536DB2AD1421CF1B95DD2
