@@ -152,11 +152,11 @@ MonoBehaviour:
   active: 1
   indirectSpecularIntensity:
     m_OverrideState: 1
-    m_Value: 1.01
+    m_Value: 1
     min: 0
   indirectDiffuseIntensity:
     m_OverrideState: 1
-    m_Value: 0.74
+    m_Value: 0.31
     min: 0
 --- !u!114 &114632913942979750
 MonoBehaviour:
