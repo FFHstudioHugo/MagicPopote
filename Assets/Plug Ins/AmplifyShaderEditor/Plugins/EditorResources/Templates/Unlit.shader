@@ -7,11 +7,19 @@ Shader /*ase_name*/ "Hidden/Templates/Unlit" /*end*/
 	
 	SubShader
 	{
+		/*ase_subshader_options:Name=Additional Options
+			Option:Vertex Position,InvertActionOnDeselection:Absolute,Relative:Relative
+				Absolute:SetDefine:ASE_ABSOLUTE_VERTEX_POS 1
+				Absolute:SetPortName:1,Vertex Position
+				Relative:SetPortName:1,Vertex Offset
+		*/
+		
 		Tags { "RenderType"="Opaque" }
 		LOD 100
+		
 		/*ase_all_modules*/
+		
 		/*ase_pass*/
-
 		Pass
 		{
 			Name "Unlit"
@@ -47,8 +55,12 @@ Shader /*ase_name*/ "Hidden/Templates/Unlit" /*end*/
 				UNITY_TRANSFER_INSTANCE_ID(v, o);
 
 				/*ase_vert_code:v=appdata;o=v2f*/
-				
-				v.vertex.xyz += /*ase_vert_out:Local Vertex;Float3*/ float3(0,0,0) /*end*/;
+				float3 vertexValue = /*ase_vert_out:Vertex Offset;Float3*/ float3(0,0,0) /*end*/;
+				#if ASE_ABSOLUTE_VERTEX_POS
+				v.vertex.xyz = vertexValue;
+				#else
+				v.vertex.xyz += vertexValue;
+				#endif
 				o.vertex = UnityObjectToClipPos(v.vertex);
 				return o;
 			}

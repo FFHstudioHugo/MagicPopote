@@ -49,6 +49,9 @@ namespace AmplifyShaderEditor
 		[SerializeField]
 		TemplateInfoContainer m_fallbackContainer = new TemplateInfoContainer();
 
+		[SerializeField]
+		private CustomTemplatePropertyUIEnum m_customTemplatePropertyUI = CustomTemplatePropertyUIEnum.None;
+
 		public TemplateMultiPass()
 		{
 			m_templateType = TemplateDataType.MultiPass;
@@ -116,6 +119,7 @@ namespace AmplifyShaderEditor
 				m_isValid = false;
 			}
 
+			m_customTemplatePropertyUI = TemplateHelperFunctions.FetchCustomUI( shaderBody );
 			TemplateHelperFunctions.FetchDependencies( m_dependenciesContainer, ref m_shaderBody );
 			if( m_dependenciesContainer.IsValid )
 			{
@@ -123,8 +127,6 @@ namespace AmplifyShaderEditor
 				m_templateProperties.AddId( new TemplateProperty( m_dependenciesContainer.Id, m_dependenciesContainer.Id.Substring( 0, index ), true ) );
 				m_templateIdManager.RegisterId( m_dependenciesContainer.Index, m_dependenciesContainer.Id, m_dependenciesContainer.Id );
 			}
-
-
 
 			TemplateHelperFunctions.FetchCustomInspector( m_customInspectorContainer, ref m_shaderBody );
 			if( m_customInspectorContainer.IsValid )
@@ -158,6 +160,9 @@ namespace AmplifyShaderEditor
 			int firstVisiblePassId = -1;
 			bool foundMainPass = false;
 			bool foundFirstVisible = false;
+
+			m_templateIdManager.RegisterTag( TemplatesManager.TemplatePassesEndTag );
+			m_templateIdManager.RegisterTag( TemplatesManager.TemplateMainPassTag );
 
 			for( int i = 0; i < subShaderCount; i++ )
 			{
@@ -1017,5 +1022,6 @@ namespace AmplifyShaderEditor
 		public TemplateInfoContainer FallbackContainer { get { return m_fallbackContainer; } }
 		public bool IsSinglePass { get { return m_isSinglePass; } }
 		public int MasterNodesRequired { get { return m_masterNodesRequired; } }
+		public CustomTemplatePropertyUIEnum CustomTemplatePropertyUI { get { return m_customTemplatePropertyUI; } }
 	}
 }

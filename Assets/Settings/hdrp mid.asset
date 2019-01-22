@@ -34,9 +34,9 @@ MonoBehaviour:
     enableDepthPrepassWithDeferredRendering: 0
     enableTransparentPrepass: 1
     enableMotionVectors: 1
-    enableObjectMotionVectors: 1
+    enableObjectMotionVectors: 0
     enableDecals: 0
-    enableRoughRefraction: 1
+    enableRoughRefraction: 0
     enableTransparentPostpass: 1
     enableDistortion: 1
     enablePostprocess: 1
@@ -105,7 +105,7 @@ MonoBehaviour:
       isFptlEnabled: 1
   m_RealtimeReflectionFrameSettings:
     overrides: 0
-    enableShadow: 1
+    enableShadow: 0
     enableContactShadows: 0
     enableShadowMask: 0
     enableSSR: 0

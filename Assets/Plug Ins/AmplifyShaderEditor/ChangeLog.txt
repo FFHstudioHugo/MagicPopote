@@ -1,4 +1,20 @@
 Release Notes:
+v1.6.2 rev 01
+* New Template:
+    * HD Lit
+
+* New Sample:
+    * SRP HD Lit Refraction
+
+* Improvements:
+    * Can add options on template which lets users change its behavior when using it on ASE
+    * Added Vertex Position option into Unlit and SRP templates
+        * Specified value on Vertex input port can now be either a relative value or an absolute one
+    * Passes can now be excluded from final shader through Available Passes menu over SubShader Properties
+
+* Fixes:
+    * Fixed issues with Lightweight PBR Shadow Caster on WebGL and Android
+
 v1.6.2 rev 00 / v1.6.1 rev 05:
 * New Template:
     * Unlit Lightmap

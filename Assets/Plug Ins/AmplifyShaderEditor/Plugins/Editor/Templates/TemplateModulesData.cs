@@ -133,7 +133,7 @@ namespace AmplifyShaderEditor
 			}
 		}
 
-		public TemplateModulesData( TemplateIdManager idManager, TemplatePropertyContainer propertyContainer, string uniquePrefix, int offsetIdx, string subBody, bool isSubShader )
+		public TemplateModulesData( TemplateOptionsContainer optionsContainer, TemplateIdManager idManager, TemplatePropertyContainer propertyContainer, string uniquePrefix, int offsetIdx, string subBody, bool isSubShader )
 		{
 			if ( string.IsNullOrEmpty( subBody ) )
 				return;
@@ -150,6 +150,12 @@ namespace AmplifyShaderEditor
 			ConfigureCommonTag( m_inputsVertTag, propertyContainer, idManager, uniquePrefix, offsetIdx, subBody );
 			ConfigureCommonTag( m_inputsFragTag, propertyContainer, idManager, uniquePrefix, offsetIdx, subBody );
 
+			// If Options are enabled then remove them so they won't influence Regex matches
+			if( optionsContainer.Enabled && optionsContainer.EndIndex  > 0 )
+			{
+				offsetIdx += optionsContainer.EndIndex;
+				subBody = subBody.Substring( optionsContainer.EndIndex );
+			}
 			//BlEND MODE
 			{
 				Match blendModeMatch = Regex.Match( subBody, TemplateHelperFunctions.BlendWholeWordPattern );
@@ -336,6 +342,7 @@ namespace AmplifyShaderEditor
 						}
 					}
 				}
+				m_depthData.SetDataCheck();
 			}
 			//TAGS
 			{

@@ -441,8 +441,10 @@ namespace AmplifyShaderEditor
 							}
 						}
 					}
-				}
 
+					m_depthData.SetDataCheck(); 
+				}
+				
 				//TAGS
 				{
 					int tagsIdx = subBody.IndexOf( "Tags" );

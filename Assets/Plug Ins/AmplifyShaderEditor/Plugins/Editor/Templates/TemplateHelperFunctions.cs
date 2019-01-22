@@ -9,6 +9,12 @@ using System.Collections.Generic;
 
 namespace AmplifyShaderEditor
 {
+	public enum CustomTemplatePropertyUIEnum
+	{
+		None,
+		HDPBR
+	}
+
 	public enum TemplateSemantics
 	{
 		NONE,
@@ -216,6 +222,11 @@ namespace AmplifyShaderEditor
 			OffsetStartIndex = -1;
 			OffsetFactorInlineValue = string.Empty;
 			OffsetUnitsInlineValue = string.Empty;
+		}
+
+		public void SetDataCheck()
+		{
+			DataCheck = ( ValidZWrite || ValidZTest || ValidOffset )?TemplateDataCheck.Valid:TemplateDataCheck.Invalid;
 		}
 	}
 
@@ -447,6 +458,12 @@ namespace AmplifyShaderEditor
 		public static string[] VectorSwizzle = { "x", "y", "z", "w" };
 		public static string[] ColorSwizzle = { "r", "g", "b", "a" };
 
+		public static readonly Dictionary<string, CustomTemplatePropertyUIEnum> CustomTemplatePropertyUI = new Dictionary<string, CustomTemplatePropertyUIEnum>
+		{
+			{ "None", CustomTemplatePropertyUIEnum.None},
+			{ "HDPBR", CustomTemplatePropertyUIEnum.HDPBR}
+		};
+
 		public static readonly Dictionary<string, InvisibleOptionsEnum> InvisibleOptions = new Dictionary<string, InvisibleOptionsEnum>()
 		{
 			{ "SyncP", InvisibleOptionsEnum.SyncProperties }
@@ -567,6 +584,10 @@ namespace AmplifyShaderEditor
 			{"uv1"  ,TemplateInfoOnSematics.TEXTURE_COORDINATES1 },
 			{"uv2"  ,TemplateInfoOnSematics.TEXTURE_COORDINATES2 },
 			{"uv3"  ,TemplateInfoOnSematics.TEXTURE_COORDINATES3 },
+			{"uv4"  ,TemplateInfoOnSematics.TEXTURE_COORDINATES4 },
+			{"uv5"  ,TemplateInfoOnSematics.TEXTURE_COORDINATES5 },
+			{"uv6"  ,TemplateInfoOnSematics.TEXTURE_COORDINATES6 },
+			{"uv7"  ,TemplateInfoOnSematics.TEXTURE_COORDINATES7 },
 			{"n"    ,TemplateInfoOnSematics.NORMAL },
 			{"t"    ,TemplateInfoOnSematics.TANGENT },
 			{"wn"   ,TemplateInfoOnSematics.WORLD_NORMAL},
@@ -762,6 +783,7 @@ namespace AmplifyShaderEditor
 		public static string CoreCommonLib = "CoreRP/ShaderLibrary/Common.hlsl";
 		public static string CoreColorLib = "CoreRP/ShaderLibrary/Color.hlsl";
 #endif
+		public static string TemplateCustomUI = @"\/\*CustomNodeUI:(\w*)\*\/";
 		public static string HidePassPattern = @"\/\*ase_hide_pass[:]*([a-zA-Z:]*)\*\/";
 		public static string BlendWholeWordPattern = @"\bBlend\b";
 		public static string BlendOpWholeWordPattern = @"\bBlendOp\b";
@@ -795,23 +817,23 @@ namespace AmplifyShaderEditor
 		public static readonly string PassNamePattern = "Name\\s+\\\"([\\w\\+\\-\\*\\/\\(\\) ]*)\\\"";
 
 		public static readonly string TagsPattern = "\"(\\w+)\"\\s*=\\s*\"(\\w+\\+*\\w*)\"";
-		public static readonly string ZTestPattern = @"\s*ZTest\s+(\[*\w+\]*)";
-		public static readonly string ZWritePattern = @"\s*ZWrite\s+(\[*\w+\]*)";
+		public static readonly string ZTestPattern = @"^\s*ZTest\s+(\[*\w+\]*)";
+		public static readonly string ZWritePattern = @"^\s*ZWrite\s+(\[*\w+\]*)";
 		//public static readonly string ZOffsetPattern = @"\s*Offset\s+([-+]?[0-9]*\.?[0-9]+)\s*,\s*([-+]?[0-9]*\.?[0-9]+)";
-		public static readonly string ZOffsetPattern = @"\s*Offset\s+([-+]?[0-9]*\.?[0-9]+|\[*\w+\]*)\s*,\s*([-+]?[0-9]*\.?[0-9]+|\[*\w+\]*)\s*";
+		public static readonly string ZOffsetPattern = @"^\s*Offset\s+([-+]?[0-9]*\.?[0-9]+|\[*\w+\]*)\s*,\s*([-+]?[0-9]*\.?[0-9]+|\[*\w+\]*)\s*";
 		public static readonly string VertexDataPattern = @"(\w+)\s*(\w+)\s*:\s*([A-Z0-9_]+);";
 		public static readonly string InterpRangePattern = @"ase_interp\((\d\.{0,1}\w{0,4}),(\d*)\)";
 		//public static readonly string PropertiesPatternB = "(\\w*)\\s*\\(\\s*\"([\\w ]*)\"\\s*\\,\\s*(\\w*)\\s*.*\\)";
 		//public static readonly string PropertiesPatternC = "^\\s*(\\w*)\\s*\\(\\s*\"([\\w\\(\\)\\+\\-\\\\* ]*)\"\\s*\\,\\s*(\\w*)\\s*.*\\)";
 		public static readonly string PropertiesPatternD = "(\\/\\/\\s*)*(\\w*)\\s*\\(\\s*\"([\\w\\(\\)\\+\\-\\\\* ]*)\"\\s*\\,\\s*(\\w*)\\s*.*\\)";
-		public static readonly string CullModePattern = @"\s*Cull\s+(\[*\w+\]*)";
-		public static readonly string ColorMaskPattern = @"\s*ColorMask\s+(\[*\w+\]*)";
+		public static readonly string CullModePattern = @"^\s*Cull\s+(\[*\w+\]*)";
+		public static readonly string ColorMaskPattern = @"^\s*ColorMask\s+(\[*\w+\]*)";
 		//public static readonly string BlendModePattern = @"\s*Blend\s+(\w+)\s+(\w+)(?:[\s,]+(\w+)\s+(\w+)|)";
 		//public static readonly string BlendModePattern = @"\s*Blend\s+(\[*\w+\]*)\s+(\[*\w+\]*)(?:[\s,]+(\[*\w+\]*)\s+(\[*\w+\]*)|)";
-		public static readonly string BlendModePattern = @"\s*Blend\s+(?:(?=\d)|(\[*\w+\]*)\s+(\[*\w+\]*)(?:[\s,]+(\[*\w+\]*)\s+(\[*\w+\]*)|))";
+		public static readonly string BlendModePattern = @"^\s*Blend\s+(?:(?=\d)|(\[*\w+\]*)\s+(\[*\w+\]*)(?:[\s,]+(\[*\w+\]*)\s+(\[*\w+\]*)|))";
 		//public static readonly string BlendOpPattern = @"\s*BlendOp\s+(\w+)[\s,]*(?:(\w+)|)";
 		//public static readonly string BlendOpPattern = @"\s*BlendOp\s+(\[*\w+\]*)[\s,]*(?:(\[*\w+\]*)|)";
-		public static readonly string BlendOpPattern = @"\s*BlendOp\s+(?:(?=\d)|(\[*\w+\]*)[\s,]*(?:(\[*\w+\]*)|))";
+		public static readonly string BlendOpPattern = @"^\s*BlendOp\s+(?:(?=\d)|(\[*\w+\]*)[\s,]*(?:(\[*\w+\]*)|))";
 
 		public static readonly string StencilOpGlobalPattern = @"Stencil\s*{([\w\W\s]*)}";
 		public static readonly string StencilOpLinePattern = @"(\w+)\s*(\[*\w+\]*)";
@@ -833,6 +855,16 @@ namespace AmplifyShaderEditor
 		public static string ReplaceAt( this string body, string oldStr, string newStr, int startIndex )
 		{
 			return body.Remove( startIndex, oldStr.Length ).Insert( startIndex, newStr );
+		}
+
+		public static CustomTemplatePropertyUIEnum FetchCustomUI( string data )
+		{
+			Match match = Regex.Match( data, TemplateCustomUI );
+			if( match.Success && CustomTemplatePropertyUI.ContainsKey( match.Groups[ 1 ].Value ) )
+			{
+				return CustomTemplatePropertyUI[ match.Groups[ 1 ].Value ];
+			}
+			return CustomTemplatePropertyUIEnum.None;
 		}
 
 		public static bool FetchInvisibleInfo( string input, ref int optionsArr, ref string id, ref int idIndex )

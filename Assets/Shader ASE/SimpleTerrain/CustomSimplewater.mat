@@ -53,19 +53,21 @@ Material:
     - _NormalScale: 0.05
     - _PlanarReflectionColorForce: 0.917
     - _PlanarRflection: -0.16
+    - _TessValue: 16
     - _WaterDepth: 1.04
     - _WaterFalloff: -0.45
     - _WaterSmoothness: 0.09
     - _WaterSpecular: 0.43
     - _WavesAmount: 2.54
     - _WavesAmplitude: 35.33
+    - __dirty: 0
     m_Colors:
     - _Color0: {r: 1, g: 1, b: 1, a: 0}
     - _Color1: {r: 0.063634746, g: 0.24528301, b: 0.13023908, a: 0}
     - _Color2: {r: 1, g: 1, b: 1, a: 0}
-    - _DeepColor: {r: 0.19530958, g: 0.62019384, b: 0.7264151, a: 0}
+    - _DeepColor: {r: 0.19530955, g: 0.62019384, b: 0.7264151, a: 0}
     - _Fresnelbiasscalepower: {r: -0.11, g: 1.14, b: 4.25, a: 0}
-    - _ShalowColor: {r: 0.1421769, g: 0.42452827, b: 0.38024163, a: 0}
+    - _ShalowColor: {r: 0.14217687, g: 0.42452824, b: 0.3802416, a: 0}
     - _SpecularColor: {r: 0.083926626, g: 0.37810546, b: 0.43396226, a: 0}
     - _Vector0: {r: -1.08, g: 1.01, b: 0, a: 0}
     - _Vector1: {r: -0.82, g: 0.52, b: 0, a: 0}

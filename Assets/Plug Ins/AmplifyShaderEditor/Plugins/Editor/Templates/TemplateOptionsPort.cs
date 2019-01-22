@@ -43,7 +43,7 @@ namespace AmplifyShaderEditor
 								dataCollector.AddToDefines( -1, m_options.ActionsPerOption[ optionId ][ i ].ActionData );
 							}
 							break;
-							case AseOptionsActionType.UnsetDefine:
+							case AseOptionsActionType.SetUndefine:
 							{
 								dataCollector.AddToDefines( -1, m_options.ActionsPerOption[ optionId ][ i ].ActionData, false );
 							}

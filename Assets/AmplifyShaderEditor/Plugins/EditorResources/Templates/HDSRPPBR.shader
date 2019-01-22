@@ -1,5 +1,6 @@
 Shader /*ase_name*/ "Hidden/Templates/HDSRPPBR" /*end*/
 {
+	/*CustomNodeUI:HDPBR*/
     Properties
     {
 		/*ase_props*/
@@ -7,6 +8,12 @@ Shader /*ase_name*/ "Hidden/Templates/HDSRPPBR" /*end*/
 
     SubShader
     {
+		/*ase_subshader_options:Name=Additional Options
+			Option:Vertex Position,InvertActionOnDeselection:Absolute,Relative:Relative
+				Absolute:SetDefine:ASE_ABSOLUTE_VERTEX_POS 1
+				Absolute:SetPortName:GBuffer:9,Vertex Position
+				Relative:SetPortName:GBuffer:9,Vertex Offset
+		*/
         Tags
         {
             "RenderPipeline"="HDRenderPipeline"
@@ -277,7 +284,13 @@ Shader /*ase_name*/ "Hidden/Templates/HDSRPPBR" /*end*/
 				#endif
 
 				/*ase_vert_code:inputMesh=AttributesMesh;outputPackedVaryingsMeshToPS=PackedVaryingsMeshToPS*/
-				inputMesh.positionOS.xyz += /*ase_vert_out:Vertex Offset;Float3;9;-1;_VertexOffset*/ float3( 0, 0, 0 ) /*end*/;
+				float3 vertexValue = /*ase_vert_out:Vertex Offset;Float3;9;-1;_VertexOffset*/ float3( 0, 0, 0 ) /*end*/;
+				#ifdef ASE_ABSOLUTE_VERTEX_POS
+				inputMesh.positionOS.xyz = vertexValue;
+				#else
+				inputMesh.positionOS.xyz += vertexValue;
+				#endif
+
 				inputMesh.normalOS = /*ase_vert_out:Vertex Normal;Float3;10;-1;_VertexNormal*/ inputMesh.normalOS /*end*/;
 
 				float3 positionRWS = TransformObjectToWorld ( inputMesh.positionOS.xyz );
@@ -564,7 +577,13 @@ Shader /*ase_name*/ "Hidden/Templates/HDSRPPBR" /*end*/
 				UNITY_TRANSFER_INSTANCE_ID ( inputMesh, outputPackedVaryingsMeshToPS );
 
 				/*ase_vert_code:inputMesh=AttributesMesh;outputPackedVaryingsMeshToPS=PackedVaryingsMeshToPS*/
-				inputMesh.positionOS.xyz += /*ase_vert_out:Vertex Offset;Float3;9;-1;_VertexOffset*/ float3( 0, 0, 0 ) /*end*/;
+				float3 vertexValue = /*ase_vert_out:Vertex Offset;Float3;9;-1;_VertexOffset*/ float3( 0, 0, 0 ) /*end*/;
+				#ifdef ASE_ABSOLUTE_VERTEX_POS
+				inputMesh.positionOS.xyz = vertexValue;
+				#else
+				inputMesh.positionOS.xyz += vertexValue;
+				#endif
+
 				inputMesh.normalOS = /*ase_vert_out:Vertex Normal;Float3;10;-1;_VertexNormal*/ inputMesh.normalOS /*end*/;
 
 				float2 uv;
@@ -792,7 +811,13 @@ Shader /*ase_name*/ "Hidden/Templates/HDSRPPBR" /*end*/
 				UNITY_TRANSFER_INSTANCE_ID ( inputMesh, outputPackedVaryingsMeshToPS );
 
 				/*ase_vert_code:inputMesh=AttributesMesh;outputPackedVaryingsMeshToPS=PackedVaryingsMeshToPS*/
-				inputMesh.positionOS.xyz += /*ase_vert_out:Vertex Offset;Float3;2;-1;_VertexOffset*/ float3( 0, 0, 0 ) /*end*/;
+				float3 vertexValue = /*ase_vert_out:Vertex Offset;Float3;2;-1;_VertexOffset*/ float3( 0, 0, 0 ) /*end*/;
+				#ifdef ASE_ABSOLUTE_VERTEX_POS
+				inputMesh.positionOS.xyz = vertexValue;
+				#else
+				inputMesh.positionOS.xyz += vertexValue;
+				#endif
+
 				inputMesh.normalOS = /*ase_vert_out:Vertex Normal;Float3;3;-1;_VertexNormal*/ inputMesh.normalOS /*end*/;
 
 				float3 positionRWS = TransformObjectToWorld ( inputMesh.positionOS.xyz );
@@ -976,8 +1001,13 @@ Shader /*ase_name*/ "Hidden/Templates/HDSRPPBR" /*end*/
 					UNITY_TRANSFER_INSTANCE_ID(inputMesh, outputPackedVaryingsMeshToPS);
 					
 					/*ase_vert_code:inputMesh=AttributesMesh;outputPackedVaryingsMeshToPS=PackedVaryingsMeshToPS*/
-				
-					inputMesh.positionOS.xyz += /*ase_vert_out:Vertex Offset;Float3;2;-1;_VertexOffset*/ float3( 0, 0, 0 ) /*end*/;
+					float3 vertexValue = /*ase_vert_out:Vertex Offset;Float3;2;-1;_VertexOffset*/ float3( 0, 0, 0 ) /*end*/;
+					#ifdef ASE_ABSOLUTE_VERTEX_POS
+					inputMesh.positionOS.xyz = vertexValue;
+					#else
+					inputMesh.positionOS.xyz += vertexValue;
+					#endif
+
 					inputMesh.normalOS = /*ase_vert_out:Vertex Normal;Float3;3;-1;_VertexNormal*/ inputMesh.normalOS /*end*/;
 
 					float3 positionRWS = TransformObjectToWorld(inputMesh.positionOS);
@@ -1164,7 +1194,13 @@ Shader /*ase_name*/ "Hidden/Templates/HDSRPPBR" /*end*/
 				UNITY_TRANSFER_INSTANCE_ID(inputMesh, outputPackedVaryingsMeshToPS);
 
 				/*ase_vert_code:inputMesh=AttributesMesh;outputPackedVaryingsMeshToPS=PackedVaryingsMeshToPS*/
-				inputMesh.positionOS.xyz += /*ase_vert_out:Vertex Offset;Float3;2;-1;_VertexOffset*/ float3( 0, 0, 0 ) /*end*/;
+				float3 vertexValue = /*ase_vert_out:Vertex Offset;Float3;2;-1;_VertexOffset*/ float3( 0, 0, 0 ) /*end*/;
+				#ifdef ASE_ABSOLUTE_VERTEX_POS
+				inputMesh.positionOS.xyz = vertexValue;
+				#else
+				inputMesh.positionOS.xyz += vertexValue;
+				#endif
+
 				inputMesh.normalOS = /*ase_vert_out:Vertex Normal;Float3;3;-1;_VertexNormal*/ inputMesh.normalOS /*end*/;
 
 				float3 positionRWS = TransformObjectToWorld(inputMesh.positionOS);
@@ -1465,7 +1501,13 @@ Shader /*ase_name*/ "Hidden/Templates/HDSRPPBR" /*end*/
 					UNITY_TRANSFER_INSTANCE_ID(inputMesh, outputVaryingsMeshToPS);
 
 					/*ase_vert_code:inputMesh=AttributesMesh;outputPackedVaryingsToPS=PackedVaryingsToPS*/
-					inputMesh.positionOS.xyz += /*ase_vert_out:Vertex Offset;Float3;2;-1;_VertexOffset*/ float3( 0, 0, 0 ) /*end*/;
+					float3 vertexValue = /*ase_vert_out:Vertex Offset;Float3;2;-1;_VertexOffset*/ float3( 0, 0, 0 ) /*end*/;
+					#ifdef ASE_ABSOLUTE_VERTEX_POS
+					inputMesh.positionOS.xyz = vertexValue;
+					#else
+					inputMesh.positionOS.xyz += vertexValue;
+					#endif
+
 					inputMesh.normalOS = /*ase_vert_out:Vertex Normal;Float3;3;-1;_VertexNormal*/ inputMesh.normalOS /*end*/;
 
 					float3 positionRWS = TransformObjectToWorld(inputMesh.positionOS);
@@ -1795,7 +1837,13 @@ Shader /*ase_name*/ "Hidden/Templates/HDSRPPBR" /*end*/
 					UNITY_TRANSFER_INSTANCE_ID(inputMesh, outputPackedVaryingsMeshToPS);
 
 					/*ase_vert_code:inputMesh=AttributesMesh;outputPackedVaryingsMeshToPS=PackedVaryingsMeshToPS*/
-					inputMesh.positionOS.xyz += /*ase_vert_out:Vertex Offset;Float3;9;-1;_VertexOffset*/ float3( 0, 0, 0 ) /*end*/;
+					float3 vertexValue = /*ase_vert_out:Vertex Offset;Float3;9;-1;_VertexOffset*/ float3( 0, 0, 0 ) /*end*/;
+					#ifdef ASE_ABSOLUTE_VERTEX_POS
+					inputMesh.positionOS.xyz = vertexValue;
+					#else
+					inputMesh.positionOS.xyz += vertexValue;
+					#endif
+					
 					inputMesh.normalOS = /*ase_vert_out:Vertex Normal;Float3;10;-1;_VertexNormal*/ inputMesh.normalOS /*end*/;
 
 					float3 positionRWS = TransformObjectToWorld(inputMesh.positionOS);
@@ -1934,6 +1982,7 @@ Shader /*ase_name*/ "Hidden/Templates/HDSRPPBR" /*end*/
 
             ENDHLSL
         }
+		/*ase_pass_end*/
     }
     FallBack "Hidden/InternalErrorShader"
 	CustomEditor "ASEMaterialInspector"

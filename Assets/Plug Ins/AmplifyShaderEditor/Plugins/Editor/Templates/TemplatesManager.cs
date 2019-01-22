@@ -336,6 +336,7 @@ namespace AmplifyShaderEditor
 	public class TemplatesManager : ScriptableObject
 	{
 		public static int MPShaderVersion = 14503;
+		
 		public static readonly string TemplateShaderNameBeginTag = "/*ase_name*/";
 		public static readonly string TemplateStencilTag = "/*ase_stencil*/\n";
 		public static readonly string TemplateAllModulesTag = "/*ase_all_modules*/\n";
@@ -346,7 +347,7 @@ namespace AmplifyShaderEditor
 		public static readonly string TemplateDependenciesListTag = "/*ase_dependencies_list*/";
 		public static readonly string TemplatePragmaTag = "/*ase_pragma*/";
 		public static readonly string TemplatePassTag = "/*ase_pass*/";
-		public static readonly string TemplateEndPassTag = "/*ase_end_pass*/";
+		public static readonly string TemplatePassesEndTag = "/*ase_pass_end*/";
 		public static readonly string TemplatePassTagPattern = @"\s\/\*ase_pass\*\/";
 		public static readonly string TemplatePropertyTag = "/*ase_props*/\n";
 		public static readonly string TemplateGlobalsTag = "/*ase_globals*/\n";
@@ -411,6 +412,7 @@ namespace AmplifyShaderEditor
 			{ "32120270d1b3a8746af2aca8bc749736","Custom RT Update"},
 			{ "1976390536c6c564abb90fe41f6ee334","Lightweight PBR"},
 			{ "e2514bdcf5e5399499a9eb24d175b9db","Lightweight Unlit"},
+			{ "091c43ba8bd92c9459798d59b089ce4e","HD Lit"},
 			{ "bb308bce79762c34e823049efce65141","HD PBR"},
 			{ "dfe2f27ac20b08c469b2f95c236be0c3","HD Unlit"},
 			{ "c71b220b631b6344493ea3cf87110c93","Legacy/Post Process" },
@@ -437,6 +439,8 @@ namespace AmplifyShaderEditor
 
 		[SerializeField]
 		public bool Initialized = false;
+
+		private Dictionary<string, bool> m_optionsInitialSetup = new Dictionary<string, bool>();
 
 		public static string CurrTemplateGUIDLoaded = string.Empty;
 
@@ -692,6 +696,26 @@ namespace AmplifyShaderEditor
 			hideFlags = HideFlags.HideAndDontSave;
 			if( ShowDebugMessages )
 				Debug.Log( "On Enable Manager: " + this.GetInstanceID() );
+		}
+
+		public void ResetOptionsSetupData()
+		{
+			if( ShowDebugMessages )
+			Debug.Log( "Reseting options setup data" );
+			m_optionsInitialSetup.Clear();
+		}
+
+		public bool SetOptionsValue( string optionId, bool value )
+		{
+			if( m_optionsInitialSetup.ContainsKey( optionId ) )
+			{
+				m_optionsInitialSetup[ optionId ] = m_optionsInitialSetup[ optionId ] || value;
+			}
+			else
+			{
+				m_optionsInitialSetup.Add( optionId, value );
+			}
+			return m_optionsInitialSetup[ optionId ];
 		}
 
 		public int TemplateCount { get { return m_sortedTemplates.Count; } }

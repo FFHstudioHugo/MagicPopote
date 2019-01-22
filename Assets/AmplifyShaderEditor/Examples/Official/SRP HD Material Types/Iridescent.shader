@@ -2,6 +2,7 @@
 // Available at the Unity Asset Store - http://u3d.as/y3X 
 Shader "ASESampleShaders/SRP HD Material Types/Iridescent"
 {
+	/*CustomNodeUI:HDPBR*/
     Properties
     {
 		_Metallic("Metallic", Range( 0 , 1)) = 0
@@ -14,6 +15,7 @@ Shader "ASESampleShaders/SRP HD Material Types/Iridescent"
 
     SubShader
     {
+		
         Tags { "RenderPipeline"="HDRenderPipeline" "RenderType"="Opaque" "Queue"="Geometry" }
         
 		Cull Back
@@ -291,7 +293,13 @@ Shader "ASESampleShaders/SRP HD Material Types/Iridescent"
 				
 				//setting value to unused interpolator channels and avoid initialization warnings
 				outputPackedVaryingsMeshToPS.ase_texcoord5.zw = 0;
-				inputMesh.positionOS.xyz +=  float3( 0, 0, 0 ) ;
+				float3 vertexValue =  float3( 0, 0, 0 ) ;
+				#ifdef ASE_ABSOLUTE_VERTEX_POS
+				inputMesh.positionOS.xyz = vertexValue;
+				#else
+				inputMesh.positionOS.xyz += vertexValue;
+				#endif
+
 				inputMesh.normalOS =  inputMesh.normalOS ;
 
 				float3 positionRWS = TransformObjectToWorld ( inputMesh.positionOS.xyz );
@@ -590,7 +598,13 @@ Shader "ASESampleShaders/SRP HD Material Types/Iridescent"
 				
 				//setting value to unused interpolator channels and avoid initialization warnings
 				outputPackedVaryingsMeshToPS.ase_texcoord.zw = 0;
-				inputMesh.positionOS.xyz +=  float3( 0, 0, 0 ) ;
+				float3 vertexValue =  float3( 0, 0, 0 ) ;
+				#ifdef ASE_ABSOLUTE_VERTEX_POS
+				inputMesh.positionOS.xyz = vertexValue;
+				#else
+				inputMesh.positionOS.xyz += vertexValue;
+				#endif
+
 				inputMesh.normalOS =  inputMesh.normalOS ;
 
 				float2 uv;
@@ -820,7 +834,13 @@ Shader "ASESampleShaders/SRP HD Material Types/Iridescent"
 				UNITY_TRANSFER_INSTANCE_ID ( inputMesh, outputPackedVaryingsMeshToPS );
 
 				
-				inputMesh.positionOS.xyz +=  float3( 0, 0, 0 ) ;
+				float3 vertexValue =  float3( 0, 0, 0 ) ;
+				#ifdef ASE_ABSOLUTE_VERTEX_POS
+				inputMesh.positionOS.xyz = vertexValue;
+				#else
+				inputMesh.positionOS.xyz += vertexValue;
+				#endif
+
 				inputMesh.normalOS =  inputMesh.normalOS ;
 
 				float3 positionRWS = TransformObjectToWorld ( inputMesh.positionOS.xyz );
@@ -1003,8 +1023,13 @@ Shader "ASESampleShaders/SRP HD Material Types/Iridescent"
 					UNITY_TRANSFER_INSTANCE_ID(inputMesh, outputPackedVaryingsMeshToPS);
 					
 					
-				
-					inputMesh.positionOS.xyz +=  float3( 0, 0, 0 ) ;
+					float3 vertexValue =  float3( 0, 0, 0 ) ;
+					#ifdef ASE_ABSOLUTE_VERTEX_POS
+					inputMesh.positionOS.xyz = vertexValue;
+					#else
+					inputMesh.positionOS.xyz += vertexValue;
+					#endif
+
 					inputMesh.normalOS =  inputMesh.normalOS ;
 
 					float3 positionRWS = TransformObjectToWorld(inputMesh.positionOS);
@@ -1190,7 +1215,13 @@ Shader "ASESampleShaders/SRP HD Material Types/Iridescent"
 				UNITY_TRANSFER_INSTANCE_ID(inputMesh, outputPackedVaryingsMeshToPS);
 
 				
-				inputMesh.positionOS.xyz +=  float3( 0, 0, 0 ) ;
+				float3 vertexValue =  float3( 0, 0, 0 ) ;
+				#ifdef ASE_ABSOLUTE_VERTEX_POS
+				inputMesh.positionOS.xyz = vertexValue;
+				#else
+				inputMesh.positionOS.xyz += vertexValue;
+				#endif
+
 				inputMesh.normalOS =  inputMesh.normalOS ;
 
 				float3 positionRWS = TransformObjectToWorld(inputMesh.positionOS);
@@ -1493,7 +1524,13 @@ Shader "ASESampleShaders/SRP HD Material Types/Iridescent"
 					UNITY_TRANSFER_INSTANCE_ID(inputMesh, outputVaryingsMeshToPS);
 
 					
-					inputMesh.positionOS.xyz +=  float3( 0, 0, 0 ) ;
+					float3 vertexValue =  float3( 0, 0, 0 ) ;
+					#ifdef ASE_ABSOLUTE_VERTEX_POS
+					inputMesh.positionOS.xyz = vertexValue;
+					#else
+					inputMesh.positionOS.xyz += vertexValue;
+					#endif
+
 					inputMesh.normalOS =  inputMesh.normalOS ;
 
 					float3 positionRWS = TransformObjectToWorld(inputMesh.positionOS);
@@ -1835,7 +1872,13 @@ Shader "ASESampleShaders/SRP HD Material Types/Iridescent"
 					
 					//setting value to unused interpolator channels and avoid initialization warnings
 					outputPackedVaryingsMeshToPS.ase_texcoord5.zw = 0;
-					inputMesh.positionOS.xyz +=  float3( 0, 0, 0 ) ;
+					float3 vertexValue =  float3( 0, 0, 0 ) ;
+					#ifdef ASE_ABSOLUTE_VERTEX_POS
+					inputMesh.positionOS.xyz = vertexValue;
+					#else
+					inputMesh.positionOS.xyz += vertexValue;
+					#endif
+					
 					inputMesh.normalOS =  inputMesh.normalOS ;
 
 					float3 positionRWS = TransformObjectToWorld(inputMesh.positionOS);
@@ -1977,6 +2020,7 @@ Shader "ASESampleShaders/SRP HD Material Types/Iridescent"
 
             ENDHLSL
         }
+		
     }
     FallBack "Hidden/InternalErrorShader"
 	CustomEditor "ASEMaterialInspector"
@@ -1984,10 +2028,10 @@ Shader "ASESampleShaders/SRP HD Material Types/Iridescent"
 	
 }
 /*ASEBEGIN
-Version=16200
-593.6;607.2;878;640;903.6643;236.5497;1.3;True;False
+Version=16201
+488;645.6;878;392;836.6334;128.4966;1.3;True;False
 Node;AmplifyShaderEditor.SamplerNode;12;-480.2741,202.3401;Float;True;Property;_IridescentMask;Iridescent Mask;4;0;Create;True;0;0;False;0;None;b038ed57d601c9449bb1dd51bfbef468;True;0;False;white;Auto;False;Object;-1;Auto;Texture2D;6;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
-Node;AmplifyShaderEditor.RangedFloatNode;10;-466.9922,101.1775;Float;False;Property;_IridescenceThickness;Iridescence Thickness;3;0;Create;True;0;0;True;0;0;1;0;1;0;1;FLOAT;0
+Node;AmplifyShaderEditor.RangedFloatNode;10;-466.9922,101.1775;Float;False;Property;_IridescenceThickness;Iridescence Thickness;3;0;Create;True;0;0;True;0;0;0.7;0;1;0;1;FLOAT;0
 Node;AmplifyShaderEditor.SamplerNode;9;-366,-273.5;Float;True;Property;_BaseColor;Base Color;2;0;Create;True;0;0;False;0;None;e70a4cc9a27a530468623a76c6c025fe;True;0;False;white;Auto;False;Object;-1;Auto;Texture2D;6;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.RangedFloatNode;7;-368,-64.5;Float;False;Property;_Metallic;Metallic;0;0;Create;True;0;0;False;0;0;0;0;1;0;1;FLOAT;0
 Node;AmplifyShaderEditor.RangedFloatNode;8;-383,12.5;Float;False;Property;_Smoothness;Smoothness;1;0;Create;True;0;0;False;0;0;0;0;1;0;1;FLOAT;0
@@ -1996,12 +2040,12 @@ Node;AmplifyShaderEditor.TemplateMultiPassMasterNode;1;0,0;Float;False;False;2;F
 Node;AmplifyShaderEditor.TemplateMultiPassMasterNode;2;0,0;Float;False;False;2;Float;ASEMaterialInspector;0;4;ASETemplateShaders/HDSRPPBR;bb308bce79762c34e823049efce65141;0;2;META;0;True;1;1;False;-1;0;False;-1;0;1;False;-1;0;False;-1;False;False;True;0;False;-1;False;False;True;1;False;-1;True;3;False;-1;False;True;3;RenderPipeline=HDRenderPipeline;RenderType=Opaque=RenderType;Queue=Geometry=Queue=0;True;5;0;False;False;False;False;True;False;False;False;False;0;False;-1;False;False;False;False;True;1;LightMode=Meta;False;0;;0;0;Iridescence;0;4;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;3;FLOAT3;0,0,0;False;0
 Node;AmplifyShaderEditor.TemplateMultiPassMasterNode;6;0,0;Float;False;False;2;Float;ASEMaterialInspector;0;4;ASETemplateShaders/HDSRPPBR;bb308bce79762c34e823049efce65141;0;6;Forward;0;True;1;1;False;-1;0;False;-1;0;1;False;-1;0;False;-1;False;False;True;0;False;-1;False;False;True;1;False;-1;True;3;False;-1;False;True;3;RenderPipeline=HDRenderPipeline;RenderType=Opaque=RenderType;Queue=Geometry=Queue=0;True;5;0;False;False;False;False;False;True;True;2;False;-1;255;False;-1;7;False;-1;7;False;-1;3;False;-1;1;False;-1;1;False;-1;7;False;-1;1;False;-1;1;False;-1;1;False;-1;False;False;False;True;1;LightMode=Forward;False;0;;0;0;Iridescence;0;22;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;3;FLOAT3;0,0,0;False;4;FLOAT;0;False;5;FLOAT;0;False;6;FLOAT;0;False;7;FLOAT;0;False;8;FLOAT;0;False;11;FLOAT;0;False;12;INT;0;False;13;FLOAT;0;False;14;FLOAT;0;False;15;FLOAT;0;False;16;FLOAT;0;False;17;FLOAT;0;False;18;FLOAT;0;False;19;FLOAT3;0,0,0;False;20;FLOAT;0;False;21;FLOAT;0;False;9;FLOAT3;0,0,0;False;10;FLOAT3;0,0,0;False;0
 Node;AmplifyShaderEditor.TemplateMultiPassMasterNode;5;0,0;Float;False;False;2;Float;ASEMaterialInspector;0;4;ASETemplateShaders/HDSRPPBR;bb308bce79762c34e823049efce65141;0;5;Motion Vectors;0;True;1;1;False;-1;0;False;-1;0;1;False;-1;0;False;-1;False;False;True;0;False;-1;False;False;True;1;False;-1;True;3;False;-1;False;True;3;RenderPipeline=HDRenderPipeline;RenderType=Opaque=RenderType;Queue=Geometry=Queue=0;True;5;0;False;False;False;False;False;True;True;128;False;-1;255;False;-1;128;False;-1;7;False;-1;3;False;-1;1;False;-1;1;False;-1;7;False;-1;1;False;-1;1;False;-1;1;False;-1;False;False;False;True;1;LightMode=MotionVectors;False;0;;0;0;Iridescence;0;4;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT3;0,0,0;False;3;FLOAT3;0,0,0;False;0
-Node;AmplifyShaderEditor.TemplateMultiPassMasterNode;0;67,-152;Float;False;True;2;Float;ASEMaterialInspector;0;6;ASESampleShaders/SRP HD Material Types/Iridescent;bb308bce79762c34e823049efce65141;0;0;GBuffer;22;True;1;1;False;-1;0;False;-1;0;1;False;-1;0;False;-1;False;False;True;0;False;-1;False;False;True;1;False;-1;True;3;False;-1;False;True;3;RenderPipeline=HDRenderPipeline;RenderType=Opaque=RenderType;Queue=Geometry=Queue=0;True;5;0;False;False;False;False;False;True;True;2;False;-1;255;False;-1;7;False;-1;7;False;-1;3;False;-1;1;False;-1;1;False;-1;7;False;-1;1;False;-1;1;False;-1;1;False;-1;False;False;False;True;1;LightMode=GBuffer;False;0;;0;0;Iridescence;0;22;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;3;FLOAT3;0,0,0;False;4;FLOAT;0;False;5;FLOAT;0;False;6;FLOAT;0;False;7;FLOAT;0;False;8;FLOAT;0;False;11;FLOAT;0;False;12;INT;0;False;13;FLOAT;0;False;14;FLOAT;0;False;15;FLOAT;0;False;16;FLOAT;0;False;17;FLOAT;0;False;18;FLOAT;0;False;19;FLOAT3;0,0,0;False;20;FLOAT;0;False;21;FLOAT;0;False;9;FLOAT3;0,0,0;False;10;FLOAT3;0,0,0;False;0
 Node;AmplifyShaderEditor.TemplateMultiPassMasterNode;4;0,0;Float;False;False;2;Float;ASEMaterialInspector;0;4;ASETemplateShaders/HDSRPPBR;bb308bce79762c34e823049efce65141;0;4;DepthOnly;0;True;1;1;False;-1;0;False;-1;0;1;False;-1;0;False;-1;False;False;True;0;False;-1;False;False;True;1;False;-1;True;3;False;-1;False;True;3;RenderPipeline=HDRenderPipeline;RenderType=Opaque=RenderType;Queue=Geometry=Queue=0;True;5;0;False;False;False;False;True;False;False;False;False;0;False;-1;False;False;False;False;True;1;LightMode=DepthOnly;False;0;;0;0;Iridescence;0;4;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT3;0,0,0;False;3;FLOAT3;0,0,0;False;0
+Node;AmplifyShaderEditor.TemplateMultiPassMasterNode;0;47.5,-102.6;Float;False;True;2;Float;ASEMaterialInspector;0;7;ASESampleShaders/SRP HD Material Types/Iridescent;bb308bce79762c34e823049efce65141;0;0;GBuffer;22;True;1;1;False;-1;0;False;-1;0;1;False;-1;0;False;-1;False;False;True;0;False;-1;False;False;True;1;False;-1;True;3;False;-1;False;True;3;RenderPipeline=HDRenderPipeline;RenderType=Opaque=RenderType;Queue=Geometry=Queue=0;True;5;0;False;False;False;False;False;True;True;2;False;-1;255;False;-1;7;False;-1;7;False;-1;3;False;-1;1;False;-1;1;False;-1;7;False;-1;1;False;-1;1;False;-1;1;False;-1;False;False;False;True;1;LightMode=GBuffer;False;0;;0;0;Iridescence;1;Vertex Position,InvertActionOnDeselection;1;0;7;True;True;True;True;True;True;True;22;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;3;FLOAT3;0,0,0;False;4;FLOAT;0;False;5;FLOAT;0;False;6;FLOAT;0;False;7;FLOAT;0;False;8;FLOAT;0;False;11;FLOAT;0;False;12;INT;0;False;13;FLOAT;0;False;14;FLOAT;0;False;15;FLOAT;0;False;16;FLOAT;0;False;17;FLOAT;0;False;18;FLOAT;0;False;19;FLOAT3;0,0,0;False;20;FLOAT;0;False;21;FLOAT;0;False;9;FLOAT3;0,0,0;False;10;FLOAT3;0,0,0;False;0
 WireConnection;0;0;9;0
 WireConnection;0;4;7;0
 WireConnection;0;5;8;0
 WireConnection;0;16;10;0
 WireConnection;0;17;12;4
 ASEEND*/
-//CHKSM=4BF244E0D3BA85A00B205D9B9405EBF1A00E5B8D
+//CHKSM=60272B74C81F191BD09BFF6D33CAE02736076010

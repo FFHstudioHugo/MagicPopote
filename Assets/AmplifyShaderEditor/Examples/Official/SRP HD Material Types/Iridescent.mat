@@ -5,7 +5,8 @@ Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: Iridescent
   m_Shader: {fileID: 4800000, guid: c4884a1528238df49aaedde1c28e6b8e, type: 3}
   m_ShaderKeywords: 
@@ -39,7 +40,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _IridescenceThickness: 1
+    - _IridescenceThickness: 0.7
     - _Metallic: 0
     - _Smoothness: 0
     - _iridescenceMask: 0

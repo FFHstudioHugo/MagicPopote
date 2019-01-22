@@ -3301,7 +3301,7 @@ namespace AmplifyShaderEditor
 		public float TextLabelWidth { get { return m_textLabelWidth; } }
 		public bool IsMoving { get { return m_isMoving > 0; } }
 		public bool MovingInFrame { get { return m_movingInFrame; } set { m_movingInFrame = value; } }
-		public bool SizeIsDirty { get { return m_sizeIsDirty; } }
+		public bool SizeIsDirty { get { return m_sizeIsDirty; } set { m_sizeIsDirty = value; } }
 		public int Category { get { return m_category; } }
 		public int CommentaryParent
 		{

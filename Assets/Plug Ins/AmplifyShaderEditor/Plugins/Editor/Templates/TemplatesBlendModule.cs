@@ -696,15 +696,77 @@ namespace AmplifyShaderEditor
 		public bool ValidBlendMode { get { return m_validBlendMode; } }
 		public bool ValidBlendOp { get { return m_validBlendOp; } }
 		public int CurrentRGBIndex { get { return m_currentRGBIndex; } }
-		public AvailableBlendFactor SourceFactorRGB { get { return m_sourceFactorRGB; } }
-		public AvailableBlendFactor DestFactorRGB { get { return m_destFactorRGB; } }
+
+		public AvailableBlendFactor SourceFactorRGB
+		{
+			get { return m_sourceFactorRGB; }
+			set
+			{
+				m_sourceFactorRGB = value;
+				m_sourceFactorRGBInline.IntValue = (int)m_sourceFactorRGB;
+				m_sourceFactorRGBInline.Active = false;
+			}
+
+		}
+		public AvailableBlendFactor DestFactorRGB
+		{
+			get { return m_destFactorRGB; }
+			set
+			{
+				m_destFactorRGB = value;
+				m_destFactorRGBInline.IntValue = (int)value;
+			}
+		}
+
 		public int CurrentAlphaIndex { get { return m_currentAlphaIndex; } }
-		public AvailableBlendFactor SourceFactorAlpha { get { return m_sourceFactorAlpha; } }
-		public AvailableBlendFactor DestFactorAlpha { get { return m_destFactorAlpha; } }
+
+		public AvailableBlendFactor SourceFactorAlpha
+		{
+			get { return m_sourceFactorAlpha; }
+			set
+			{
+				m_sourceFactorAlpha = value;
+				m_sourceFactorAlphaInline.IntValue = (int)value;
+				m_sourceFactorAlphaInline.Active = false;
+			}
+		}
+
+		public AvailableBlendFactor DestFactorAlpha
+		{
+			get { return m_destFactorAlpha; }
+			set
+			{
+				m_destFactorAlpha = value;
+				m_destFactorAlphaInline.IntValue = (int)value;
+				m_destFactorAlphaInline.Active = false;
+
+			}
+		}
+
 		public bool BlendModeEnabled { get { return m_blendModeEnabled; } }
 		public bool BlendOpEnabled { get { return m_blendOpEnabled; } }
-		public AvailableBlendOps BlendOpRGB { get { return m_blendOpRGB; } }
-		public AvailableBlendOps BlendOpAlpha { get { return m_blendOpAlpha; } }
+		public AvailableBlendOps BlendOpRGB
+		{
+			get { return m_blendOpRGB; }
+			set
+			{
+				m_blendOpRGB = value;
+				m_blendOpRGBInline.IntValue = (int)value;
+				m_blendOpRGBInline.Active = false;
+			}
+		}
+
+		public AvailableBlendOps BlendOpAlpha
+		{
+			get { return m_blendOpAlpha; }
+			set
+			{
+				m_blendOpAlpha = value;
+				m_blendOpAlphaInline.IntValue = (int)value;
+				m_blendOpAlphaInline.Active = false;
+			}
+		}
+
 		public InlineProperty SourceFactorRGBInline { get { return m_sourceFactorRGBInline; } }
 		public InlineProperty DestFactorRGBInline { get { return m_destFactorRGBInline; } }
 		public InlineProperty SourceFactorAlphaInline { get { return m_sourceFactorAlphaInline; } }

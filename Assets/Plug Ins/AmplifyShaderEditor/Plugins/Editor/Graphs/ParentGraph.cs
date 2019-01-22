@@ -3022,6 +3022,7 @@ namespace AmplifyShaderEditor
 			m_multiPassMasterNodes.NodesList.Sort( ( x, y ) => ( x.SubShaderIdx * 1000 + x.PassIdx ).CompareTo( y.SubShaderIdx * 1000 + y.PassIdx ) );
 			m_multiPassMasterNodes.UpdateNodeArr();
 
+			m_parentWindow.TemplatesManagerInstance.ResetOptionsSetupData();
 			for( int i = 0; i < mpCount; i++ )
 			{
 				int visiblePorts = 0;
@@ -3040,10 +3041,10 @@ namespace AmplifyShaderEditor
 				}
 
 				m_multiPassMasterNodes.NodesList[ i ].Docking = visiblePorts <= 0;
+				if( !m_isLoading )
+					m_multiPassMasterNodes.NodesList[ i ].ForceOptionsRefresh();
 			}
-
 		}
-
 
 		void CheckLinkedPorts( ref Dictionary<string, List<InputPort>> registeredLinks, TemplateMultiPassMasterNode masterNode )
 		{
@@ -3083,6 +3084,7 @@ namespace AmplifyShaderEditor
 					masterNode.InputPorts[ i ].Visible = true;
 				}
 			}
+			
 		}
 
 		public MasterNode ReplaceMasterNode( AvailableShaderTypes newType, bool writeDefaultData = false, TemplateDataParent templateData = null )
@@ -3444,6 +3446,11 @@ namespace AmplifyShaderEditor
 		{
 			return ( node.UniqueId == m_masterNodeId ) ||
 					m_multiPassMasterNodes.HasNode( node.UniqueId );
+		}
+
+		public TemplateMultiPassMasterNode GetMasterNodeOfPass( string passName )
+		{
+			return m_multiPassMasterNodes.NodesList.Find( x => x.PassName.Equals( passName ) );
 		}
 
 		public bool IsNormalDependent { get { return m_normalDependentCount > 0; } }
