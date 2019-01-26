@@ -41,4 +41,4 @@ MonoBehaviour:
   m_MaxPixelLights: 4
   m_ShadowAtlasResolution: 1024
   m_ResourcesAsset: {fileID: 11400000, guid: aac5a08c32552a14c89394b703f1978a, type: 2}
-  m_ShaderVariantLogLevel: 1
+  m_ShaderVariantLogLevel: 0
