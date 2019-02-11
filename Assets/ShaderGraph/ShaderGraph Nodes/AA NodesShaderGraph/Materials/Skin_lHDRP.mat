@@ -14,8 +14,10 @@ Material:
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
+  stringTagMap:
+    MotionVector: User
+  disabledShaderPasses:
+  - MOTIONVECTORS
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -119,15 +121,15 @@ Material:
     - Vector1_5127C35D: 1
     - Vector1_6C4C265B: 0.433
     - Vector1_7741C03: 1
-    - Vector1_7DAD511F: 0.4
+    - Vector1_7DAD511F: 1
     - Vector1_8ADF3397: 0.018
     - Vector1_9A27D27: 0.868
     - Vector1_9B3F9A63: 0.411
     - Vector1_9F755350: 0
     - Vector1_A9E64BBA: -4.81
     - Vector1_ACE3C66F: 0.609
-    - Vector1_E030FF4A: -1.65
-    - Vector1_FC20164B: 0.8
+    - Vector1_E030FF4A: -0.7
+    - Vector1_FC20164B: 0.44
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
@@ -152,7 +154,7 @@ Material:
     - Color_4C0F02F7: {r: 0.5660378, g: 0.27612177, b: 0.10946956, a: 0}
     - Color_6B08FA5F: {r: 0.764151, g: 0, b: 0.07370006, a: 0}
     - Color_9894B972: {r: 1, g: 0.986359, b: 0.986, a: 0}
-    - Color_A035A7E2: {r: 0.811, g: 0.7299227, b: 0.7239658, a: 0}
+    - Color_A035A7E2: {r: 0.8301887, g: 0.8301887, b: 0.8301887, a: 0}
     - Color_B5380A9D: {r: 0.59414697, g: 0.54202497, b: 0.65699995, a: 0}
     - _Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}

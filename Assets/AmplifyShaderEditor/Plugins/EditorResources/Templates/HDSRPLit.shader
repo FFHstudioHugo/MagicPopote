@@ -46,12 +46,16 @@ Shader /*ase_name*/ "Hidden/Templates/HDSRPLit" /*end*/
 			Option:Surface Type:Opaque,Transparent:Opaque
 				Opaque:SetPropertyOnSubShader:RenderType,Opaque
 				Opaque:SetPropertyOnSubShader:RenderQueue,Geometry
+				Opaque:SetPropertyOnSubShader:ZWrite,On
+				Opaque:SetPropertyOnSubShader:BlendRGB,One,One
 				Opaque:HideOption:Distortion,0
 				Opaque:HideOption:Back Then Front Rendering
 				Opaque:HideOption:Blend Preserves Specular
 				Opaque:HideOption:Fog
 				Transparent:SetPropertyOnSubShader:RenderType,Transparent
 				Transparent:SetPropertyOnSubShader:RenderQueue,Transparent
+				Transparent:SetPropertyOnSubShader:ZWrite,Off
+				Transparent:SetPropertyOnSubShader:BlendRGB,SrcAlpha,OneMinusSrcAlpha
 				Transparent:ShowOption:Distortion
 				Transparent:ShowOption:Back Then Front Rendering
 				Transparent:ShowOption:Blend Preserves Specular
@@ -301,18 +305,7 @@ Shader /*ase_name*/ "Hidden/Templates/HDSRPLit" /*end*/
 				#include "Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Decal/DecalUtilities.hlsl"
 				#include "Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/LitDecalData.hlsl"
 				#include "Packages/com.unity.render-pipelines.high-definition/Runtime/ShaderLibrary/ShaderGraphFunctions.hlsl"
-            
-				//float3x3 BuildWorldToTangent(float4 tangentWS, float3 normalWS)
-				//{
-				//	float3 unnormalizedNormalWS = normalWS;
-				//	float renormFactor = 1.0 / length(unnormalizedNormalWS);
-				//	float3x3 worldToTangent = CreateWorldToTangent(unnormalizedNormalWS, tangentWS.xyz, tangentWS.w > 0.0 ? 1.0 : -1.0);
-				//	worldToTangent[0] = worldToTangent[0] * renormFactor;
-				//	worldToTangent[1] = worldToTangent[1] * renormFactor;
-				//	worldToTangent[2] = worldToTangent[2] * renormFactor;
-				//	return worldToTangent;
-				//}
-        
+				
 				struct AttributesMesh 
 				{
 					float3 positionOS : POSITION;
@@ -340,9 +333,8 @@ Shader /*ase_name*/ "Hidden/Templates/HDSRPLit" /*end*/
 					#endif
 				};
 
-                CBUFFER_START(UnityPerMaterial)
 				/*ase_globals*/
-				CBUFFER_END
+
 				/*ase_funcs*/
     
 				void BuildSurfaceData(FragInputs fragInputs, inout GlobalSurfaceDescription surfaceDescription, float3 V, out SurfaceData surfaceData, out float3 bentNormalWS)
@@ -391,13 +383,13 @@ Shader /*ase_name*/ "Hidden/Templates/HDSRPLit" /*end*/
         
 					float3 normalTS = float3(0.0f, 0.0f, 1.0f);
 					normalTS = surfaceDescription.Normal;
-        
-					GetNormalWS(fragInputs, normalTS, surfaceData.normalWS);
+					float3 doubleSidedConstants = float3(1.0, 1.0, 1.0);
+					GetNormalWS(fragInputs, normalTS, surfaceData.normalWS,doubleSidedConstants);
         
 					bentNormalWS = surfaceData.normalWS;
 			
 			#ifdef ASE_BENT_NORMAL
-					GetNormalWS(fragInputs, surfaceDescription.BentNormal, bentNormalWS);
+					GetNormalWS(fragInputs, surfaceDescription.BentNormal, bentNormalWS,doubleSidedConstants);
 			#endif
 			
 			#if defined(_HAS_REFRACTION) || defined(_MATERIAL_FEATURE_TRANSMISSION)
@@ -687,9 +679,8 @@ Shader /*ase_name*/ "Hidden/Templates/HDSRPLit" /*end*/
 					#endif
 				};
 
-                CBUFFER_START(UnityPerMaterial)
 				/*ase_globals*/
-				CBUFFER_END
+				
 				/*ase_funcs*/
                 
 				void BuildSurfaceData(FragInputs fragInputs, inout GlobalSurfaceDescription surfaceDescription, float3 V, out SurfaceData surfaceData, out float3 bentNormalWS)
@@ -736,11 +727,13 @@ Shader /*ase_name*/ "Hidden/Templates/HDSRPLit" /*end*/
 			#endif
 					float3 normalTS = float3(0.0f, 0.0f, 1.0f);
 					normalTS = surfaceDescription.Normal;
-					GetNormalWS(fragInputs, normalTS, surfaceData.normalWS);
+					float3 doubleSidedConstants = float3(1.0, 1.0, 1.0);
+
+					GetNormalWS(fragInputs, normalTS, surfaceData.normalWS,doubleSidedConstants);
 					bentNormalWS = surfaceData.normalWS;
 			
 			#ifdef ASE_BENT_NORMAL
-					GetNormalWS(fragInputs, surfaceDescription.BentNormal, bentNormalWS);
+					GetNormalWS(fragInputs, surfaceDescription.BentNormal, bentNormalWS,doubleSidedConstants);
 			#endif
 			
 			#ifdef _HAS_REFRACTION
@@ -1022,9 +1015,8 @@ Shader /*ase_name*/ "Hidden/Templates/HDSRPLit" /*end*/
 					#endif
 				};
 
-                CBUFFER_START(UnityPerMaterial)
 				/*ase_globals*/
-				CBUFFER_END
+				
 				/*ase_funcs*/
                 
 				void BuildSurfaceData(FragInputs fragInputs, inout AlphaSurfaceDescription surfaceDescription, float3 V, out SurfaceData surfaceData, out float3 bentNormalWS)
@@ -1054,7 +1046,8 @@ Shader /*ase_name*/ "Hidden/Templates/HDSRPLit" /*end*/
 			#endif
         
 					float3 normalTS = float3(0.0f, 0.0f, 1.0f);
-					GetNormalWS(fragInputs, normalTS, surfaceData.normalWS);
+					float3 doubleSidedConstants = float3(1.0, 1.0, 1.0);
+					GetNormalWS(fragInputs, normalTS, surfaceData.normalWS,doubleSidedConstants);
 					bentNormalWS = surfaceData.normalWS;
         
 			#ifdef _HAS_REFRACTION
@@ -1239,7 +1232,6 @@ Shader /*ase_name*/ "Hidden/Templates/HDSRPLit" /*end*/
 				#include "Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/LitDecalData.hlsl"
 				#include "Packages/com.unity.render-pipelines.high-definition/Runtime/ShaderLibrary/ShaderGraphFunctions.hlsl"
         
-				
 				int _ObjectId;
 				int _PassValue;
         
@@ -1262,9 +1254,8 @@ Shader /*ase_name*/ "Hidden/Templates/HDSRPLit" /*end*/
 					#endif
 				};
 
-                CBUFFER_START(UnityPerMaterial)
 				/*ase_globals*/
-				CBUFFER_END
+
 				/*ase_funcs*/
         
 				void BuildSurfaceData(FragInputs fragInputs, inout AlphaSurfaceDescription surfaceDescription, float3 V, out SurfaceData surfaceData, out float3 bentNormalWS)
@@ -1294,8 +1285,8 @@ Shader /*ase_name*/ "Hidden/Templates/HDSRPLit" /*end*/
 			#endif
         
 					float3 normalTS = float3(0.0f, 0.0f, 1.0f);
-        
-					GetNormalWS(fragInputs, normalTS, surfaceData.normalWS);
+					float3 doubleSidedConstants = float3(1.0, 1.0, 1.0);
+					GetNormalWS(fragInputs, normalTS, surfaceData.normalWS,doubleSidedConstants);
         
 					bentNormalWS = surfaceData.normalWS;
         
@@ -1504,17 +1495,6 @@ Shader /*ase_name*/ "Hidden/Templates/HDSRPLit" /*end*/
 				#include "Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/LitDecalData.hlsl"
 				#include "Packages/com.unity.render-pipelines.high-definition/Runtime/ShaderLibrary/ShaderGraphFunctions.hlsl"
         
-				//float3x3 BuildWorldToTangent(float4 tangentWS, float3 normalWS)
-				//{
-				//	float3 unnormalizedNormalWS = normalWS;
-				//	float renormFactor = 1.0 / length(unnormalizedNormalWS);
-				//	float3x3 worldToTangent = CreateWorldToTangent(unnormalizedNormalWS, tangentWS.xyz, tangentWS.w > 0.0 ? 1.0 : -1.0);
-				//	worldToTangent[0] = worldToTangent[0] * renormFactor;
-				//	worldToTangent[1] = worldToTangent[1] * renormFactor;
-				//	worldToTangent[2] = worldToTangent[2] * renormFactor;
-				//	return worldToTangent;
-				//}
-        
 				struct AttributesMesh 
 				{
 					float3 positionOS : POSITION;
@@ -1548,9 +1528,8 @@ Shader /*ase_name*/ "Hidden/Templates/HDSRPLit" /*end*/
 					#endif
 				};
       
-                CBUFFER_START(UnityPerMaterial)
 				/*ase_globals*/
-				CBUFFER_END
+
 				/*ase_funcs*/
                     
 				void BuildSurfaceData(FragInputs fragInputs, inout SmoothSurfaceDescription surfaceDescription, float3 V, out SurfaceData surfaceData, out float3 bentNormalWS)
@@ -1581,7 +1560,8 @@ Shader /*ase_name*/ "Hidden/Templates/HDSRPLit" /*end*/
 			#endif
         
 					float3 normalTS = float3(0.0f, 0.0f, 1.0f);
-					GetNormalWS(fragInputs, normalTS, surfaceData.normalWS);
+					float3 doubleSidedConstants = float3(1.0, 1.0, 1.0);
+					GetNormalWS(fragInputs, normalTS, surfaceData.normalWS,doubleSidedConstants);
 					bentNormalWS = surfaceData.normalWS;
 			#ifdef _HAS_REFRACTION
 					surfaceData.transmittanceMask = 1.0 - surfaceDescription.Alpha;
@@ -1791,7 +1771,7 @@ Shader /*ase_name*/ "Hidden/Templates/HDSRPLit" /*end*/
 				#include "Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Decal/DecalUtilities.hlsl"
 				#include "Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/LitDecalData.hlsl"
 				#include "Packages/com.unity.render-pipelines.high-definition/Runtime/ShaderLibrary/ShaderGraphFunctions.hlsl"
-        
+        		
 				struct AttributesMesh 
 				{
 					float3 positionOS : POSITION;
@@ -1841,9 +1821,8 @@ Shader /*ase_name*/ "Hidden/Templates/HDSRPLit" /*end*/
 					#endif 
 				};
 
-                CBUFFER_START(UnityPerMaterial)
 				/*ase_globals*/
-				CBUFFER_END
+
 				/*ase_funcs*/
         
 				void BuildSurfaceData(FragInputs fragInputs, inout SmoothSurfaceDescription surfaceDescription, float3 V, out SurfaceData surfaceData, out float3 bentNormalWS)
@@ -1875,7 +1854,8 @@ Shader /*ase_name*/ "Hidden/Templates/HDSRPLit" /*end*/
 			#endif
         
 					float3 normalTS = float3(0.0f, 0.0f, 1.0f);
-					GetNormalWS(fragInputs, normalTS, surfaceData.normalWS);
+					float3 doubleSidedConstants = float3(1.0, 1.0, 1.0);
+					GetNormalWS(fragInputs, normalTS, surfaceData.normalWS,doubleSidedConstants);
 					bentNormalWS = surfaceData.normalWS;
         
 			#ifdef _HAS_REFRACTION
@@ -2173,12 +2153,9 @@ Shader /*ase_name*/ "Hidden/Templates/HDSRPLit" /*end*/
 					#endif
 				};
 
-				CBUFFER_START(UnityPerMaterial)
 				/*ase_globals*/
-				CBUFFER_END
-				/*ase_funcs*/
 
-               
+				/*ase_funcs*/
         
 				void BuildSurfaceData(FragInputs fragInputs, inout DistortionSurfaceDescription surfaceDescription, float3 V, out SurfaceData surfaceData, out float3 bentNormalWS)
 				{
@@ -2227,7 +2204,8 @@ Shader /*ase_name*/ "Hidden/Templates/HDSRPLit" /*end*/
 			#endif
         
 					float3 normalTS = float3(0.0f, 0.0f, 1.0f);
-					GetNormalWS(fragInputs, normalTS, surfaceData.normalWS);
+					float3 doubleSidedConstants = float3(1.0, 1.0, 1.0);
+					GetNormalWS(fragInputs, normalTS, surfaceData.normalWS,doubleSidedConstants);
 					bentNormalWS = surfaceData.normalWS;
         
 					surfaceData.tangentWS = normalize(fragInputs.worldToTangent[0].xyz);    // The tangent is not normalize in worldToTangent for mikkt. TODO: Check if it expected that we normalize with Morten. Tag: SURFACE_GRADIENT
@@ -2400,17 +2378,7 @@ Shader /*ase_name*/ "Hidden/Templates/HDSRPLit" /*end*/
 				int _ObjectId;
 				int _PassValue;
         
-				//float3x3 BuildWorldToTangent(float4 tangentWS, float3 normalWS)
-				//{
-				//	float3 unnormalizedNormalWS = normalWS;
-				//	float renormFactor = 1.0 / length(unnormalizedNormalWS);
-				//	float3x3 worldToTangent = CreateWorldToTangent(unnormalizedNormalWS, tangentWS.xyz, tangentWS.w > 0.0 ? 1.0 : -1.0);
-				//	worldToTangent[0] = worldToTangent[0] * renormFactor;
-				//	worldToTangent[1] = worldToTangent[1] * renormFactor;
-				//	worldToTangent[2] = worldToTangent[2] * renormFactor;
-				//	return worldToTangent;
-				//}
-        
+		
 				struct AttributesMesh 
 				{
 					float3 positionOS : POSITION;
@@ -2438,9 +2406,8 @@ Shader /*ase_name*/ "Hidden/Templates/HDSRPLit" /*end*/
 					#endif 
 				};
 
-                CBUFFER_START(UnityPerMaterial)
 				/*ase_globals*/
-				CBUFFER_END
+
 				/*ase_funcs*/
                   
 				void BuildSurfaceData(FragInputs fragInputs, inout GlobalSurfaceDescription surfaceDescription, float3 V, out SurfaceData surfaceData, out float3 bentNormalWS)
@@ -2483,12 +2450,13 @@ Shader /*ase_name*/ "Hidden/Templates/HDSRPLit" /*end*/
 					float3 normalTS = float3(0.0f, 0.0f, 1.0f);
 					normalTS = surfaceDescription.Normal;
         
-					GetNormalWS(fragInputs, normalTS, surfaceData.normalWS);
+					float3 doubleSidedConstants = float3(1.0, 1.0, 1.0);
+					GetNormalWS(fragInputs, normalTS, surfaceData.normalWS,doubleSidedConstants);
         
 					bentNormalWS = surfaceData.normalWS;
 
 			#ifdef ASE_BENT_NORMAL
-					GetNormalWS(fragInputs, surfaceDescription.BentNormal, bentNormalWS);
+					GetNormalWS(fragInputs, surfaceDescription.BentNormal, bentNormalWS,doubleSidedConstants);
 			#endif
         
 			#ifdef _HAS_REFRACTION
@@ -2789,9 +2757,8 @@ Shader /*ase_name*/ "Hidden/Templates/HDSRPLit" /*end*/
 					#endif 
 				};
 
-                CBUFFER_START(UnityPerMaterial)
 				/*ase_globals*/
-				CBUFFER_END
+
 				/*ase_funcs*/
                   
 				void BuildSurfaceData(FragInputs fragInputs, inout GlobalSurfaceDescription surfaceDescription, float3 V, out SurfaceData surfaceData, out float3 bentNormalWS)
@@ -2840,13 +2807,13 @@ Shader /*ase_name*/ "Hidden/Templates/HDSRPLit" /*end*/
         
 					float3 normalTS = float3(0.0f, 0.0f, 1.0f);
 					normalTS = surfaceDescription.Normal;
-        
-					GetNormalWS(fragInputs, normalTS, surfaceData.normalWS);
+					float3 doubleSidedConstants = float3(1.0, 1.0, 1.0);
+					GetNormalWS(fragInputs, normalTS, surfaceData.normalWS,doubleSidedConstants);
         
 					bentNormalWS = surfaceData.normalWS;
 
 			#ifdef ASE_BENT_NORMAL
-					GetNormalWS(fragInputs, surfaceDescription.BentNormal, bentNormalWS);
+					GetNormalWS(fragInputs, surfaceDescription.BentNormal, bentNormalWS,doubleSidedConstants);
 			#endif
         
 			#ifdef _HAS_REFRACTION
