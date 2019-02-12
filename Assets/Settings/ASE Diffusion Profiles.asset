@@ -42,17 +42,17 @@ MonoBehaviour:
     transmissionTint: {r: 1.0717734, g: 0.20902692, b: 0.045499794, a: 1}
     texturingMode: 0
     transmissionMode: 1
-    thicknessRemap: {x: 7.5396824, y: 36.420975}
-    worldScale: 3.51
-    ior: 1.55
+    thicknessRemap: {x: 0, y: 28.881292}
+    worldScale: 18.98
+    ior: 1.671
   - name: Profile 5
-    scatteringDistance: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-    transmissionTint: {r: 1, g: 1, b: 1, a: 1}
+    scatteringDistance: {r: 6.7409573, g: 2.8935242, b: 2.8935242, a: 1}
+    transmissionTint: {r: 2.1740067, g: 1.1979221, b: 1.1979221, a: 1}
     texturingMode: 0
     transmissionMode: 1
-    thicknessRemap: {x: 0, y: 5}
-    worldScale: 1
-    ior: 1.4
+    thicknessRemap: {x: 14.672686, y: 24.993546}
+    worldScale: 4.51
+    ior: 2
   - name: Profile 6
     scatteringDistance: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     transmissionTint: {r: 1, g: 1, b: 1, a: 1}

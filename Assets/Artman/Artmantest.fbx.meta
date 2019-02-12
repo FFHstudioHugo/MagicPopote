@@ -1,0 +1,241 @@
+fileFormatVersion: 2
+guid: 5ef7ca94f3403784ca2175b69dd6a849
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Bag
+    100004: Corpus
+    100006: Cutter
+    100008: description29_convert6
+    100010: DoubleGun
+    100012: Down
+    100014: Eye
+    100016: Eye1
+    100018: Fourreaux
+    100020: group5_polySurface18
+    100022: group5_polySurface19
+    100024: Gun
+    100026: Hair2
+    100028: Head
+    100030: Holster1
+    100032: polySurface1
+    100034: polySurface1 1
+    100036: polySurface133
+    100038: polySurface138
+    100040: polySurface139
+    100042: polySurface140
+    100044: polySurface23
+    100046: pTorus1
+    100048: pTorus2
+    100050: Stuff
+    100052: Stuff 1
+    400000: //RootNode
+    400002: Bag
+    400004: Corpus
+    400006: Cutter
+    400008: description29_convert6
+    400010: DoubleGun
+    400012: Down
+    400014: Eye
+    400016: Eye1
+    400018: Fourreaux
+    400020: group5_polySurface18
+    400022: group5_polySurface19
+    400024: Gun
+    400026: Hair2
+    400028: Head
+    400030: Holster1
+    400032: polySurface1
+    400034: polySurface1 1
+    400036: polySurface133
+    400038: polySurface138
+    400040: polySurface139
+    400042: polySurface140
+    400044: polySurface23
+    400046: pTorus1
+    400048: pTorus2
+    400050: Stuff
+    400052: Stuff 1
+    2300000: Bag
+    2300002: Corpus
+    2300004: Cutter
+    2300006: description29_convert6
+    2300008: Eye
+    2300010: Eye1
+    2300012: Fourreaux
+    2300014: group5_polySurface18
+    2300016: group5_polySurface19
+    2300018: Gun
+    2300020: Holster1
+    2300022: polySurface1
+    2300024: polySurface1 1
+    2300026: polySurface133
+    2300028: polySurface138
+    2300030: polySurface139
+    2300032: polySurface140
+    2300034: polySurface23
+    2300036: pTorus1
+    2300038: pTorus2
+    3300000: Bag
+    3300002: Corpus
+    3300004: Cutter
+    3300006: description29_convert6
+    3300008: Eye
+    3300010: Eye1
+    3300012: Fourreaux
+    3300014: group5_polySurface18
+    3300016: group5_polySurface19
+    3300018: Gun
+    3300020: Holster1
+    3300022: polySurface1
+    3300024: polySurface1 1
+    3300026: polySurface133
+    3300028: polySurface138
+    3300030: polySurface139
+    3300032: polySurface140
+    3300034: polySurface23
+    3300036: pTorus1
+    3300038: pTorus2
+    4300000: group5_polySurface18
+    4300002: group5_polySurface19
+    4300004: Corpus
+    4300006: polySurface138
+    4300008: polySurface23
+    4300010: polySurface133
+    4300012: polySurface1
+    4300014: polySurface140
+    4300016: polySurface1
+    4300018: pTorus2
+    4300020: pTorus1
+    4300022: Holster1
+    4300024: Fourreaux
+    4300026: Cutter
+    4300028: Bag
+    4300030: Gun
+    4300032: Eye
+    4300034: Eye1
+    4300036: description29_convert6
+    4300038: polySurface139
+    2186277476908879412: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Down1
+    second: {fileID: 2100000, guid: 06879b28befa3cf408504149c094003f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Hair1
+    second: {fileID: 2100000, guid: 2c55792dd3456c043b30ec238ce510b3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Head1
+    second: {fileID: 2100000, guid: 8f9e498967cf7094dac14e784795b00a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: StingrayPBS12
+    second: {fileID: 2100000, guid: c012c73d4581f1347a6afb4d550a28a3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: StingrayPBS18
+    second: {fileID: 2100000, guid: 2c55792dd3456c043b30ec238ce510b3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: StingrayPBS9
+    second: {fileID: 2100000, guid: efa7958d8eb4289468c7fb9247b6108d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Stuff1
+    second: {fileID: 2100000, guid: eb7e004d5100383408a5d4dd07749a3d, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

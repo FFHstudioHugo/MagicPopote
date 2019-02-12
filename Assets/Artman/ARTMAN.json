@@ -1,0 +1,57 @@
+{
+    "format": {
+        "version": "1.0"
+    },
+    "shaders": {
+        "Main shader": {
+            "parameters": {
+                "Common Parameters": {
+                    "alpha_dither": false,
+                    "alpha_threshold": 0.33000001311302185,
+                    "ao_intensity": 0.75,
+                    "emissive_intensity": 1,
+                    "horizonFade": 1.2999999523162842,
+                    "nbSamples": 16
+                },
+                "Parallax Occlusion Mapping": {
+                    "maxPOMSamples": 16,
+                    "minPOMSamples": 4,
+                    "pomStrength": 1,
+                    "usePOM": false
+                },
+                "Subsurface Scattering Parameters": {
+                    "sssColor": [
+                        0.21128042042255402,
+                        0.18911169469356537,
+                        0.18933339416980743
+                    ],
+                    "sssEnabled": true,
+                    "sssScale": 0.5,
+                    "sssType": 0
+                }
+            },
+            "shader": "pbr-metal-rough-with-alpha-test",
+            "shaderInstance": "Main shader"
+        }
+    },
+    "texturesets": {
+        "Corpus": {
+            "shader": "Main shader"
+        },
+        "Down1": {
+            "shader": "Main shader"
+        },
+        "Hair": {
+            "shader": "Main shader"
+        },
+        "Hair1": {
+            "shader": "Main shader"
+        },
+        "Head1": {
+            "shader": "Main shader"
+        },
+        "Stuff1": {
+            "shader": "Main shader"
+        }
+    }
+}
