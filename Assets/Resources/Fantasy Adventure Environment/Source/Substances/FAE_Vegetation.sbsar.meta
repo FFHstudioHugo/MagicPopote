@@ -1,0 +1,492 @@
+fileFormatVersion: 2
+guid: f654a384396a5a245a9a41a56b8efbeb
+ScriptedImporter:
+  fileIDToRecycleName:
+    2100018: FAE_TreeBush
+    2100020: FAE_Vegetation_Atlas
+    2100022: FAE_Speedwell
+    2100024: FAE_TallGrass
+    2100026: Leaf
+    2100028: Lillypad
+    2100030: Lotus
+    2100032: ElephantEar
+    2100034: FAE_Bush
+    2800000: FAE_TreeBush - diffuse
+    2800002: FAE_Vegetation_Atlas - diffuse
+    2800006: FAE_Vegetation_Atlas - normal
+    2800008: FAE_Speedwell - diffuse
+    2800010: FAE_TallGrass - diffuse
+    2800012: Leaf - diffuse
+    2800016: Lillypad - diffuse
+    2800018: Lillypad - normal
+    2800020: Lotus - diffuse
+    2800040: ElephantEar - diffuse
+    2800042: FAE_Bush - diffuse
+    11400000: graph1
+    11400002: graph2
+    11400004: graph3
+    11400006: graph4
+    11400008: graph5
+    11400010: graph6
+    11400012: graph7
+    11400014: graph8
+    11400016: sbsar
+    11400018: graph0
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 232528478, guid: 43a8bbf65be290d44ba52b94476242b9, type: 3}
+  version: 17
+  mGraphInstanceData:
+  - graphLabel: FAE_TreeBush
+    prototypeName: 
+    graphDescIndex: 0
+    generateAllOutputs: 0
+    generateMipMaps: 1
+    preset: " <sbspreset pkgurl=\"pkg://FAE_TreeBush\" label=\"\" >\n </sbspreset>\n"
+    shaderName: Standard
+    outputNames: diffuse
+    texturePackingList:
+    - outputName: baseColor
+      alphaSource: baseColor
+    textureParameters:
+    - textureName: FAE_TreeBush_diffuse
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: FAE_TreeBush - diffuse
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    colorSpaceList:
+    - outputName: baseColor
+      bLinear: 0
+    inputTextureMap: []
+    targetSettingList:
+    - label: Default
+      bLockRatio: 1
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      bGenerateOnLoad: 1
+    - label: Standalone
+      bLockRatio: 1
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      bGenerateOnLoad: 0
+    - label: iPhone
+      bLockRatio: 1
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      bGenerateOnLoad: 0
+    material: {instanceID: 0}
+    generatedTextures: []
+  - graphLabel: FAE_Vegetation_Atlas
+    prototypeName: 
+    graphDescIndex: 1
+    generateAllOutputs: 0
+    generateMipMaps: 1
+    preset: " <sbspreset pkgurl=\"pkg://FAE_Vegetation_Atlas\" label=\"\" >\n  <presetinput
+      identifier=\"$outputsize\" uid=\"3835182047\" type=\"8\" value=\"10,10\" />\n
+      \ <presetinput identifier=\"Bush_Bush_LeafColor\" uid=\"2458349827\" type=\"3\"
+      value=\"0.261884,0.415094,0.244749,1\" />\n  <presetinput identifier=\"Bush_Bush_BranchColor\"
+      uid=\"2458349825\" type=\"3\" value=\"0.254717,0.204558,0.0973211,1\" />\n  <presetinput
+      identifier=\"Bush_Bush_LightingAmount\" uid=\"2458349887\" type=\"0\" value=\"0.438\"
+      />\n  <presetinput identifier=\"Fern_FernColor\" uid=\"2458814657\" type=\"3\"
+      value=\"0.425577,0.632075,0.187834,1\" />\n  <presetinput identifier=\"Fern_AO\"
+      uid=\"2458814719\" type=\"0\" value=\"0.093\" />\n  <presetinput identifier=\"Fern_Gradient\"
+      uid=\"2460451764\" type=\"0\" value=\"0.727\" />\n </sbspreset>\n"
+    shaderName: Standard
+    outputNames: diffuse,normal
+    texturePackingList:
+    - outputName: output
+      alphaSource: output
+    - outputName: normal
+      alphaSource: normal
+    textureParameters:
+    - textureName: FAE_Vegetation_Atlas_diffuse
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: FAE_Vegetation_Atlas_normal
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: FAE_Vegetation_Atlas - diffuse
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: FAE_Vegetation_Atlas - normal
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    colorSpaceList:
+    - outputName: output
+      bLinear: 0
+    - outputName: normal
+      bLinear: 1
+    inputTextureMap: []
+    targetSettingList:
+    - label: Default
+      bLockRatio: 1
+      textureWidth: 1024
+      textureHeight: 1024
+      textureFormat: 0
+      bGenerateOnLoad: 1
+    - label: Standalone
+      bLockRatio: 1
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      bGenerateOnLoad: 0
+    - label: iPhone
+      bLockRatio: 1
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      bGenerateOnLoad: 0
+    material: {instanceID: 0}
+    generatedTextures: []
+  - graphLabel: FAE_Speedwell
+    prototypeName: 
+    graphDescIndex: 2
+    generateAllOutputs: 0
+    generateMipMaps: 1
+    preset: " <sbspreset pkgurl=\"pkg://Flowers/FAE_Speedwell\" label=\"\" >\n </sbspreset>\n"
+    shaderName: Standard
+    outputNames: diffuse
+    texturePackingList:
+    - outputName: billboard
+      alphaSource: billboard
+    textureParameters:
+    - textureName: FAE_Speedwell_diffuse
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: FAE_Speedwell - diffuse
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    colorSpaceList:
+    - outputName: billboard
+      bLinear: 0
+    inputTextureMap: []
+    targetSettingList:
+    - label: Default
+      bLockRatio: 1
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      bGenerateOnLoad: 1
+    - label: Standalone
+      bLockRatio: 1
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      bGenerateOnLoad: 0
+    - label: iPhone
+      bLockRatio: 1
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      bGenerateOnLoad: 0
+    material: {instanceID: 0}
+    generatedTextures: []
+  - graphLabel: FAE_TallGrass
+    prototypeName: 
+    graphDescIndex: 3
+    generateAllOutputs: 0
+    generateMipMaps: 1
+    preset: " <sbspreset pkgurl=\"pkg://Flowers/FAE_TallGrass\" label=\"\" >\n </sbspreset>\n"
+    shaderName: Standard
+    outputNames: diffuse
+    texturePackingList:
+    - outputName: billboard
+      alphaSource: billboard
+    textureParameters:
+    - textureName: FAE_TallGrass_diffuse
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: FAE_TallGrass - diffuse
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    colorSpaceList:
+    - outputName: billboard
+      bLinear: 0
+    inputTextureMap: []
+    targetSettingList:
+    - label: Default
+      bLockRatio: 1
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      bGenerateOnLoad: 1
+    - label: Standalone
+      bLockRatio: 1
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      bGenerateOnLoad: 0
+    - label: iPhone
+      bLockRatio: 1
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      bGenerateOnLoad: 0
+    material: {instanceID: 0}
+    generatedTextures: []
+  - graphLabel: Leaf
+    prototypeName: 
+    graphDescIndex: 4
+    generateAllOutputs: 0
+    generateMipMaps: 1
+    preset: " <sbspreset pkgurl=\"pkg://Flowers/Leaf\" label=\"\" >\n </sbspreset>\n"
+    shaderName: Standard
+    outputNames: diffuse
+    texturePackingList:
+    - outputName: output
+      alphaSource: alpha
+    - outputName: alpha
+      alphaSource: alpha
+    textureParameters:
+    - textureName: Leaf_diffuse
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Leaf_opacity
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Leaf - diffuse
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Leaf - opacity
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    colorSpaceList:
+    - outputName: output
+      bLinear: 0
+    - outputName: alpha
+      bLinear: 1
+    inputTextureMap: []
+    targetSettingList:
+    - label: Default
+      bLockRatio: 1
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      bGenerateOnLoad: 1
+    - label: Standalone
+      bLockRatio: 1
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      bGenerateOnLoad: 0
+    - label: iPhone
+      bLockRatio: 1
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      bGenerateOnLoad: 0
+    material: {instanceID: 0}
+    generatedTextures: []
+  - graphLabel: Lillypad
+    prototypeName: 
+    graphDescIndex: 5
+    generateAllOutputs: 0
+    generateMipMaps: 1
+    preset: " <sbspreset pkgurl=\"pkg://Flowers/Lillypad\" label=\"\" >\n </sbspreset>\n"
+    shaderName: Standard
+    outputNames: diffuse,normal
+    texturePackingList:
+    - outputName: output
+      alphaSource: output
+    - outputName: normal
+      alphaSource: normal
+    textureParameters:
+    - textureName: Lillypad_diffuse
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Lillypad_normal
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Lillypad - diffuse
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Lillypad - normal
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    colorSpaceList:
+    - outputName: output
+      bLinear: 0
+    - outputName: normal
+      bLinear: 1
+    inputTextureMap: []
+    targetSettingList:
+    - label: Default
+      bLockRatio: 1
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      bGenerateOnLoad: 1
+    - label: Standalone
+      bLockRatio: 1
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      bGenerateOnLoad: 0
+    - label: iPhone
+      bLockRatio: 1
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      bGenerateOnLoad: 0
+    material: {instanceID: 0}
+    generatedTextures: []
+  - graphLabel: Lotus
+    prototypeName: 
+    graphDescIndex: 6
+    generateAllOutputs: 0
+    generateMipMaps: 1
+    preset: " <sbspreset pkgurl=\"pkg://Flowers/Lotus\" label=\"\" >\n </sbspreset>\n"
+    shaderName: Standard
+    outputNames: diffuse
+    texturePackingList:
+    - outputName: output
+      alphaSource: output
+    textureParameters:
+    - textureName: Lotus_diffuse
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Lotus - diffuse
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    colorSpaceList:
+    - outputName: output
+      bLinear: 0
+    inputTextureMap: []
+    targetSettingList:
+    - label: Default
+      bLockRatio: 1
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      bGenerateOnLoad: 1
+    - label: Standalone
+      bLockRatio: 1
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      bGenerateOnLoad: 0
+    - label: iPhone
+      bLockRatio: 1
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      bGenerateOnLoad: 0
+    material: {instanceID: 0}
+    generatedTextures: []
+  - graphLabel: ElephantEar
+    prototypeName: 
+    graphDescIndex: 7
+    generateAllOutputs: 0
+    generateMipMaps: 1
+    preset: " <sbspreset pkgurl=\"pkg://Plants/ElephantEar\" label=\"\" >\n </sbspreset>\n"
+    shaderName: Standard
+    outputNames: diffuse
+    texturePackingList:
+    - outputName: output
+      alphaSource: output
+    textureParameters:
+    - textureName: ElephantEar_diffuse
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: ElephantEar - diffuse
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    colorSpaceList:
+    - outputName: output
+      bLinear: 0
+    inputTextureMap: []
+    targetSettingList:
+    - label: Default
+      bLockRatio: 1
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      bGenerateOnLoad: 1
+    - label: Standalone
+      bLockRatio: 1
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      bGenerateOnLoad: 0
+    - label: iPhone
+      bLockRatio: 1
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      bGenerateOnLoad: 0
+    material: {instanceID: 0}
+    generatedTextures: []
+  - graphLabel: FAE_Bush
+    prototypeName: 
+    graphDescIndex: 8
+    generateAllOutputs: 0
+    generateMipMaps: 1
+    preset: " <sbspreset pkgurl=\"pkg://Plants/FAE_Bush\" label=\"\" >\n </sbspreset>\n"
+    shaderName: Standard
+    outputNames: diffuse
+    texturePackingList:
+    - outputName: billboard
+      alphaSource: billboard
+    textureParameters:
+    - textureName: FAE_Bush_diffuse
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: FAE_Bush - diffuse
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    colorSpaceList:
+    - outputName: billboard
+      bLinear: 0
+    inputTextureMap: []
+    targetSettingList:
+    - label: Default
+      bLockRatio: 1
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      bGenerateOnLoad: 1
+    - label: Standalone
+      bLockRatio: 1
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      bGenerateOnLoad: 0
+    - label: iPhone
+      bLockRatio: 1
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      bGenerateOnLoad: 0
+    material: {instanceID: 0}
+    generatedTextures: []

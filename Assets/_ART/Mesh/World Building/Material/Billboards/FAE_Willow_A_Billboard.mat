@@ -9,14 +9,13 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: FAE_Willow_A_Billboard
   m_Shader: {fileID: 4800000, guid: da2ba458c5917bc47b8412af914a8f11, type: 3}
-  m_ShaderKeywords: _ALPHATEST_ON _RECEIVE_SHADOWS_OFF
-  m_LightmapFlags: 6
-  m_EnableInstancingVariants: 0
+  m_ShaderKeywords: EFFECT_HUE_VARIATION GEOM_TYPE_LEAF _ALPHATEST_ON _USELIGHTCOLOR_ON
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
-  disabledShaderPasses:
-  - SHADOWCASTER
+  disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -25,7 +24,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Atlas:
-        m_Texture: {fileID: 2800000, guid: 1621bff6d67cdd444be84884eeadde71, type: 3}
+        m_Texture: {fileID: 2800008, guid: 978ab4b8ee86bb44c95988f0296cdafb, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
@@ -61,7 +60,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 1621bff6d67cdd444be84884eeadde71, type: 3}
+        m_Texture: {fileID: 751134319, guid: 520815e513b5368499c87f5ecd748eb8, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -73,7 +72,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Normals:
-        m_Texture: {fileID: 2800000, guid: 6709677b987ba64408349de4bacadbfe, type: 3}
+        m_Texture: {fileID: 2800010, guid: 978ab4b8ee86bb44c95988f0296cdafb, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
@@ -89,10 +88,6 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ShadowOffset:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _SpecGlossMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -122,20 +117,18 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _AO: 0
-    - _AlphaClip: 1
     - _Alphacutoff: 0.415
     - _AmbientOcclusion: 0.556
     - _BendingInfluence: 0
-    - _Blend: 0
     - _BlendSpeed: 1
     - _BumpScale: 1
     - _ColorVariation: 0.422
     - _Colorvariation: 0.266
-    - _Cull: 2
-    - _Cutoff: 0.677
+    - _Cull: 0
+    - _Cutoff: 0.5
     - _Debug: 0
     - _DetailNormalMapScale: 1
-    - _DstBlend: 10
+    - _DstBlend: 0
     - _FlatLighting: 0
     - _GlossMapScale: 1
     - _Glossiness: 0.5
@@ -148,7 +141,6 @@ Material:
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _PigmentMapSize: 1024
-    - _ReceiveShadows: 0
     - _SSSAmount: 0.3306561
     - _SSSSize: 5.3
     - _ShadowStrength: 1
@@ -160,11 +152,10 @@ Material:
     - _SnowHeight: 0
     - _SpecularHighlights: 1
     - _SquashAmount: 1
-    - _SrcBlend: 5
+    - _SrcBlend: 1
     - _Subsurface: 1
     - _SubsurfaceAmount: 0.017
     - _SubsurfaceSize: 1
-    - _Surface: 1
     - _TessMax: 25
     - _TessMin: 10
     - _TessPhongStrength: 0.5
@@ -179,11 +170,10 @@ Material:
     - _WindWeight: 0.448
     - _Windspeed: 0.25
     - _Windweight: 1
-    - _WorkflowMode: 1
-    - _ZWrite: 0
+    - _ZWrite: 1
     - __dirty: 0
     m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 0, g: 1, b: 0, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _HueVariation: {r: 1, g: 0.80689657, b: 0, a: 0.366}
     - _SSSColor: {r: 0.9368154, g: 1, b: 0.3455882, a: 1}

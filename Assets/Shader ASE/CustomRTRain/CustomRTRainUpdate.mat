@@ -26,7 +26,7 @@ Material:
     m_Floats:
     - _Float2: 10
     - _Float3: 10.22
-    - _MaxRadius: 0
+    - _MaxRadius: 0.1
     - _Resolution: 25.11
     - _TimeScale: 3
     m_Colors:

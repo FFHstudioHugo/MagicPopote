@@ -1,0 +1,106 @@
+fileFormatVersion: 2
+guid: b31e198a97701b841a8d92d8b0eaa2eb
+ScriptedImporter:
+  fileIDToRecycleName:
+    2100002: Pine
+    2800012: Pine - diffuse
+    2800014: Pine - baseColor
+    2800016: Pine - normal
+    2800018: Pine - height
+    2800020: Pine - diffuse
+    2800022: Pine - normalWS
+    11400000: sbsar
+    11400002: graph0
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 232528478, guid: 43a8bbf65be290d44ba52b94476242b9, type: 3}
+  version: 17
+  mGraphInstanceData:
+  - graphLabel: Pine
+    prototypeName: Pine
+    graphDescIndex: 0
+    generateAllOutputs: 1
+    generateMipMaps: 1
+    preset: " <sbspreset pkgurl=\"pkg://Pine\" label=\"\" >\n </sbspreset>\n"
+    shaderName: Standard
+    outputNames: baseColor,normal,height
+    texturePackingList:
+    - outputName: diffuse
+      alphaSource: diffuse
+    - outputName: baseColor
+      alphaSource: baseColor
+    - outputName: normal
+      alphaSource: normal
+    - outputName: height
+      alphaSource: height
+    - outputName: diffuse
+      alphaSource: diffuse
+    - outputName: normalWS
+      alphaSource: normalWS
+    textureParameters:
+    - textureName: Pine_diffuse
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Pine_baseColor
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Pine_normal
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Pine_height
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Pine_normalWS
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Pine - diffuse
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Pine - baseColor
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Pine - normal
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Pine - height
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Pine - normalWS
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    colorSpaceList:
+    - outputName: diffuse
+      bLinear: 0
+    - outputName: baseColor
+      bLinear: 0
+    - outputName: normal
+      bLinear: 1
+    - outputName: height
+      bLinear: 1
+    - outputName: diffuse
+      bLinear: 0
+    - outputName: normalWS
+      bLinear: 1
+    inputTextureMap: []
+    targetSettingList:
+    - label: 
+      bLockRatio: 1
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      bGenerateOnLoad: 1
+    material: {fileID: 2100002, guid: b31e198a97701b841a8d92d8b0eaa2eb, type: 3}
+    generatedTextures: []

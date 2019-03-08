@@ -1,0 +1,131 @@
+fileFormatVersion: 2
+guid: a21334fc6629647409c02c54bd550550
+ScriptedImporter:
+  fileIDToRecycleName:
+    2100002: Spruce
+    2800008: Spruce - diffuse
+    2800010: Spruce - normal
+    2800012: Spruce - baseColor
+    2800028: Spruce - normal
+    2800030: Spruce - height
+    2800032: Spruce - diffuse
+    2800034: Spruce - normalWS
+    2800036: Spruce - diffuse
+    2800038: Spruce - normalWS
+    2800040: Spruce - diffuse
+    2800042: Spruce - normalWS
+    11400002: sbsar
+    11400004: graph0
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 232528478, guid: 43a8bbf65be290d44ba52b94476242b9, type: 3}
+  version: 17
+  mGraphInstanceData:
+  - graphLabel: Spruce
+    prototypeName: Spruce
+    graphDescIndex: 0
+    generateAllOutputs: 1
+    generateMipMaps: 1
+    preset: " <sbspreset pkgurl=\"pkg://Spruce\" label=\"\" >\n </sbspreset>\n"
+    shaderName: Standard
+    outputNames: 
+    texturePackingList:
+    - outputName: diffuse
+      alphaSource: diffuse
+    - outputName: normal
+      alphaSource: normal
+    - outputName: baseColor
+      alphaSource: baseColor
+    - outputName: normal
+      alphaSource: normal
+    - outputName: height
+      alphaSource: height
+    - outputName: diffuse
+      alphaSource: diffuse
+    - outputName: normalWS
+      alphaSource: normalWS
+    - outputName: diffuse
+      alphaSource: diffuse
+    - outputName: normalWS
+      alphaSource: normalWS
+    - outputName: diffuse
+      alphaSource: diffuse
+    - outputName: normalWS
+      alphaSource: normalWS
+    textureParameters:
+    - textureName: Spruce_diffuse
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Spruce_normal
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Spruce_baseColor
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Spruce_height
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Spruce_normalWS
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Spruce - diffuse
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Spruce - normal
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Spruce - baseColor
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Spruce - height
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Spruce - normalWS
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    colorSpaceList:
+    - outputName: diffuse
+      bLinear: 0
+    - outputName: normal
+      bLinear: 1
+    - outputName: baseColor
+      bLinear: 0
+    - outputName: normal
+      bLinear: 1
+    - outputName: height
+      bLinear: 1
+    - outputName: diffuse
+      bLinear: 0
+    - outputName: normalWS
+      bLinear: 1
+    - outputName: diffuse
+      bLinear: 0
+    - outputName: normalWS
+      bLinear: 1
+    - outputName: diffuse
+      bLinear: 0
+    - outputName: normalWS
+      bLinear: 1
+    inputTextureMap: []
+    targetSettingList:
+    - label: 
+      bLockRatio: 1
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      bGenerateOnLoad: 1
+    material: {fileID: 2100002, guid: a21334fc6629647409c02c54bd550550, type: 3}
+    generatedTextures: []

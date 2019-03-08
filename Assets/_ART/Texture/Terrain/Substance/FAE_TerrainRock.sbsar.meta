@@ -1,0 +1,101 @@
+fileFormatVersion: 2
+guid: 0b6a9734e5be76549ad53a4fc715ec01
+ScriptedImporter:
+  fileIDToRecycleName:
+    2100002: TerrainRock
+    2800006: TerrainRock - height
+    2800008: TerrainRock - baseColor
+    2800010: TerrainRock - normal
+    11400000: sbsar
+    11400002: graph0
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 232528478, guid: 43a8bbf65be290d44ba52b94476242b9, type: 3}
+  version: 17
+  mGraphInstanceData:
+  - graphLabel: TerrainRock
+    prototypeName: 
+    graphDescIndex: 0
+    generateAllOutputs: 0
+    generateMipMaps: 1
+    preset: " <sbspreset pkgurl=\"pkg://TerrainRock\" label=\"\" >\n  <presetinput
+      identifier=\"$outputsize\" uid=\"4159515113\" type=\"8\" value=\"10,10\" />\n
+      </sbspreset>\n"
+    shaderName: Standard
+    outputNames: height,baseColor,normal
+    texturePackingList:
+    - outputName: height
+      alphaSource: height
+    - outputName: basecolor
+      alphaSource: basecolor
+    - outputName: normal
+      alphaSource: normal
+    - outputName: roughness
+      alphaSource: roughness
+    textureParameters:
+    - textureName: TerrainRock_height
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: TerrainRock_baseColor
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: TerrainRock_normal
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: TerrainRock_roughness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: TerrainRock - height
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: TerrainRock - baseColor
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: TerrainRock - normal
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: TerrainRock - roughness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    colorSpaceList:
+    - outputName: height
+      bLinear: 1
+    - outputName: basecolor
+      bLinear: 0
+    - outputName: normal
+      bLinear: 1
+    - outputName: roughness
+      bLinear: 1
+    inputTextureMap: []
+    targetSettingList:
+    - label: Default
+      bLockRatio: 1
+      textureWidth: 1024
+      textureHeight: 1024
+      textureFormat: 0
+      bGenerateOnLoad: 1
+    - label: Standalone
+      bLockRatio: 1
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      bGenerateOnLoad: 0
+    - label: iPhone
+      bLockRatio: 1
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      bGenerateOnLoad: 0
+    material: {instanceID: 0}
+    generatedTextures: []

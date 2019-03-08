@@ -49,7 +49,8 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _AlphaClip: 0
-    - _AmbientOcclusion: 0.742
+    - _AlphaCutoff: 0.7
+    - _AmbientOcclusion: 0.93
     - _BendingInfluence: 0.2
     - _BendingTint: -0.086
     - _Blend: 0
@@ -64,6 +65,7 @@ Material:
     - _Glossiness: 0.5
     - _GlossyReflections: 1
     - _HeightmapInfluence: 0.34
+    - _Int0: 1
     - _LeafFlutter: 0.7
     - _MaxHeight: 0
     - _MaxWindStrength: 0.126967
@@ -78,6 +80,7 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _Surface: 0
+    - _Thickness: 0.54
     - _TransmissionAmount: 3.67
     - _TransmissionSize: 1.3
     - _VS_TOUCHBEND: 0

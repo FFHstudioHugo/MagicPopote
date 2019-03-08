@@ -75,5 +75,5 @@ Material:
     - _SnowTiling: 7
     - __dirty: 0
     m_Colors:
-    - _GlobalColor: {r: 0.5882353, g: 0.5294118, b: 0.40784314, a: 1}
+    - _GlobalColor: {r: 0.5882353, g: 0.5294118, b: 0.40784317, a: 1}
     - _ObjectColor: {r: 0.86764705, g: 0.86764705, b: 0.86764705, a: 1}

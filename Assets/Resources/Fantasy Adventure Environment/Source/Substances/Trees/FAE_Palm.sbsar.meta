@@ -1,0 +1,146 @@
+fileFormatVersion: 2
+guid: 45b75d02ba260ba43bc95331f81b8058
+ScriptedImporter:
+  fileIDToRecycleName:
+    2100002: Palm
+    2800000: Palm - diffuse
+    2800002: Palm - normal
+    2800004: Palm - normal
+    2800006: Palm - baseColor
+    2800008: Palm - height
+    2800010: Palm - normalWS
+    2800012: Palm - normalWS
+    2800014: Palm - normalWS
+    2800016: Palm - normalWS
+    2800018: Palm - normalWS
+    2800020: Palm - normalWS
+    11400000: sbsar
+    11400002: graph0
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 232528478, guid: 43a8bbf65be290d44ba52b94476242b9, type: 3}
+  version: 17
+  mGraphInstanceData:
+  - graphLabel: Palm
+    prototypeName: 
+    graphDescIndex: 0
+    generateAllOutputs: 1
+    generateMipMaps: 1
+    preset: " <sbspreset pkgurl=\"pkg://Palm\" label=\"\" >\n  <presetinput identifier=\"LeafColor\"
+      uid=\"2647750833\" type=\"3\" value=\"0.403835,0.662745,0,1\" />\n  <presetinput
+      identifier=\"BranchColor\" uid=\"2647812437\" type=\"3\" value=\"0.34658,0.494118,0.196078,1\"
+      />\n </sbspreset>\n"
+    shaderName: Standard
+    outputNames: 
+    texturePackingList:
+    - outputName: branch
+      alphaSource: branch
+    - outputName: branch_normal
+      alphaSource: branch_normal
+    - outputName: bark_normal
+      alphaSource: bark_normal
+    - outputName: bark_diffuse
+      alphaSource: bark_diffuse
+    - outputName: bark_height
+      alphaSource: bark_height
+    - outputName: a_Billboard_normal
+      alphaSource: a_Billboard_normal
+    - outputName: a_Billboard
+      alphaSource: a_Billboard
+    - outputName: b_Billboard_normal
+      alphaSource: b_Billboard_normal
+    - outputName: b_Billboard
+      alphaSource: b_Billboard
+    - outputName: c_Billboard_normal
+      alphaSource: c_Billboard_normal
+    - outputName: c_Billboard
+      alphaSource: c_Billboard
+    textureParameters:
+    - textureName: Palm_diffuse
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Palm_normal
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Palm_baseColor
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Palm_height
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Palm_normalWS
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Palm - diffuse
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Palm - normal
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Palm - baseColor
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Palm - height
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Palm - normalWS
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    colorSpaceList:
+    - outputName: branch
+      bLinear: 0
+    - outputName: branch_normal
+      bLinear: 1
+    - outputName: bark_normal
+      bLinear: 1
+    - outputName: bark_diffuse
+      bLinear: 0
+    - outputName: bark_height
+      bLinear: 1
+    - outputName: a_Billboard_normal
+      bLinear: 1
+    - outputName: a_Billboard
+      bLinear: 1
+    - outputName: b_Billboard_normal
+      bLinear: 1
+    - outputName: b_Billboard
+      bLinear: 1
+    - outputName: c_Billboard_normal
+      bLinear: 1
+    - outputName: c_Billboard
+      bLinear: 1
+    inputTextureMap: []
+    targetSettingList:
+    - label: Default
+      bLockRatio: 1
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      bGenerateOnLoad: 1
+    - label: Standalone
+      bLockRatio: 1
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      bGenerateOnLoad: 0
+    - label: iPhone
+      bLockRatio: 1
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      bGenerateOnLoad: 0
+    material: {fileID: 2100002, guid: 45b75d02ba260ba43bc95331f81b8058, type: 3}
+    generatedTextures: []

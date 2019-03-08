@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Skin_l 2
-  m_Shader: {fileID: 4800000, guid: ff42f4c7ef14bce46b31d5e4c87042e3, type: 3}
+  m_Shader: {fileID: 4800000, guid: 75794b0c670a1344fb5ee72d195c6ebd, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -47,6 +47,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     - Texture2D_B47C6B8F:
         m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_B93D4081:
+        m_Texture: {fileID: 2800000, guid: 72d2240ffeb12b94ebd553854d610b2d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_C7E2396F:
@@ -142,12 +146,13 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_5127C35D: 0.41
-    - Vector1_59D73497: 0
+    - Vector1_2B9C6765: 4
+    - Vector1_5127C35D: 0.39
+    - Vector1_59D73497: 0.41
     - Vector1_6C4C265B: 0.433
     - Vector1_7741C03: 1
-    - Vector1_7DAD511F: 0.35
-    - Vector1_82140A69: 0
+    - Vector1_7DAD511F: 0.2
+    - Vector1_82140A69: 0.41
     - Vector1_8ADF3397: 0.018
     - Vector1_9A27D27: 0.868
     - Vector1_9B3F9A63: 0.411
@@ -155,9 +160,10 @@ Material:
     - Vector1_A9E64BBA: 0.702
     - Vector1_ACE3C66F: 0.623
     - Vector1_B05BCB04: 1
-    - Vector1_E030FF4A: -3.4
+    - Vector1_B90EA7D1: 5
+    - Vector1_E030FF4A: 0.57
     - Vector1_F0E17752: 0
-    - Vector1_FC20164B: 0.39
+    - Vector1_FC20164B: 1
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
@@ -185,7 +191,7 @@ Material:
     - Color_4C0F02F7: {r: 0.5660378, g: 0.27612177, b: 0.10946956, a: 0}
     - Color_6B08FA5F: {r: 0.764151, g: 0, b: 0.07370006, a: 0}
     - Color_9894B972: {r: 1, g: 0.986359, b: 0.986, a: 0}
-    - Color_A035A7E2: {r: 2.5693963, g: 1.878568, b: 1.878568, a: 0}
+    - Color_A035A7E2: {r: 0.9245283, g: 0.6392242, b: 0.5538448, a: 0}
     - Color_B5380A9D: {r: 0.59414697, g: 0.54202497, b: 0.65699995, a: 0}
     - Color_BA72ABE3: {r: 1, g: 0, b: 0, a: 0}
     - Color_F7F779FB: {r: 1, g: 1, b: 1, a: 0}

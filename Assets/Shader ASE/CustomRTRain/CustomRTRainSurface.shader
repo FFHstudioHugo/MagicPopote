@@ -2,6 +2,7 @@
 // Available at the Unity Asset Store - http://u3d.as/y3X 
 Shader "ASESampleShaders/CustomRTRainSurface"
 {
+	/*CustomNodeUI:HDPBR*/
     Properties
     {
 		_RainRT("RainRT", 2D) = "white" {}
@@ -14,6 +15,7 @@ Shader "ASESampleShaders/CustomRTRainSurface"
 
     SubShader
     {
+		
         Tags { "RenderPipeline"="HDRenderPipeline" "RenderType"="Opaque" "Queue"="Geometry" }
         
 		Cull Back
@@ -89,6 +91,7 @@ Shader "ASESampleShaders/CustomRTRainSurface"
 			#pragma vertex Vert
 			#pragma fragment Frag
 			
+			#define ASE_SRP_VERSION 41000
 			#define _NORMALMAP 1
 
 		
@@ -120,26 +123,6 @@ Shader "ASESampleShaders/CustomRTRainSurface"
             #include "Packages/com.unity.render-pipelines.high-definition/Runtime/Material/MaterialUtilities.hlsl"
 			#include "Packages/com.unity.render-pipelines.high-definition/Runtime/ShaderLibrary/ShaderGraphFunctions.hlsl"
 
-			CBUFFER_START(UnityPerMaterial)
-			sampler2D _Albedo;
-			float _Tiling;
-			sampler2D _RainRT;
-			sampler2D _Normal;
-			float _Metallic;
-			float _Smoothness;
-			CBUFFER_END
-			
-            //float3x3 BuildWorldToTangent(float4 tangentWS, float3 normalWS)
-            //{
-        	//    float3 unnormalizedNormalWS = normalWS;
-            //    float renormFactor = 1.0 / length(unnormalizedNormalWS);
-            //    float3x3 worldToTangent = CreateWorldToTangent(unnormalizedNormalWS, tangentWS.xyz, tangentWS.w > 0.0 ? 1.0 : -1.0);
-            //    worldToTangent[0] = worldToTangent[0] * renormFactor;
-            //    worldToTangent[1] = worldToTangent[1] * renormFactor;
-            //    worldToTangent[2] = worldToTangent[2] * renormFactor;
-            //    return worldToTangent;
-            //}
-
             struct AttributesMesh 
 			{
                 float4 positionOS : POSITION;
@@ -167,13 +150,22 @@ Shader "ASESampleShaders/CustomRTRainSurface"
 				#endif
             };
         
+			sampler2D _Albedo;
+			float _Tiling;
+			sampler2D _RainRT;
+			sampler2D _Normal;
+			float _Metallic;
+			float _Smoothness;
+			
+			
 			void BuildSurfaceData ( FragInputs fragInputs, GlobalSurfaceDescription surfaceDescription, float3 V, out SurfaceData surfaceData )
 			{
 				ZERO_INITIALIZE ( SurfaceData, surfaceData );
 
 				float3 normalTS = float3( 0.0f, 0.0f, 1.0f );
 				normalTS = surfaceDescription.Normal;
-				GetNormalWS ( fragInputs, normalTS, surfaceData.normalWS );
+				float3 doubleSidedConstants = float3(1.0, 1.0, 1.0);
+				GetNormalWS ( fragInputs, normalTS, surfaceData.normalWS ,doubleSidedConstants);
 
 				surfaceData.ambientOcclusion = 1.0f;
 
@@ -287,7 +279,13 @@ Shader "ASESampleShaders/CustomRTRainSurface"
 				#endif
 
 				
-				inputMesh.positionOS.xyz +=  float3( 0, 0, 0 ) ;
+				float3 vertexValue =  float3( 0, 0, 0 ) ;
+				#ifdef ASE_ABSOLUTE_VERTEX_POS
+				inputMesh.positionOS.xyz = vertexValue;
+				#else
+				inputMesh.positionOS.xyz += vertexValue;
+				#endif
+
 				inputMesh.normalOS =  inputMesh.normalOS ;
 
 				float3 positionRWS = TransformObjectToWorld ( inputMesh.positionOS.xyz );
@@ -403,6 +401,7 @@ Shader "ASESampleShaders/CustomRTRainSurface"
 			#pragma vertex Vert
 			#pragma fragment Frag
 
+			#define ASE_SRP_VERSION 41000
 			#define _NORMALMAP 1
 
         
@@ -427,16 +426,7 @@ Shader "ASESampleShaders/CustomRTRainSurface"
             #include "Packages/com.unity.render-pipelines.high-definition/Runtime/Material/BuiltinUtilities.hlsl"
             #include "Packages/com.unity.render-pipelines.high-definition/Runtime/Material/MaterialUtilities.hlsl"
             #include "Packages/com.unity.render-pipelines.high-definition/Runtime/ShaderLibrary/ShaderGraphFunctions.hlsl"
-        
-			CBUFFER_START(UnityPerMaterial)
-			sampler2D _Albedo;
-			float _Tiling;
-			sampler2D _RainRT;
-			sampler2D _Normal;
-			float _Metallic;
-			float _Smoothness;
-			CBUFFER_END
-			
+
             struct AttributesMesh 
 			{
                 float4 positionOS : POSITION;
@@ -455,13 +445,22 @@ Shader "ASESampleShaders/CustomRTRainSurface"
 				float4 ase_texcoord : TEXCOORD0;
             };
             
+			sampler2D _Albedo;
+			float _Tiling;
+			sampler2D _RainRT;
+			sampler2D _Normal;
+			float _Metallic;
+			float _Smoothness;
+			
+			
 			void BuildSurfaceData ( FragInputs fragInputs, GlobalSurfaceDescription surfaceDescription, float3 V, out SurfaceData surfaceData )
 			{
 				ZERO_INITIALIZE ( SurfaceData, surfaceData );
 
 				float3 normalTS = float3( 0.0f, 0.0f, 1.0f );
 				normalTS = surfaceDescription.Normal;
-				GetNormalWS ( fragInputs, normalTS, surfaceData.normalWS );
+				float3 doubleSidedConstants = float3(1.0, 1.0, 1.0);
+				GetNormalWS ( fragInputs, normalTS, surfaceData.normalWS ,doubleSidedConstants);
 
 				surfaceData.ambientOcclusion = 1.0f;
 
@@ -586,7 +585,13 @@ Shader "ASESampleShaders/CustomRTRainSurface"
 				
 				//setting value to unused interpolator channels and avoid initialization warnings
 				outputPackedVaryingsMeshToPS.ase_texcoord.w = 0;
-				inputMesh.positionOS.xyz +=  float3( 0, 0, 0 ) ;
+				float3 vertexValue =  float3( 0, 0, 0 ) ;
+				#ifdef ASE_ABSOLUTE_VERTEX_POS
+				inputMesh.positionOS.xyz = vertexValue;
+				#else
+				inputMesh.positionOS.xyz += vertexValue;
+				#endif
+
 				inputMesh.normalOS =  inputMesh.normalOS ;
 
 				float2 uv;
@@ -702,7 +707,8 @@ Shader "ASESampleShaders/CustomRTRainSurface"
 			#pragma vertex Vert
 			#pragma fragment Frag
 
-			
+			#define ASE_SRP_VERSION 41000
+
         
             #include "Packages/com.unity.render-pipelines.core/ShaderLibrary/Common.hlsl"
             #include "Packages/com.unity.render-pipelines.core/ShaderLibrary/Wind.hlsl"
@@ -723,9 +729,7 @@ Shader "ASESampleShaders/CustomRTRainSurface"
             #include "Packages/com.unity.render-pipelines.high-definition/Runtime/Material/MaterialUtilities.hlsl"
             #include "Packages/com.unity.render-pipelines.high-definition/Runtime/ShaderLibrary/ShaderGraphFunctions.hlsl"
         
-			CBUFFER_START(UnityPerMaterial)
-						CBUFFER_END
-			
+
             struct AttributesMesh 
 			{
                 float4 positionOS : POSITION;
@@ -745,6 +749,8 @@ Shader "ASESampleShaders/CustomRTRainSurface"
 				#endif 
             };
         
+						
+			
             void BuildSurfaceData(FragInputs fragInputs, AlphaSurfaceDescription surfaceDescription, float3 V, out SurfaceData surfaceData)
             {
                 ZERO_INITIALIZE(SurfaceData, surfaceData);
@@ -772,7 +778,8 @@ Shader "ASESampleShaders/CustomRTRainSurface"
         #endif
         
                 float3 normalTS = float3(0.0f, 0.0f, 1.0f);
-                GetNormalWS(fragInputs, normalTS, surfaceData.normalWS);
+                float3 doubleSidedConstants = float3(1.0, 1.0, 1.0);
+				GetNormalWS(fragInputs, normalTS, surfaceData.normalWS,doubleSidedConstants);
                 surfaceData.tangentWS = normalize(fragInputs.worldToTangent[0].xyz);
                 surfaceData.tangentWS = Orthonormalize(surfaceData.tangentWS, surfaceData.normalWS);
                 surfaceData.anisotropy = 0;
@@ -814,7 +821,13 @@ Shader "ASESampleShaders/CustomRTRainSurface"
 				UNITY_TRANSFER_INSTANCE_ID ( inputMesh, outputPackedVaryingsMeshToPS );
 
 				
-				inputMesh.positionOS.xyz +=  float3( 0, 0, 0 ) ;
+				float3 vertexValue =  float3( 0, 0, 0 ) ;
+				#ifdef ASE_ABSOLUTE_VERTEX_POS
+				inputMesh.positionOS.xyz = vertexValue;
+				#else
+				inputMesh.positionOS.xyz += vertexValue;
+				#endif
+
 				inputMesh.normalOS =  inputMesh.normalOS ;
 
 				float3 positionRWS = TransformObjectToWorld ( inputMesh.positionOS.xyz );
@@ -893,7 +906,8 @@ Shader "ASESampleShaders/CustomRTRainSurface"
 				#pragma vertex Vert
 				#pragma fragment Frag
         
-				
+				#define ASE_SRP_VERSION 41000
+
 
 				#include "Packages/com.unity.render-pipelines.core/ShaderLibrary/Common.hlsl"
 				#include "Packages/com.unity.render-pipelines.core/ShaderLibrary/Wind.hlsl"
@@ -937,10 +951,8 @@ Shader "ASESampleShaders/CustomRTRainSurface"
 					uint instanceID : INSTANCEID_SEMANTIC; 
 					#endif 
 				};
-
         
-                CBUFFER_START(UnityPerMaterial)
-								CBUFFER_END
+						
 				                
         
 				void BuildSurfaceData(FragInputs fragInputs, AlphaSurfaceDescription surfaceDescription, float3 V, out SurfaceData surfaceData)
@@ -953,7 +965,8 @@ Shader "ASESampleShaders/CustomRTRainSurface"
 					surfaceData.materialFeatures |= MATERIALFEATUREFLAGS_LIT_SPECULAR_COLOR;
 			#endif
 					float3 normalTS =                   float3(0.0f, 0.0f, 1.0f);
-					GetNormalWS(fragInputs, normalTS, surfaceData.normalWS);
+					float3 doubleSidedConstants = float3(1.0, 1.0, 1.0);
+					GetNormalWS(fragInputs, normalTS, surfaceData.normalWS,doubleSidedConstants);
 					surfaceData.tangentWS = normalize(fragInputs.worldToTangent[0].xyz);    // The tangent is not normalize in worldToTangent for mikkt. TODO: Check if it expected that we normalize with Morten. Tag: SURFACE_GRADIENT
 					surfaceData.tangentWS = Orthonormalize(surfaceData.tangentWS, surfaceData.normalWS);
 					surfaceData.anisotropy = 0;
@@ -996,8 +1009,13 @@ Shader "ASESampleShaders/CustomRTRainSurface"
 					UNITY_TRANSFER_INSTANCE_ID(inputMesh, outputPackedVaryingsMeshToPS);
 					
 					
-				
-					inputMesh.positionOS.xyz +=  float3( 0, 0, 0 ) ;
+					float3 vertexValue =  float3( 0, 0, 0 ) ;
+					#ifdef ASE_ABSOLUTE_VERTEX_POS
+					inputMesh.positionOS.xyz = vertexValue;
+					#else
+					inputMesh.positionOS.xyz += vertexValue;
+					#endif
+
 					inputMesh.normalOS =  inputMesh.normalOS ;
 
 					float3 positionRWS = TransformObjectToWorld(inputMesh.positionOS);
@@ -1075,7 +1093,8 @@ Shader "ASESampleShaders/CustomRTRainSurface"
 				#pragma vertex Vert
 				#pragma fragment Frag
         
-				
+				#define ASE_SRP_VERSION 41000
+
 
         
 				#include "Packages/com.unity.render-pipelines.core/ShaderLibrary/Common.hlsl"
@@ -1094,7 +1113,7 @@ Shader "ASESampleShaders/CustomRTRainSurface"
 				#include "Packages/com.unity.render-pipelines.high-definition/Runtime/Material/BuiltinUtilities.hlsl"
 				#include "Packages/com.unity.render-pipelines.high-definition/Runtime/Material/MaterialUtilities.hlsl"
 				#include "Packages/com.unity.render-pipelines.high-definition/Runtime/ShaderLibrary/ShaderGraphFunctions.hlsl"
-        
+				
 				struct AttributesMesh 
 				{
 					float3 positionOS : POSITION;
@@ -1114,8 +1133,7 @@ Shader "ASESampleShaders/CustomRTRainSurface"
 					#endif
 				};
 
-				CBUFFER_START(UnityPerMaterial)
-								CBUFFER_END
+								
 				        
 				void BuildSurfaceData(FragInputs fragInputs, AlphaSurfaceDescription surfaceDescription, float3 V, out SurfaceData surfaceData)
 				{
@@ -1143,7 +1161,8 @@ Shader "ASESampleShaders/CustomRTRainSurface"
 					surfaceData.materialFeatures |= MATERIALFEATUREFLAGS_LIT_SPECULAR_COLOR;
 			#endif
 					float3 normalTS =                   float3(0.0f, 0.0f, 1.0f);
-					GetNormalWS(fragInputs, normalTS, surfaceData.normalWS);
+					float3 doubleSidedConstants = float3(1.0, 1.0, 1.0);
+					GetNormalWS(fragInputs, normalTS, surfaceData.normalWS,doubleSidedConstants);
 					surfaceData.tangentWS = normalize(fragInputs.worldToTangent[0].xyz);    // The tangent is not normalize in worldToTangent for mikkt. TODO: Check if it expected that we normalize with Morten. Tag: SURFACE_GRADIENT
 					surfaceData.tangentWS = Orthonormalize(surfaceData.tangentWS, surfaceData.normalWS);
 					surfaceData.anisotropy = 0;
@@ -1182,7 +1201,13 @@ Shader "ASESampleShaders/CustomRTRainSurface"
 				UNITY_TRANSFER_INSTANCE_ID(inputMesh, outputPackedVaryingsMeshToPS);
 
 				
-				inputMesh.positionOS.xyz +=  float3( 0, 0, 0 ) ;
+				float3 vertexValue =  float3( 0, 0, 0 ) ;
+				#ifdef ASE_ABSOLUTE_VERTEX_POS
+				inputMesh.positionOS.xyz = vertexValue;
+				#else
+				inputMesh.positionOS.xyz += vertexValue;
+				#endif
+
 				inputMesh.normalOS =  inputMesh.normalOS ;
 
 				float3 positionRWS = TransformObjectToWorld(inputMesh.positionOS);
@@ -1267,7 +1292,8 @@ Shader "ASESampleShaders/CustomRTRainSurface"
 				#pragma vertex Vert
 				#pragma fragment Frag
         
-				
+				#define ASE_SRP_VERSION 41000
+
         
 				#include "Packages/com.unity.render-pipelines.core/ShaderLibrary/Common.hlsl"
 				#include "Packages/com.unity.render-pipelines.core/ShaderLibrary/Wind.hlsl"
@@ -1290,7 +1316,6 @@ Shader "ASESampleShaders/CustomRTRainSurface"
 				#include "Packages/com.unity.render-pipelines.high-definition/Runtime/Material/MaterialUtilities.hlsl"
 				#include "Packages/com.unity.render-pipelines.high-definition/Runtime/ShaderLibrary/ShaderGraphFunctions.hlsl"
         
-            
 				struct AttributesMesh
 				{
 					float3 positionOS : POSITION;
@@ -1341,8 +1366,7 @@ Shader "ASESampleShaders/CustomRTRainSurface"
 					#endif
 				};
 
-                CBUFFER_START(UnityPerMaterial)
-								CBUFFER_END
+								
 				            
 				FragInputs BuildFragInputs(VaryingsMeshToPS input)
 				{
@@ -1380,7 +1404,8 @@ Shader "ASESampleShaders/CustomRTRainSurface"
 			#endif
         
 					float3 normalTS =                   float3(0.0f, 0.0f, 1.0f);
-					GetNormalWS(fragInputs, normalTS, surfaceData.normalWS);
+					float3 doubleSidedConstants = float3(1.0, 1.0, 1.0);
+					GetNormalWS(fragInputs, normalTS, surfaceData.normalWS,doubleSidedConstants);
 					surfaceData.tangentWS = normalize(fragInputs.worldToTangent[0].xyz);    // The tangent is not normalize in worldToTangent for mikkt. TODO: Check if it expected that we normalize with Morten. Tag: SURFACE_GRADIENT
 					surfaceData.tangentWS = Orthonormalize(surfaceData.tangentWS, surfaceData.normalWS);
 					surfaceData.anisotropy = 0;
@@ -1484,7 +1509,13 @@ Shader "ASESampleShaders/CustomRTRainSurface"
 					UNITY_TRANSFER_INSTANCE_ID(inputMesh, outputVaryingsMeshToPS);
 
 					
-					inputMesh.positionOS.xyz +=  float3( 0, 0, 0 ) ;
+					float3 vertexValue =  float3( 0, 0, 0 ) ;
+					#ifdef ASE_ABSOLUTE_VERTEX_POS
+					inputMesh.positionOS.xyz = vertexValue;
+					#else
+					inputMesh.positionOS.xyz += vertexValue;
+					#endif
+
 					inputMesh.normalOS =  inputMesh.normalOS ;
 
 					float3 positionRWS = TransformObjectToWorld(inputMesh.positionOS);
@@ -1611,6 +1642,7 @@ Shader "ASESampleShaders/CustomRTRainSurface"
 				#pragma vertex Vert
 				#pragma fragment Frag
         
+				#define ASE_SRP_VERSION 41000
 				#define _NORMALMAP 1
 
         
@@ -1657,18 +1689,7 @@ Shader "ASESampleShaders/CustomRTRainSurface"
 				#include "Packages/com.unity.render-pipelines.high-definition/Runtime/Material/BuiltinUtilities.hlsl"
 				#include "Packages/com.unity.render-pipelines.high-definition/Runtime/Material/MaterialUtilities.hlsl"
 				#include "Packages/com.unity.render-pipelines.high-definition/Runtime/ShaderLibrary/ShaderGraphFunctions.hlsl"
-        
-				//float3x3 BuildWorldToTangent(float4 tangentWS, float3 normalWS)
-				//{
-        		//	float3 unnormalizedNormalWS = normalWS;
-				//	float renormFactor = 1.0 / length(unnormalizedNormalWS);
-				//	float3x3 worldToTangent = CreateWorldToTangent(unnormalizedNormalWS, tangentWS.xyz, tangentWS.w > 0.0 ? 1.0 : -1.0);
-				//	worldToTangent[0] = worldToTangent[0] * renormFactor;
-				//	worldToTangent[1] = worldToTangent[1] * renormFactor;
-				//	worldToTangent[2] = worldToTangent[2] * renormFactor;
-				//	return worldToTangent;
-				//}
-        
+				
 				struct AttributesMesh 
 				{
 					float3 positionOS : POSITION;
@@ -1696,15 +1717,13 @@ Shader "ASESampleShaders/CustomRTRainSurface"
 					#endif
 				};
 
-        
-				CBUFFER_START(UnityPerMaterial)
 				sampler2D _Albedo;
 				float _Tiling;
 				sampler2D _RainRT;
 				sampler2D _Normal;
 				float _Metallic;
 				float _Smoothness;
-				CBUFFER_END
+				
 				                
         
 				void BuildSurfaceData ( FragInputs fragInputs, GlobalSurfaceDescription surfaceDescription, float3 V, out SurfaceData surfaceData )
@@ -1713,7 +1732,8 @@ Shader "ASESampleShaders/CustomRTRainSurface"
 
 				float3 normalTS = float3( 0.0f, 0.0f, 1.0f );
 				normalTS = surfaceDescription.Normal;
-				GetNormalWS ( fragInputs, normalTS, surfaceData.normalWS );
+				float3 doubleSidedConstants = float3(1.0, 1.0, 1.0);
+				GetNormalWS ( fragInputs, normalTS, surfaceData.normalWS ,doubleSidedConstants);
 
 				surfaceData.ambientOcclusion = 1.0f;
 
@@ -1822,7 +1842,13 @@ Shader "ASESampleShaders/CustomRTRainSurface"
 					UNITY_TRANSFER_INSTANCE_ID(inputMesh, outputPackedVaryingsMeshToPS);
 
 					
-					inputMesh.positionOS.xyz +=  float3( 0, 0, 0 ) ;
+					float3 vertexValue =  float3( 0, 0, 0 ) ;
+					#ifdef ASE_ABSOLUTE_VERTEX_POS
+					inputMesh.positionOS.xyz = vertexValue;
+					#else
+					inputMesh.positionOS.xyz += vertexValue;
+					#endif
+					
 					inputMesh.normalOS =  inputMesh.normalOS ;
 
 					float3 positionRWS = TransformObjectToWorld(inputMesh.positionOS);
@@ -1963,6 +1989,7 @@ Shader "ASESampleShaders/CustomRTRainSurface"
 
             ENDHLSL
         }
+		
     }
     FallBack "Hidden/InternalErrorShader"
 	CustomEditor "ASEMaterialInspector"
@@ -1970,8 +1997,8 @@ Shader "ASESampleShaders/CustomRTRainSurface"
 	
 }
 /*ASEBEGIN
-Version=16200
-542.4;116.8;878;664;1105.887;311.3949;1.943582;True;False
+Version=16301
+455.2;64;721;772;953.3158;416.3483;1.943582;True;False
 Node;AmplifyShaderEditor.WorldPosInputsNode;19;-2120.197,-49.54021;Float;True;0;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3
 Node;AmplifyShaderEditor.SwizzleNode;28;-1879.181,-75.0134;Float;False;FLOAT2;0;2;2;3;1;0;FLOAT3;0,0,0;False;1;FLOAT2;0
 Node;AmplifyShaderEditor.RangedFloatNode;25;-2017.339,256.696;Float;False;Property;_Tiling;Tiling;5;0;Create;True;0;0;False;0;0;1.19;0;10;0;1;FLOAT;0
@@ -1979,30 +2006,30 @@ Node;AmplifyShaderEditor.SimpleMultiplyOpNode;24;-1668.186,-39.84122;Float;True;
 Node;AmplifyShaderEditor.TFHCRemapNode;27;-1415.936,-283.6642;Float;True;5;0;FLOAT2;0,0;False;1;FLOAT2;-1,-1;False;2;FLOAT2;1,1;False;3;FLOAT2;0,0;False;4;FLOAT2;1,1;False;1;FLOAT2;0
 Node;AmplifyShaderEditor.SamplerNode;1;-1002.049,49.92022;Float;True;Property;_RainRT;RainRT;0;0;Create;True;0;0;False;0;90633d9cb21e25047a98cbe2bc8aa6e7;90633d9cb21e25047a98cbe2bc8aa6e7;True;0;False;white;Auto;False;Object;-1;Auto;Texture2D;6;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.SamplerNode;3;-470.5006,-138.5006;Float;True;Property;_Albedo;Albedo;1;0;Create;True;0;0;False;0;None;b297077dae62c1944ba14cad801cddf5;True;0;False;white;Auto;False;Object;-1;Auto;Texture2D;6;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
-Node;AmplifyShaderEditor.RangedFloatNode;14;-172.4833,377.9584;Float;False;Property;_Smoothness;Smoothness;4;0;Create;True;0;0;False;0;0;0.5;0;1;0;1;FLOAT;0
-Node;AmplifyShaderEditor.RangedFloatNode;31;-1687.537,1065.55;Float;False;Property;_Float1;Float 1;6;0;Create;True;0;0;False;0;0;20000;0;0;0;1;FLOAT;0
-Node;AmplifyShaderEditor.SamplerNode;11;-403.3066,100.9921;Float;True;Property;_Normal;Normal;2;0;Create;True;0;0;False;0;None;0bebe40e9ebbecc48b8e9cfea982da7e;True;0;True;bump;Auto;True;Object;-1;Auto;Texture2D;6;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;5;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
-Node;AmplifyShaderEditor.SimpleAddOpNode;2;-153.5006,-30.40063;Float;False;2;2;0;COLOR;0,0,0,0;False;1;FLOAT;0;False;1;COLOR;0
 Node;AmplifyShaderEditor.RangedFloatNode;13;-202.4833,285.9584;Float;False;Property;_Metallic;Metallic;3;0;Create;True;0;0;False;0;0;0;0;1;0;1;FLOAT;0
-Node;AmplifyShaderEditor.TemplateMultiPassMasterNode;32;153.5001,59.09998;Float;False;True;2;Float;ASEMaterialInspector;0;6;ASESampleShaders/CustomRTRainSurface;bb308bce79762c34e823049efce65141;0;0;GBuffer;22;True;1;1;False;-1;0;False;-1;0;1;False;-1;0;False;-1;False;False;True;0;False;-1;False;False;True;1;False;-1;True;3;False;-1;False;True;3;RenderPipeline=HDRenderPipeline;RenderType=Opaque=RenderType;Queue=Geometry=Queue=0;True;5;0;False;False;False;False;False;True;True;2;False;-1;255;False;-1;7;False;-1;7;False;-1;3;False;-1;1;False;-1;1;False;-1;7;False;-1;1;False;-1;1;False;-1;1;False;-1;False;False;False;True;1;LightMode=GBuffer;False;0;;0;0;Standard;0;22;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;3;FLOAT3;0,0,0;False;4;FLOAT;0;False;5;FLOAT;0;False;6;FLOAT;0;False;7;FLOAT;0;False;8;FLOAT;0;False;11;FLOAT;0;False;12;INT;0;False;13;FLOAT;0;False;14;FLOAT;0;False;15;FLOAT;0;False;16;FLOAT;0;False;17;FLOAT;0;False;18;FLOAT;0;False;19;FLOAT3;0,0,0;False;20;FLOAT;0;False;21;FLOAT;0;False;9;FLOAT3;0,0,0;False;10;FLOAT3;0,0,0;False;0
-Node;AmplifyShaderEditor.TemplateMultiPassMasterNode;33;153.5001,59.09998;Float;False;False;2;Float;ASEMaterialInspector;0;1;Hidden/Templates/HDSRPPBR;bb308bce79762c34e823049efce65141;0;1;META;0;True;1;1;False;-1;0;False;-1;0;1;False;-1;0;False;-1;False;False;True;0;False;-1;False;False;True;1;False;-1;True;3;False;-1;False;True;3;RenderPipeline=HDRenderPipeline;RenderType=Opaque=RenderType;Queue=Geometry=Queue=0;True;5;0;False;False;False;True;2;False;-1;False;False;False;False;False;True;1;LightMode=Meta;False;0;;0;0;Standard;0;22;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;3;FLOAT3;0,0,0;False;4;FLOAT;0;False;5;FLOAT;0;False;6;FLOAT;0;False;7;FLOAT;0;False;8;FLOAT;0;False;11;FLOAT;0;False;12;INT;0;False;13;FLOAT;0;False;14;FLOAT;0;False;15;FLOAT;0;False;16;FLOAT;0;False;17;FLOAT;0;False;18;FLOAT;0;False;19;FLOAT3;0,0,0;False;20;FLOAT;0;False;21;FLOAT;0;False;9;FLOAT3;0,0,0;False;10;FLOAT3;0,0,0;False;0
-Node;AmplifyShaderEditor.TemplateMultiPassMasterNode;34;153.5001,59.09998;Float;False;False;2;Float;ASEMaterialInspector;0;1;Hidden/Templates/HDSRPPBR;bb308bce79762c34e823049efce65141;0;2;ShadowCaster;0;True;1;1;False;-1;0;False;-1;0;1;False;-1;0;False;-1;False;False;True;0;False;-1;False;False;True;1;False;-1;True;3;False;-1;False;True;3;RenderPipeline=HDRenderPipeline;RenderType=Opaque=RenderType;Queue=Geometry=Queue=0;True;5;0;False;False;False;False;True;False;False;False;False;0;False;-1;False;False;False;False;True;1;LightMode=ShadowCaster;False;0;;0;0;Standard;0;4;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT3;0,0,0;False;3;FLOAT3;0,0,0;False;0
-Node;AmplifyShaderEditor.TemplateMultiPassMasterNode;35;153.5001,59.09998;Float;False;False;2;Float;ASEMaterialInspector;0;1;Hidden/Templates/HDSRPPBR;bb308bce79762c34e823049efce65141;0;3;SceneSelectionPass;0;True;1;1;False;-1;0;False;-1;0;1;False;-1;0;False;-1;False;False;True;0;False;-1;False;False;True;1;False;-1;True;3;False;-1;False;True;3;RenderPipeline=HDRenderPipeline;RenderType=Opaque=RenderType;Queue=Geometry=Queue=0;True;5;0;False;False;False;False;True;False;False;False;False;0;False;-1;False;False;False;False;True;1;LightMode=SceneSelectionPass;False;0;;0;0;Standard;0;4;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT3;0,0,0;False;3;FLOAT3;0,0,0;False;0
-Node;AmplifyShaderEditor.TemplateMultiPassMasterNode;36;153.5001,59.09998;Float;False;False;2;Float;ASEMaterialInspector;0;1;Hidden/Templates/HDSRPPBR;bb308bce79762c34e823049efce65141;0;4;DepthOnly;0;True;1;1;False;-1;0;False;-1;0;1;False;-1;0;False;-1;False;False;True;0;False;-1;False;False;True;1;False;-1;True;3;False;-1;False;True;3;RenderPipeline=HDRenderPipeline;RenderType=Opaque=RenderType;Queue=Geometry=Queue=0;True;5;0;False;False;False;False;True;False;False;False;False;0;False;-1;False;False;False;False;True;1;LightMode=DepthOnly;False;0;;0;0;Standard;0;4;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT3;0,0,0;False;3;FLOAT3;0,0,0;False;0
-Node;AmplifyShaderEditor.TemplateMultiPassMasterNode;37;153.5001,59.09998;Float;False;False;2;Float;ASEMaterialInspector;0;1;Hidden/Templates/HDSRPPBR;bb308bce79762c34e823049efce65141;0;5;Motion Vectors;0;True;1;1;False;-1;0;False;-1;0;1;False;-1;0;False;-1;False;False;True;0;False;-1;False;False;True;1;False;-1;True;3;False;-1;False;True;3;RenderPipeline=HDRenderPipeline;RenderType=Opaque=RenderType;Queue=Geometry=Queue=0;True;5;0;False;False;False;False;False;True;True;128;False;-1;255;False;-1;128;False;-1;7;False;-1;3;False;-1;1;False;-1;1;False;-1;7;False;-1;1;False;-1;1;False;-1;1;False;-1;False;False;False;True;1;LightMode=MotionVectors;False;0;;0;0;Standard;0;4;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT3;0,0,0;False;3;FLOAT3;0,0,0;False;0
-Node;AmplifyShaderEditor.TemplateMultiPassMasterNode;38;153.5001,59.09998;Float;False;False;2;Float;ASEMaterialInspector;0;1;Hidden/Templates/HDSRPPBR;bb308bce79762c34e823049efce65141;0;6;Forward;0;True;1;1;False;-1;0;False;-1;0;1;False;-1;0;False;-1;False;False;True;0;False;-1;False;False;True;1;False;-1;True;3;False;-1;False;True;3;RenderPipeline=HDRenderPipeline;RenderType=Opaque=RenderType;Queue=Geometry=Queue=0;True;5;0;False;False;False;False;False;True;True;2;False;-1;255;False;-1;7;False;-1;7;False;-1;3;False;-1;1;False;-1;1;False;-1;7;False;-1;1;False;-1;1;False;-1;1;False;-1;False;False;False;True;1;LightMode=Forward;False;0;;0;0;Standard;0;22;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;3;FLOAT3;0,0,0;False;4;FLOAT;0;False;5;FLOAT;0;False;6;FLOAT;0;False;7;FLOAT;0;False;8;FLOAT;0;False;11;FLOAT;0;False;12;INT;0;False;13;FLOAT;0;False;14;FLOAT;0;False;15;FLOAT;0;False;16;FLOAT;0;False;17;FLOAT;0;False;18;FLOAT;0;False;19;FLOAT3;0,0,0;False;20;FLOAT;0;False;21;FLOAT;0;False;9;FLOAT3;0,0,0;False;10;FLOAT3;0,0,0;False;0
+Node;AmplifyShaderEditor.SimpleAddOpNode;2;-153.5006,-30.40063;Float;False;2;2;0;COLOR;0,0,0,0;False;1;FLOAT;0;False;1;COLOR;0
+Node;AmplifyShaderEditor.SamplerNode;11;-403.3066,100.9921;Float;True;Property;_Normal;Normal;2;0;Create;True;0;0;False;0;None;0bebe40e9ebbecc48b8e9cfea982da7e;True;0;True;bump;Auto;True;Object;-1;Auto;Texture2D;6;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;5;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
+Node;AmplifyShaderEditor.RangedFloatNode;31;-1687.537,1065.55;Float;False;Property;_Float1;Float 1;6;0;Create;True;0;0;False;0;0;20000;0;0;0;1;FLOAT;0
+Node;AmplifyShaderEditor.RangedFloatNode;14;-172.4833,377.9584;Float;False;Property;_Smoothness;Smoothness;4;0;Create;True;0;0;False;0;0;0.5;0;1;0;1;FLOAT;0
+Node;AmplifyShaderEditor.TemplateMultiPassMasterNode;32;153.5001,59.09998;Float;False;True;2;Float;ASEMaterialInspector;0;6;ASESampleShaders/CustomRTRainSurface;bb308bce79762c34e823049efce65141;True;GBuffer;0;0;GBuffer;22;True;1;1;False;-1;0;False;-1;0;1;False;-1;0;False;-1;False;False;True;0;False;-1;False;False;True;1;False;-1;True;3;False;-1;False;True;3;RenderPipeline=HDRenderPipeline;RenderType=Opaque=RenderType;Queue=Geometry=Queue=0;True;5;0;False;False;False;False;False;True;True;2;False;-1;255;False;-1;7;False;-1;7;False;-1;3;False;-1;1;False;-1;1;False;-1;7;False;-1;1;False;-1;1;False;-1;1;False;-1;False;False;False;True;1;LightMode=GBuffer;False;0;;0;0;Standard;1;Vertex Position,InvertActionOnDeselection;1;0;7;True;True;True;True;True;True;True;False;22;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;3;FLOAT3;0,0,0;False;4;FLOAT;0;False;5;FLOAT;0;False;6;FLOAT;0;False;7;FLOAT;0;False;8;FLOAT;0;False;11;FLOAT;0;False;12;INT;0;False;13;FLOAT;0;False;14;FLOAT;0;False;15;FLOAT;0;False;16;FLOAT;0;False;17;FLOAT;0;False;18;FLOAT;0;False;19;FLOAT3;0,0,0;False;20;FLOAT;0;False;21;FLOAT;0;False;9;FLOAT3;0,0,0;False;10;FLOAT3;0,0,0;False;0
+Node;AmplifyShaderEditor.TemplateMultiPassMasterNode;33;153.5001,59.09998;Float;False;False;2;Float;ASEMaterialInspector;0;1;Hidden/Templates/HDSRPPBR;bb308bce79762c34e823049efce65141;True;META;0;1;META;0;True;1;1;False;-1;0;False;-1;0;1;False;-1;0;False;-1;False;False;True;0;False;-1;False;False;True;1;False;-1;True;3;False;-1;False;True;3;RenderPipeline=HDRenderPipeline;RenderType=Opaque=RenderType;Queue=Geometry=Queue=0;True;5;0;False;False;False;True;2;False;-1;False;False;False;False;False;True;1;LightMode=Meta;False;0;;0;0;Standard;0;22;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;3;FLOAT3;0,0,0;False;4;FLOAT;0;False;5;FLOAT;0;False;6;FLOAT;0;False;7;FLOAT;0;False;8;FLOAT;0;False;11;FLOAT;0;False;12;INT;0;False;13;FLOAT;0;False;14;FLOAT;0;False;15;FLOAT;0;False;16;FLOAT;0;False;17;FLOAT;0;False;18;FLOAT;0;False;19;FLOAT3;0,0,0;False;20;FLOAT;0;False;21;FLOAT;0;False;9;FLOAT3;0,0,0;False;10;FLOAT3;0,0,0;False;0
+Node;AmplifyShaderEditor.TemplateMultiPassMasterNode;34;153.5001,59.09998;Float;False;False;2;Float;ASEMaterialInspector;0;1;Hidden/Templates/HDSRPPBR;bb308bce79762c34e823049efce65141;True;ShadowCaster;0;2;ShadowCaster;0;True;1;1;False;-1;0;False;-1;0;1;False;-1;0;False;-1;False;False;True;0;False;-1;False;False;True;1;False;-1;True;3;False;-1;False;True;3;RenderPipeline=HDRenderPipeline;RenderType=Opaque=RenderType;Queue=Geometry=Queue=0;True;5;0;False;False;False;False;True;False;False;False;False;0;False;-1;False;False;False;False;True;1;LightMode=ShadowCaster;False;0;;0;0;Standard;0;4;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT3;0,0,0;False;3;FLOAT3;0,0,0;False;0
+Node;AmplifyShaderEditor.TemplateMultiPassMasterNode;35;153.5001,59.09998;Float;False;False;2;Float;ASEMaterialInspector;0;1;Hidden/Templates/HDSRPPBR;bb308bce79762c34e823049efce65141;True;SceneSelectionPass;0;3;SceneSelectionPass;0;True;1;1;False;-1;0;False;-1;0;1;False;-1;0;False;-1;False;False;True;0;False;-1;False;False;True;1;False;-1;True;3;False;-1;False;True;3;RenderPipeline=HDRenderPipeline;RenderType=Opaque=RenderType;Queue=Geometry=Queue=0;True;5;0;False;False;False;False;True;False;False;False;False;0;False;-1;False;False;False;False;True;1;LightMode=SceneSelectionPass;False;0;;0;0;Standard;0;4;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT3;0,0,0;False;3;FLOAT3;0,0,0;False;0
+Node;AmplifyShaderEditor.TemplateMultiPassMasterNode;36;153.5001,59.09998;Float;False;False;2;Float;ASEMaterialInspector;0;1;Hidden/Templates/HDSRPPBR;bb308bce79762c34e823049efce65141;True;DepthOnly;0;4;DepthOnly;0;True;1;1;False;-1;0;False;-1;0;1;False;-1;0;False;-1;False;False;True;0;False;-1;False;False;True;1;False;-1;True;3;False;-1;False;True;3;RenderPipeline=HDRenderPipeline;RenderType=Opaque=RenderType;Queue=Geometry=Queue=0;True;5;0;False;False;False;False;True;False;False;False;False;0;False;-1;False;False;False;False;True;1;LightMode=DepthOnly;False;0;;0;0;Standard;0;4;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT3;0,0,0;False;3;FLOAT3;0,0,0;False;0
+Node;AmplifyShaderEditor.TemplateMultiPassMasterNode;37;153.5001,59.09998;Float;False;False;2;Float;ASEMaterialInspector;0;1;Hidden/Templates/HDSRPPBR;bb308bce79762c34e823049efce65141;True;Motion Vectors;0;5;Motion Vectors;0;True;1;1;False;-1;0;False;-1;0;1;False;-1;0;False;-1;False;False;True;0;False;-1;False;False;True;1;False;-1;True;3;False;-1;False;True;3;RenderPipeline=HDRenderPipeline;RenderType=Opaque=RenderType;Queue=Geometry=Queue=0;True;5;0;False;False;False;False;False;True;True;128;False;-1;255;False;-1;128;False;-1;7;False;-1;3;False;-1;1;False;-1;1;False;-1;7;False;-1;1;False;-1;1;False;-1;1;False;-1;False;False;False;True;1;LightMode=MotionVectors;False;0;;0;0;Standard;0;4;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT3;0,0,0;False;3;FLOAT3;0,0,0;False;0
+Node;AmplifyShaderEditor.TemplateMultiPassMasterNode;38;153.5001,59.09998;Float;False;False;2;Float;ASEMaterialInspector;0;1;Hidden/Templates/HDSRPPBR;bb308bce79762c34e823049efce65141;True;Forward;0;6;Forward;0;True;1;1;False;-1;0;False;-1;0;1;False;-1;0;False;-1;False;False;True;0;False;-1;False;False;True;1;False;-1;True;3;False;-1;False;True;3;RenderPipeline=HDRenderPipeline;RenderType=Opaque=RenderType;Queue=Geometry=Queue=0;True;5;0;False;False;False;False;False;True;True;2;False;-1;255;False;-1;7;False;-1;7;False;-1;3;False;-1;1;False;-1;1;False;-1;7;False;-1;1;False;-1;1;False;-1;1;False;-1;False;False;False;True;1;LightMode=Forward;False;0;;0;0;Standard;0;22;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;3;FLOAT3;0,0,0;False;4;FLOAT;0;False;5;FLOAT;0;False;6;FLOAT;0;False;7;FLOAT;0;False;8;FLOAT;0;False;11;FLOAT;0;False;12;INT;0;False;13;FLOAT;0;False;14;FLOAT;0;False;15;FLOAT;0;False;16;FLOAT;0;False;17;FLOAT;0;False;18;FLOAT;0;False;19;FLOAT3;0,0,0;False;20;FLOAT;0;False;21;FLOAT;0;False;9;FLOAT3;0,0,0;False;10;FLOAT3;0,0,0;False;0
 WireConnection;28;0;19;0
 WireConnection;24;0;28;0
 WireConnection;24;1;25;0
 WireConnection;27;0;24;0
 WireConnection;1;1;27;0
 WireConnection;3;1;27;0
-WireConnection;11;1;27;0
 WireConnection;2;0;3;0
 WireConnection;2;1;1;4
+WireConnection;11;1;27;0
 WireConnection;32;0;2;0
 WireConnection;32;1;11;0
 WireConnection;32;4;13;0
 WireConnection;32;5;14;0
 ASEEND*/
-//CHKSM=B574167167890066B065291A39B3BD89A839BDA4
+//CHKSM=0A1DC0FAA5D8AEEEC26EBC806DDBA30333F2F65D

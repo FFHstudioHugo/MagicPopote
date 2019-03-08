@@ -245,8 +245,8 @@ Shader "ASESampleShaders/CustomRTRainUpdate"
 	
 }
 /*ASEBEGIN
-Version=16200
-542.4;111.2;878;670;1251.456;191.61;1.9;True;False
+Version=16301
+455.2;57.6;721;778;1102.306;294.21;1.9;True;False
 Node;AmplifyShaderEditor.CommentaryNode;5;-778.9706,-438.6071;Float;False;1110.81;785.8901;Rain ripple effect based on https://www.shadertoy.com/view/ldfyzl;10;10;16;15;12;19;13;7;6;20;8;;1,1,1,1;0;0
 Node;AmplifyShaderEditor.RangedFloatNode;19;-688.2086,4.02002;Float;False;Property;_TimeScale;Time Scale;4;0;Create;True;0;0;False;0;1;3;0;0;0;1;FLOAT;0
 Node;AmplifyShaderEditor.SimpleTimeNode;16;-532.8568,0.7747045;Float;False;1;0;FLOAT;1;False;1;FLOAT;0
@@ -260,7 +260,7 @@ Node;AmplifyShaderEditor.SimpleMultiplyOpNode;20;149.9745,124.9723;Float;False;2
 Node;AmplifyShaderEditor.CustomExpressionNode;6;-629.6786,-364.2099;Float;False;float3 p3  = frac(float3(pos.xyx) * hashScale)@$p3 += dot(p3, p3.yzx + 19.19)@$return frac((p3.x + p3.y) * p3.z)@;1;False;2;True;pos;FLOAT2;0,0;In;;Float;True;hashScale;FLOAT;0;In;;Float;Hash12;False;True;0;2;0;FLOAT2;0,0;False;1;FLOAT;0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.DynamicAppendNode;10;147.7353,-34.07792;Float;False;FLOAT4;4;0;FLOAT2;0,0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;1;FLOAT4;0
 Node;AmplifyShaderEditor.CustomExpressionNode;7;-393.7159,-392.6599;Float;False;float3 p3 = frac(float3(pos.xyx) * hashScale3)@$p3 += dot(p3, p3.yzx+19.19)@$return frac((p3.xx+p3.yz)*p3.zy)@;1;False;2;True;pos;FLOAT2;0,0;In;;Float;True;hashScale3;FLOAT3;0,0,0;In;;Float;Hash22;False;True;0;2;0;FLOAT2;0,0;False;1;FLOAT3;0,0,0;False;1;FLOAT;0
-Node;AmplifyShaderEditor.TemplateMultiPassMasterNode;0;370.1,-27.79996;Float;False;True;2;Float;ASEMaterialInspector;0;3;ASESampleShaders/CustomRTRainUpdate;32120270d1b3a8746af2aca8bc749736;0;0;Custom RT Update;1;True;0;1;False;-1;0;False;-1;0;1;False;-1;0;False;-1;True;0;False;-1;0;False;-1;True;False;True;0;False;-1;True;True;True;True;True;0;False;-1;True;False;255;False;-1;255;False;-1;255;False;-1;7;False;-1;1;False;-1;1;False;-1;1;False;-1;7;False;-1;1;False;-1;1;False;-1;1;False;-1;True;1;False;-1;True;3;False;-1;True;True;0;False;-1;0;False;-1;True;0;True;2;0;False;False;False;False;False;False;False;False;False;False;True;2;1;Define;DOUBLE_HASH 1;False;;;0;0;Standard;0;1;0;FLOAT4;0,0,0,0;False;0
+Node;AmplifyShaderEditor.TemplateMultiPassMasterNode;0;370.1,-27.79996;Float;False;True;2;Float;ASEMaterialInspector;0;4;ASESampleShaders/CustomRTRainUpdate;32120270d1b3a8746af2aca8bc749736;True;Custom RT Update;0;0;Custom RT Update;1;True;0;1;False;-1;0;False;-1;0;1;False;-1;0;False;-1;True;0;False;-1;0;False;-1;True;False;True;0;False;-1;True;True;True;True;True;0;False;-1;True;False;255;False;-1;255;False;-1;255;False;-1;7;False;-1;1;False;-1;1;False;-1;1;False;-1;7;False;-1;1;False;-1;1;False;-1;1;False;-1;True;1;False;-1;True;3;False;-1;True;True;0;False;-1;0;False;-1;True;0;True;2;0;False;False;False;False;False;False;False;False;False;False;True;2;1;Define;DOUBLE_HASH 1;False;;;0;0;Standard;0;0;1;True;False;1;0;FLOAT4;0,0,0,0;False;0
 WireConnection;16;0;19;0
 WireConnection;8;1;13;0
 WireConnection;8;2;12;0
@@ -273,4 +273,4 @@ WireConnection;10;0;8;8
 WireConnection;10;3;20;0
 WireConnection;0;0;10;0
 ASEEND*/
-//CHKSM=2E437056383659B90DF536DB2AD1421CF1B95DD2
+//CHKSM=1BD2D3F1B30E5FADC53A2307CBEC9C2B3F26F3E1

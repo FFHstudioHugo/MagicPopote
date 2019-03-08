@@ -1,5 +1,14 @@
+Note: Substance materials are set to be removed in version 2.0!
+
+1.3.1
+
+Changed:
+- Shading improvements for SpeedTree assets
+
+Fixed:
+- Custom pigment map option not accessible
+
 1.3.0
-Note: Substance materials are set to be removed in version 2.0! Materials have been updated to support v2.1 of the plugin (update required).
 
 Added:
 - Ivy kit, consisting out of 6 variants

@@ -9,9 +9,9 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: FAE_GrassAtlas
   m_Shader: {fileID: 4800000, guid: 1e36dfca605fba6499e6817389a06b01, type: 3}
-  m_ShaderKeywords: GEOM_TYPE_LEAF _ALPHATEST_ON
+  m_ShaderKeywords: GEOM_TYPE_LEAF _ALPHATEST_ON _VS_TOUCHBEND_ON
   m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
+  m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
@@ -24,7 +24,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
-        m_Texture: {fileID: 2800000, guid: 78e71b9e097c52e4cba00d81ed4dbe74, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -121,21 +121,23 @@ Material:
     - WindSpeed: 0.3
     - _AO: 0
     - _ASEOutlineWidth: 0
-    - _AmbientOcclusion: 0.651
-    - _BendingInfluence: 0.126
+    - _AlphaClip: 0.67
+    - _AmbientOcclusion: 1
+    - _BendingInfluence: 1
     - _BendingRadius: 1.5
     - _BendingStiffness: 1
     - _BendingStrength: 20
-    - _BendingTint: 0.1
+    - _BendingTint: -0.051
     - _BiDirectionality: 1
     - _BlendSpeed: 0
     - _BumpScale: 1
-    - _ColorVariation: 0
+    - _ColorVariation: 0.064
     - _Colorvariation: 0.729
     - _Cutoff: 0.5
     - _Debug: 0
     - _DetailNormalMapScale: 1
     - _Detailstrength: 1
+    - _Diffusion: 0
     - _DstBlend: 0
     - _Float0: 0.498
     - _Float17: 1
@@ -146,13 +148,13 @@ Material:
     - _Globaltiling: 1.56
     - _Glossiness: 0.5
     - _Height: 0
-    - _HeightmapInfluence: 1
+    - _HeightmapInfluence: 0
     - _MaskClipValue: 0.5
     - _MaxFlattening: 0.469
-    - _MaxHeight: -0.22
-    - _MaxWindStrength: 0.15
+    - _MaxHeight: 0.42
+    - _MaxWindStrength: 0.301
     - _Metallic: 0
-    - _MinHeight: -0.78
+    - _MinHeight: -0.832
     - _Mode: 1
     - _OcclusionStrength: 1
     - _Parallax: 0.02
@@ -163,6 +165,7 @@ Material:
     - _Roughness: 0.5
     - _SSSAmount: 0.46
     - _SSSSize: 3
+    - _Smoothness: 0
     - _SrcBlend: 1
     - _SubsurfaceAmount: 2
     - _Subsurfacesize: 2.8
@@ -170,31 +173,31 @@ Material:
     - _TerrainOffsetX: 394.7
     - _TerrainOffsetY: 250
     - _TerrainSize: 500
-    - _TransmissionAmount: 3.17
-    - _TransmissionSize: 10.9
+    - _Thickness: 0.159
+    - _TransmissionAmount: 10
+    - _TransmissionSize: 6
     - _Transmissionsize: 0
     - _UVSec: 0
     - _Uselightcolor: 0
-    - _VS_TOUCHBEND: 0
-    - _WindAmplitudeMultiplier: 0.57
+    - _VS_TOUCHBEND: 1
+    - _WindAmplitudeMultiplier: 1
     - _WindGusting: 1
     - _WindSpeed: 0.116
     - _WindStiffness: 1
-    - _WindSwinging: 0.51
+    - _WindSwinging: 0.394
     - _WindWaving: 1
     - _WindWeight: 0.21
     - _Windspeed: 0.107
     - _Windweight: 4.15
     - _ZWrite: 1
     - __dirty: 0
-    - _diff: 2
     m_Colors:
     - ObstaclePosition: {r: 0, g: 0, b: 0, a: 0}
     - WindDirection: {r: 0, g: 0, b: 1, a: 0}
     - _ASEOutlineColor: {r: 0, g: 0, b: 0, a: 0}
     - _Color: {r: 0.232, g: 0.5, b: 0, a: 1}
-    - _ColorBottom: {r: 0.2702609, g: 0.2735849, b: 0.26713243, a: 1}
-    - _ColorTop: {r: 0.4647436, g: 0.6320754, b: 0.30113026, a: 1}
+    - _ColorBottom: {r: 0.2549249, g: 0.5147058, b: 0, a: 1}
+    - _ColorTop: {r: 0.31585747, g: 0.6102941, b: 0.02692473, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _FlatColor: {r: 1, g: 0, b: 0, a: 0}
     - _GlobalColor: {r: 0, g: 0, b: 0, a: 0}

@@ -46,7 +46,7 @@ namespace FAE
 
             manualInput = serializedObject.FindProperty("manualInput");
             useCustomPigmentMap = serializedObject.FindProperty("useCustomPigmentMap");
-            inputPigmentMap = serializedObject.FindProperty("inputPigmentMap");
+            inputPigmentMap = serializedObject.FindProperty("customPigmentMap");
             layerMask = serializedObject.FindProperty("layerMask");
 
         }
@@ -89,7 +89,7 @@ namespace FAE
                         if (e.Message.StartsWith("Texture '" + pmg.customPigmentMap.name + "' is not readable"))
                         {
 
-                            EditorGUILayout.HelpBox("Please enable Read/Write on texture \"" + pmg.customPigmentMap.name + "\"\n\nWith the texture selected, choose the \"Advanced\" texture type to show this option.", MessageType.Error);
+                            EditorGUILayout.HelpBox("Please enable the Read/Write option on texture \"" + pmg.customPigmentMap.name + "\"\n\nIt accessed be read otherwise.", MessageType.Error);
                         }
                     }
                 }

@@ -1,0 +1,149 @@
+fileFormatVersion: 2
+guid: cefd76dd5fe67074eaa5d8c1fbb402ab
+ScriptedImporter:
+  fileIDToRecycleName:
+    2100004: SingleLeaf
+    2100006: TerrainForestFloor
+    2800000: SingleLeaf - baseColor
+    2800002: TerrainForestFloor - baseColor
+    2800004: TerrainForestFloor - normal
+    2800006: TerrainForestFloor - height
+    11400000: graph1
+    11400002: sbsar
+    11400004: graph0
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 232528478, guid: 43a8bbf65be290d44ba52b94476242b9, type: 3}
+  version: 17
+  mGraphInstanceData:
+  - graphLabel: SingleLeaf
+    prototypeName: 
+    graphDescIndex: 0
+    generateAllOutputs: 0
+    generateMipMaps: 1
+    preset: " <sbspreset pkgurl=\"pkg://SingleLeaf\" label=\"\" >\n </sbspreset>\n"
+    shaderName: Standard
+    outputNames: baseColor
+    texturePackingList:
+    - outputName: baseColor
+      alphaSource: baseColor
+    textureParameters:
+    - textureName: SingleLeaf_baseColor
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: SingleLeaf - baseColor
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    colorSpaceList:
+    - outputName: baseColor
+      bLinear: 0
+    inputTextureMap: []
+    targetSettingList:
+    - label: Default
+      bLockRatio: 1
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      bGenerateOnLoad: 1
+    - label: Standalone
+      bLockRatio: 1
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      bGenerateOnLoad: 0
+    - label: iPhone
+      bLockRatio: 1
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      bGenerateOnLoad: 0
+    material: {instanceID: 0}
+    generatedTextures: []
+  - graphLabel: TerrainForestFloor
+    prototypeName: 
+    graphDescIndex: 1
+    generateAllOutputs: 0
+    generateMipMaps: 1
+    preset: " <sbspreset pkgurl=\"pkg://TerrainForestFloor\" label=\"\" >\n  <presetinput
+      identifier=\"$outputsize\" uid=\"1840441828\" type=\"8\" value=\"10,10\" />\n
+      </sbspreset>\n"
+    shaderName: Standard
+    outputNames: baseColor,normal,height
+    texturePackingList:
+    - outputName: baseColor
+      alphaSource: baseColor
+    - outputName: normal
+      alphaSource: normal
+    - outputName: roughness
+      alphaSource: roughness
+    - outputName: height
+      alphaSource: height
+    textureParameters:
+    - textureName: TerrainForestFloor_baseColor
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: TerrainForestFloor_normal
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: TerrainForestFloor_roughness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: TerrainForestFloor_height
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: TerrainForestFloor - baseColor
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: TerrainForestFloor - normal
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: TerrainForestFloor - roughness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: TerrainForestFloor - height
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    colorSpaceList:
+    - outputName: baseColor
+      bLinear: 0
+    - outputName: normal
+      bLinear: 1
+    - outputName: roughness
+      bLinear: 1
+    - outputName: height
+      bLinear: 1
+    inputTextureMap: []
+    targetSettingList:
+    - label: Default
+      bLockRatio: 1
+      textureWidth: 1024
+      textureHeight: 1024
+      textureFormat: 0
+      bGenerateOnLoad: 1
+    - label: Standalone
+      bLockRatio: 1
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      bGenerateOnLoad: 0
+    - label: iPhone
+      bLockRatio: 1
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      bGenerateOnLoad: 0
+    material: {instanceID: 0}
+    generatedTextures: []

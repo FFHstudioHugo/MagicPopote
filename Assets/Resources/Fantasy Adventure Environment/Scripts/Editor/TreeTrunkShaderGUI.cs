@@ -20,6 +20,7 @@ namespace FAE
         //Color
         MaterialProperty _AmbientOcclusion;
         MaterialProperty _GradientBrightness;
+        MaterialProperty _Smoothness;
 
         MaterialEditor m_MaterialEditor;
 
@@ -90,6 +91,8 @@ namespace FAE
             if (showHelp) EditorGUILayout.HelpBox("Darkens the areas of the mesh where red vertex colors are applied", MessageType.None);
             m_MaterialEditor.ShaderProperty(_GradientBrightness, _GradientBrightness.displayName);
             if (showHelp) EditorGUILayout.HelpBox("Adds a gradient to the branch mesh from bottom to top. This information is stored in the alpha vertex color channel.\n\nWithout this information, the parameter will have no effect.", MessageType.None);
+            m_MaterialEditor.ShaderProperty(_Smoothness, _Smoothness.displayName);
+            if (showHelp) EditorGUILayout.HelpBox("Multiplies the value of the texture's alpha channel to decrease the roughness amount", MessageType.None);
 
             EditorGUILayout.Space();
         }
@@ -106,6 +109,7 @@ namespace FAE
             //Color
             _AmbientOcclusion = FindProperty("_AmbientOcclusion", props);
             _GradientBrightness = FindProperty("_GradientBrightness", props);
+            _Smoothness = FindProperty("_Smoothness", props);
 
         }
 

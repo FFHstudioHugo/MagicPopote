@@ -18,7 +18,7 @@ namespace FAE
         public const string ASSET_ID = "70354";
 
         public const string PACKAGE_VERSION = "20171";
-        public static string INSTALLED_VERSION = "1.3.0";
+        public static string INSTALLED_VERSION = "1.3.1";
         public const string MIN_UNITY_VERSION = "2017.1";
 
         public static string DOC_URL = "http://staggart.xyz/unity/fantasy-adventure-environment/fae-documentation/";
