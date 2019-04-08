@@ -9,8 +9,8 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: Hidden_Templates_HDSRPLit
   m_Shader: {fileID: 4800000, guid: 6e4ae4064600d784cac1e41a9e6f2e59, type: 3}
-  m_ShaderKeywords: _ALPHATEST_ON _ANISOTROPYMAP _DISABLE_DECALS _DISABLE_SSR _DOUBLESIDED_ON
-    _MATERIAL_FEATURE_SPECULAR_COLOR _NORMALMAP _NORMALMAP_TANGENT_SPACE
+  m_ShaderKeywords: _ALPHATEST_ON _DISABLE_DECALS _DISABLE_SSR _DOUBLESIDED_ON _NORMALMAP
+    _NORMALMAP_TANGENT_SPACE
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 1
@@ -31,7 +31,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _AnisotropyMap:
-        m_Texture: {fileID: 2800000, guid: 9a4a55d8d2e54394d97426434477cdcf, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseColorMap:
@@ -127,17 +127,17 @@ Material:
     - _AORemapMin: 0
     - _ATDistance: 1
     - _AlbedoAffectEmissive: 0
-    - _AlphaCutoff: 0.081
+    - _AlphaCutoff: 0.055
     - _AlphaCutoffEnable: 1
-    - _AlphaCutoffPostpass: 0.5
-    - _AlphaCutoffPrepass: 0.371
-    - _AlphaCutoffShadow: 0.39
-    - _Anisotropy: 0.71
+    - _AlphaCutoffPostpass: 0.574
+    - _AlphaCutoffPrepass: 0.368
+    - _AlphaCutoffShadow: 0.252
+    - _Anisotropy: 0.01
     - _BlendMode: 0
     - _CoatMask: 0
     - _CullMode: 0
     - _CullModeForward: 0
-    - _Cutoff: 0.081
+    - _Cutoff: 0.055
     - _DepthOffsetEnable: 0
     - _DetailAlbedoScale: 1
     - _DetailNormalScale: 1
@@ -161,7 +161,7 @@ Material:
     - _DistortionVectorBias: -1
     - _DistortionVectorScale: 2
     - _DoubleSidedEnable: 1
-    - _DoubleSidedNormalMode: 1
+    - _DoubleSidedNormalMode: 0
     - _Drag: 1
     - _DstBlend: 0
     - _EmissiveColorMode: 1
@@ -191,10 +191,10 @@ Material:
     - _IridescenceMask: 1
     - _IridescenceThickness: 1
     - _LinkDetailsWithBase: 1
-    - _MaterialID: 4
+    - _MaterialID: 1
     - _Metallic: 0
     - _NormalMapSpace: 0
-    - _NormalScale: 7.14
+    - _NormalScale: 4.7
     - _PPDLodThreshold: 5
     - _PPDMaxSamples: 15
     - _PPDMinSamples: 5
@@ -207,7 +207,7 @@ Material:
     - _ShiverDirectionality: 0.5
     - _ShiverDrag: 0.2
     - _Smooth: 0.209
-    - _Smoothness: 0.235
+    - _Smoothness: 0
     - _SmoothnessRemapMax: 1
     - _SmoothnessRemapMin: 0
     - _SpecularAAScreenSpaceVariance: 0.1
@@ -233,17 +233,17 @@ Material:
     - _UVBase: 0
     - _UVDetail: 0
     - _UVEmissive: 0
-    - _UseShadowThreshold: 1
+    - _UseShadowThreshold: 0
     - _ZTestDepthEqualForOpaque: 3
     - _ZTestGBuffer: 3
     - _ZTestModeDistortion: 4
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 0.5188679, g: 0.3425081, b: 0.2227216, a: 1}
+    - _BaseColor: {r: 0.37735844, g: 0.3067346, b: 0.25097895, a: 0.3372549}
     - _BaseColorMap_MipInfo: {r: 0, g: 0, b: 0, a: 0}
-    - _Color: {r: 0.51886785, g: 0.34250808, b: 0.22272158, a: 1}
+    - _Color: {r: 0.3773584, g: 0.30673456, b: 0.25097892, a: 0.3372549}
     - _Color0: {r: 1, g: 0.615852, b: 0.41037717, a: 0}
-    - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
+    - _DoubleSidedConstants: {r: -1, g: -1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
     - _EmissiveColor: {r: 0, g: 0, b: 0, a: 1}
     - _InvPrimScale: {r: 1, g: 1, b: 0, a: 0}
